@@ -9,6 +9,18 @@
   margin: 40px;
 }
 
+@media (min-width: 320px) and (max-width: 359px) {
+  .intro img {
+    width: 100%;
+  }
+  .intro .container {
+    display: block;
+  }
+  .intro .container .txt-intro {
+    width: 100%;
+    margin: 0px;
+  }
+}
 /* Nosotros */
 .inner img {
   width: 100%;
@@ -48,26 +60,35 @@
 @media (min-width: 320px) and (max-width: 359px) {
   .nosotros {
     margin-top: 40px;
-  }
-  .nosotros img {
-    width: 280px;
+    width: 100%;
   }
   .nosotros .bnos {
     margin-top: 40px;
+    width: 100%;
   }
-  .nosotros .bnos .nos-a, .nosotros .bnos .nos-b {
+  .nosotros .bnos .nos-a,
+.nosotros .bnos .nos-b {
     background: #5b2674;
     border-radius: 26px;
-    width: 300px;
+    width: 100%;
     display: block;
     margin-left: 0px;
     padding: 8px;
     padding-left: 10px;
     color: white;
   }
-  .nosotros .bnos .nos-a .nosa-txt, .nosotros .bnos .nos-b .nosa-txt {
+  .nosotros .bnos .nos-a .nosa-txt,
+.nosotros .bnos .nos-b .nosa-txt {
     margin-top: 20px;
-    width: 280px;
+    width: 100%;
+  }
+  .nosotros .bnos .nos-a .nosa-img,
+.nosotros .bnos .nos-b .nosa-img {
+    width: 100%;
+  }
+  .nosotros .bnos .nos-a .nosa-img img,
+.nosotros .bnos .nos-b .nosa-img img {
+    width: 100%;
   }
 }
 @media (min-width: 360px) and (max-width: 410px) {
@@ -80,7 +101,8 @@
   .nosotros .bnos {
     margin-top: 40px;
   }
-  .nosotros .bnos .nos-a, .nosotros .bnos .nos-b {
+  .nosotros .bnos .nos-a,
+.nosotros .bnos .nos-b {
     background: #5b2674;
     border-radius: 26px;
     width: 340px;
@@ -90,7 +112,8 @@
     padding-left: 10px;
     color: white;
   }
-  .nosotros .bnos .nos-a .nosa-txt, .nosotros .bnos .nos-b .nosa-txt {
+  .nosotros .bnos .nos-a .nosa-txt,
+.nosotros .bnos .nos-b .nosa-txt {
     margin-top: 20px;
     width: 320px;
   }
@@ -105,7 +128,8 @@
   .nosotros .bnos {
     margin-top: 40px;
   }
-  .nosotros .bnos .nos-a, .nosotros .bnos .nos-b {
+  .nosotros .bnos .nos-a,
+.nosotros .bnos .nos-b {
     background: #5b2674;
     border-radius: 26px;
     width: 390px;
@@ -115,7 +139,8 @@
     padding-left: 10px;
     color: white;
   }
-  .nosotros .bnos .nos-a .nosa-txt, .nosotros .bnos .nos-b .nosa-txt {
+  .nosotros .bnos .nos-a .nosa-txt,
+.nosotros .bnos .nos-b .nosa-txt {
     margin-top: 20px;
     width: 360px;
   }
@@ -130,7 +155,8 @@
   .nosotros .bnos {
     margin-top: 40px;
   }
-  .nosotros .bnos .nos-a, .nosotros .bnos .nos-b {
+  .nosotros .bnos .nos-a,
+.nosotros .bnos .nos-b {
     background: #5b2674;
     border-radius: 26px;
     width: 390px;
@@ -140,7 +166,8 @@
     padding-left: 10px;
     color: white;
   }
-  .nosotros .bnos .nos-a .nosa-txt, .nosotros .bnos .nos-b .nosa-txt {
+  .nosotros .bnos .nos-a .nosa-txt,
+.nosotros .bnos .nos-b .nosa-txt {
     margin-top: 20px;
     width: 360px;
   }
@@ -300,6 +327,70 @@
   }
 }
 /* Fin Servicios */
+.footer {
+  color: white;
+  background: #5b2674;
+  clear: both;
+  padding: 20px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  transition: all 0.6s;
+  color: #1c0327;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footer__section {
+  width: 30%;
+}
+.footer .container .footer__section ul {
+  list-style: none;
+}
+.footer .container .footer__section .section__contacts .whats a img,
+.footer .container .footer__section .section__contacts .email a img,
+.footer .container .footer__section .section__contacts .tel a img {
+  width: 20px;
+  margin: 10px;
+}
+.footer .container .footer__section .section__social .social {
+  display: flex;
+  justify-content: center;
+}
+.footer .container .footer__section .section__social .social .face a img,
+.footer .container .footer__section .section__social .social .insta a img,
+.footer .container .footer__section .section__social .social .twitt a img {
+  width: 60px;
+  margin: 10px;
+}
+.footer .container .footer__section .logo-footer a img {
+  width: 80px;
+}
+.footer .derechos {
+  text-align: center;
+  height: 30px;
+}
+.footer .derechos .container {
+  text-align: center;
+  display: block;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .footer {
+    padding: 0px;
+  }
+  .footer .container {
+    display: block;
+  }
+  .footer .container .footer__section {
+    width: 100%;
+  }
+}
 .claims .hclaims {
   text-align: center;
 }
@@ -350,6 +441,11 @@
   color: #1c0327;
 }
 
+@media (min-width: 320px) and (max-width: 359px) {
+  .claims {
+    display: none;
+  }
+}
 .contacto {
   text-align: center;
   margin-top: 120px;
@@ -380,9 +476,9 @@
     margin-top: 40px;
   }
   .contacto .bmap {
-    width: 300px;
-    margin-top: -40px;
-    height: 620px;
+    width: 90%;
+    height: 420px;
+    margin: 0px;
   }
   .contacto .mapa iframe {
     z-index: 0;
@@ -485,59 +581,6 @@ h4 {
 }
 .slogan h2 {
   font-weight: lighter;
-}
-
-.footer {
-  color: white;
-  background: #5b2674;
-  clear: both;
-  padding: 20px;
-}
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-.footer a:hover {
-  transition: all 0.6s;
-  color: #1c0327;
-}
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-}
-.footer .container .footer__section {
-  width: 30%;
-}
-.footer .container .footer__section ul {
-  list-style: none;
-}
-.footer .container .footer__section .section__contacts .whats a img,
-.footer .container .footer__section .section__contacts .email a img,
-.footer .container .footer__section .section__contacts .tel a img {
-  width: 20px;
-  margin: 10px;
-}
-.footer .container .footer__section .section__social .social {
-  display: flex;
-  justify-content: center;
-}
-.footer .container .footer__section .section__social .social .face a img,
-.footer .container .footer__section .section__social .social .insta a img,
-.footer .container .footer__section .section__social .social .twitt a img {
-  width: 60px;
-  margin: 10px;
-}
-.footer .container .footer__section .logo-footer a img {
-  width: 80px;
-}
-.footer .derechos {
-  text-align: center;
-  height: 30px;
-}
-.footer .derechos .container {
-  text-align: center;
-  display: block;
-  align-items: center;
 }
 
 .inner--bg {

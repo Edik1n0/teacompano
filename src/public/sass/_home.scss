@@ -11,3 +11,18 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .intro {
+        img {
+            width: 100%;
+        }
+        .container {
+            display: block;
+            .txt-intro {
+                width: 100%;
+                margin: 0px;
+            }
+        }
+    }
+}
