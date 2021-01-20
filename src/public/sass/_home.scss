@@ -1,0 +1,13 @@
+.intro {
+    .container {
+        display: flex;
+        margin-top: 40px;
+        justify-content: flex-end;
+        align-items: center;
+
+        .txt-intro {
+            width: 40%;
+            margin: 40px;
+        }
+    }
+}

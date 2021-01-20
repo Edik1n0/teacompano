@@ -1,0 +1,41 @@
+.claims {
+  .hclaims {
+    text-align: center;
+  }
+
+  .bclaims {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-right: 40px;
+    .claim-a,
+    .claim-b,
+    .claim-c {
+      text-align: center;
+      a {
+        color: $mor;
+        text-decoration: none;
+        p {
+          opacity: 0%;
+          margin: 10px;
+        }
+        img {
+          width: 80px;
+          &:hover {
+            transition: all .6s;
+            opacity: 80%;
+          }
+        }
+
+        &:hover {
+          transition: all .6s;
+          p {
+            opacity: 100%;
+            transition: all .6s;
+            color: $morb;
+          }
+        }
+      }
+    }
+  }
+}
