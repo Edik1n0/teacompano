@@ -37,3 +37,11 @@ h4 {
 .inner--bg {
     width: 100%;
 }
+
+.alerta {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

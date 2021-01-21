@@ -1,0 +1,90 @@
+{{> inner}}
+
+<div class="users__table">
+    <div class="container">
+        <div class="users__title m-2 text-center">
+            <h1>Solicitudes de servicios Teacompaño</h1>
+        </div>
+        <div class="row m-4">
+            <table class="table-secondary">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each usuarios}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td><a href="">{{username}}</a></td>
+                        <td><a href="mailto:{{email}}">{{email}}</a></td>
+                        <td><a href="callto:{{phone}}">{{phone}}</a></td>
+                        <td>
+                            <ul class="user__list">
+                                <li class="list__item">
+                                    <a href="" class=""></a>
+                                    <!-- Button trigger modal -->
+                                    <a type="button" class="icon-plus-circled" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">{{username}}</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul class="usr__info">
+                                                        <li class="usr__info--item">
+                                                            <p><strong>Id: </strong>{{id}}</p>
+                                                        </li>
+                                                        <li class="usr__info--item">
+                                                            <p><strong>Email: </strong>{{email}}</p>
+                                                        </li>
+                                                        <li class="usr__info--item">
+                                                            <p><strong>Teléfono: </strong>{{phone}}</p>
+                                                        </li>
+                                                        <li class="usr__info--item">
+                                                            <p><strong>Descripción:<br> </strong>{{description}}</p>
+                                                        </li>
+                                                        <li class="usr__info--item">
+                                                            <p><strong>Hora registro: </strong>{{timeago created_at}}
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list__item"><a href="/control/users/delete/{{id}}" class="icon-trash-1"></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>No hay usuarios</td>
+                        <td>Registra uno</td>
+                        <td><a href="/usuarios/add">Aquí</a></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

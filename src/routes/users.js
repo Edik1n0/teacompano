@@ -16,7 +16,8 @@ router.post('/add', async (req, res) => {
         description
     };
     await pool.query('INSERT INTO usuarios SET ?', [newComUser]);
-    res.render('/');
+    req.flash('success', 'Mensaje enviado satisfactoriamente');
+    res.redirect('/');
 });
 
 module.exports = router;

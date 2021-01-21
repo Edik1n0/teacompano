@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .intro .container {
   display: flex;
   margin-top: 40px;
@@ -283,6 +284,170 @@
     margin: 10px 0px 10px 0px;
   }
 }
+.users__table a {
+  color: black;
+  text-decoration: none;
+}
+.users__table a:hover {
+  transition: all 0.6s;
+  color: #1c0327;
+}
+.users__table .container .row table tbody td ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+.users__table .container .row table tbody td ul .list__item {
+  margin: 4px;
+  font-size: 18px;
+}
+.users__table .container .row table tbody td ul .list__item .icon-trash-1 {
+  color: red;
+}
+.users__table .container .row table tbody td ul .list__item .icon-trash-1:hover {
+  color: #570000;
+}
+.users__table .container .row table tbody td ul .list__item .icon-pencil {
+  color: #5b2674;
+}
+.users__table .container .row table tbody td ul .list__item .icon-pencil:hover {
+  color: #1c0327;
+}
+.users__table .container .row table tbody td ul .list__item .icon-plus-circled {
+  color: green;
+}
+.users__table .container .row table tbody td ul .list__item .icon-plus-circled:hover {
+  color: #002c00;
+}
+.users__table .container .row table tbody td ul .modal .modal-dialog .modal-content .modal-body ul {
+  display: block;
+}
+
+@font-face {
+  font-family: "fontello";
+  src: url("../font/fontello.eot?21836580");
+  src: url("../font/fontello.eot?21836580#iefix") format("embedded-opentype"), url("../font/fontello.woff2?21836580") format("woff2"), url("../font/fontello.woff?21836580") format("woff"), url("../font/fontello.ttf?21836580") format("truetype"), url("../font/fontello.svg?21836580#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?21836580#fontello') format('svg');
+    }
+  }
+  */
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+/* '' */
+.icon-chat:before {
+  content: "";
+}
+
+/* '' */
+.icon-down-open:before {
+  content: "";
+}
+
+/* '' */
+.icon-left-open:before {
+  content: "";
+}
+
+/* '' */
+.icon-right-open:before {
+  content: "";
+}
+
+/* '' */
+.icon-up-open:before {
+  content: "";
+}
+
+/* '' */
+.icon-plus-circled:before {
+  content: "";
+}
+
+/* '' */
+.icon-trash-1:before {
+  content: "";
+}
+
+/* '' */
+.icon-trash-empty:before {
+  content: "";
+}
+
+/* '' */
+.icon-trash-2:before {
+  content: "";
+}
+
+/* '' */
+.icon-contrast:before {
+  content: "";
+}
+
+/* '' */
+.icon-adjust:before {
+  content: "";
+}
+
+/* '' */
+.icon-adjust-1:before {
+  content: "";
+}
+
+/* '' */
+.icon-pencil:before {
+  content: "";
+}
+
+/* '' */
+.icon-menu:before {
+  content: "";
+}
+
+/* '' */
+.icon-trash:before {
+  content: "";
+}
+
+/* '' */
 .footer {
   color: white;
   background: #5b2674;
@@ -582,6 +747,14 @@ h4 {
 
 .inner--bg {
   width: 100%;
+}
+
+.alerta {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */

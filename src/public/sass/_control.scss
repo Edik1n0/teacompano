@@ -1,0 +1,62 @@
+.users__table {
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            transition: all .6s;
+            color: $morb;
+        }
+    }
+
+    .container {
+        .row {
+            table {
+                tbody {
+                    td {
+                        ul {
+                            list-style: none;
+                            padding: 0px;
+                            display: flex;
+                            .list__item {
+                                margin: 4px;
+                                font-size: 18px;
+                                .icon-trash-1 {
+                                    color: red;
+                                    &:hover {
+                                        color: $red;
+                                    }
+                                }
+
+                                .icon-pencil {
+                                    color: $mor;
+                                    &:hover {
+                                        color: $morb;
+                                    }
+                                }
+
+                                .icon-plus-circled {
+                                    color: green;
+                                    &:hover {
+                                        color: $green;
+                                    }
+                                }
+                            }
+
+                            .modal {
+                                .modal-dialog {
+                                    .modal-content {
+                                        .modal-body {
+                                            ul {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
