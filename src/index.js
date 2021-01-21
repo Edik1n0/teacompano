@@ -31,6 +31,7 @@ app.use((req, res, next) => {
 // Routes
 app.use(require('./routes'));
 app.use(require('./routes/auth'));
+app.use('/control', require('./routes/control'));
 app.use('/usuarios', require('./routes/users'));
 
 // Public

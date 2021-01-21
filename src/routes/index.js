@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const pool = require('../db');
+
 router.get('/', (req, res) => {
     res.render('layouts/home');
 });
@@ -27,6 +29,16 @@ router.get('/servicios/enfermeria-domicilio', (req, res) => {
 
 router.get('/servicios/enfermeria-intrahospitalario', (req, res) => {
     res.render('servicios/enfermeria-intrahospitalario');
+});
+
+router.get('/control', (req, res) => {
+    res.render('control/');
+});
+
+router.get('/control/users', async(req, res) => {
+    const usuarios = await pool.query('SELECT * FROM usuarios');
+    console.log(usuarios);
+    res.render('control/users', {usuarios});
 });
 
 module.exports = router;
