@@ -27,3 +27,12 @@
 
 -- ALTER TABLE usuarios
 --     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+
+-- CREATE TABLE suser(
+--      id INT(11) NOT NULL,
+--      fullname VARCHAR(60) NOT NULL,
+--      username VARCHAR(16) NOT NULL,
+--      email VARCHAR(60) NOT NULL,
+--      phone VARCHAR(50) NOT NULL,
+--      password VARCHAR(60) NOT NULL,
+-- );
