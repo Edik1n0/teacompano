@@ -1,4 +1,5 @@
 const express = require('express');
+const passport = require('passport');
 const router = express.Router();
 
 const pool = require('../db');
@@ -33,6 +34,14 @@ router.get('/servicios/enfermeria-intrahospitalario', (req, res) => {
 
 router.get('/control', (req, res) => {
     res.render('control/');
+});
+
+router.post('/control/', (req, res, next) => {
+    passport.authenticate('local.signin', {
+        successRedirect: '/control/perfil',
+        failureRedirect: '/control/',
+        failureFlash: true
+    })(req, res, next);
 });
 
 router.get('/control/users', async(req, res) => {

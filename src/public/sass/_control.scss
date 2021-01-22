@@ -1,3 +1,25 @@
+.acceso__control {
+    .container {
+        .access__ctrl {
+            .ctrl__body {
+                .col-md-4 {
+                    .card {
+                        .card-body {
+                            .img-form {
+                                display: flex;
+                                justify-content: center;
+                                img {
+                                    width: 30%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .users__table {
     a {
         color: black;
