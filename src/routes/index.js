@@ -3,6 +3,7 @@ const passport = require('passport');
 const router = express.Router();
 
 const pool = require('../db');
+const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
 router.get('/', (req, res) => {
     res.render('layouts/home');
@@ -32,11 +33,11 @@ router.get('/servicios/enfermeria-intrahospitalario', (req, res) => {
     res.render('servicios/enfermeria-intrahospitalario');
 });
 
-router.get('/control', (req, res) => {
+router.get('/control', isNotLoggedIn, (req, res) => {
     res.render('control/');
 });
 
-router.post('/control/', (req, res, next) => {
+router.post('/control/', isNotLoggedIn, (req, res, next) => {
     passport.authenticate('local.signin', {
         successRedirect: '/control/perfil',
         failureRedirect: '/control/',
@@ -44,13 +45,13 @@ router.post('/control/', (req, res, next) => {
     })(req, res, next);
 });
 
-router.get('/control/users', async(req, res) => {
+router.get('/control/users', isLoggedIn, async(req, res) => {
     const usuarios = await pool.query('SELECT * FROM usuarios');
     console.log(usuarios);
     res.render('control/users', {usuarios});
 });
 
-router.get('/control/users/delete/:id', async (req, res) => {
+router.get('/control/users/delete/:id', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     await pool.query('DELETE FROM usuarios WHERE id = ?', [id]);
     req.flash('success', 'Usuario eliminado satisfactoriamente')

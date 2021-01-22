@@ -2,19 +2,25 @@ const express = require('express');
 const router = express.Router();
 
 const passport = require('passport');
+const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
-router.get('/control/signup', (req, res) => {
+router.get('/control/signup', isLoggedIn, (req, res) => {
     res.render('auth/signup');
 });
 
 router.post('/control/signup', passport.authenticate('local.signup', {
-    successRedirect: '/control/perfil',
+    successRedirect: '/control/signup',
     failureRedirect: '/control/signup',
     failureFlash: true
 }));
 
-router.get('/control/perfil', (req, res) => {
-    res.send('Vista del perfil');
+router.get('/control/perfil', isLoggedIn, (req, res) => {
+    res.render('perfil');
+});
+
+router.get('/control/logout', isLoggedIn, (req, res) => {
+    req.logOut();
+    res.redirect('/control/');
 });
 
 module.exports = router;

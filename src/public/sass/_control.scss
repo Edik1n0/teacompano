@@ -82,3 +82,27 @@
         }
     }
 }
+
+.perfil {
+    .container {
+        .perfil__body {
+            .container {
+                .menu__control {
+                    list-style: none;
+                    padding: 0px;
+                    .control__items {
+                        margin: 10px;
+                        .control__links {
+                            color: $mor;
+                            text-decoration: none;
+                            &:hover {
+                                transition: all .6s;
+                                color: $morb;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
