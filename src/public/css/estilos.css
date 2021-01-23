@@ -309,9 +309,6 @@
   margin: 4px;
   font-size: 18px;
 }
-.users__table .container .row table tbody td ul .list__item .icon-trash-1 {
-  color: red;
-}
 .users__table .container .row table tbody td ul .list__item .icon-trash-1:hover {
   color: #570000;
 }
@@ -320,9 +317,6 @@
 }
 .users__table .container .row table tbody td ul .list__item .icon-pencil:hover {
   color: #1c0327;
-}
-.users__table .container .row table tbody td ul .list__item .icon-plus-circled {
-  color: green;
 }
 .users__table .container .row table tbody td ul .list__item .icon-plus-circled:hover {
   color: #002c00;
@@ -346,11 +340,9 @@
   text-align: center;
 }
 .users__table--mob .container .row {
-  border: 1px solid green;
   justify-content: center;
 }
 .users__table--mob .container .row .card {
-  border: 1px solid red;
   color: black;
   width: 100%;
 }
@@ -596,7 +588,7 @@
 }
 @media (min-width: 360px) and (max-width: 410px) {
   .footer {
-    padding: 0px;
+    padding: 10px;
     height: 666px;
   }
   .footer .container {
@@ -611,7 +603,7 @@
 }
 @media (min-width: 411px) and (max-width: 767px) {
   .footer {
-    padding: 0px;
+    padding: 10px;
   }
   .footer .container {
     display: block;
@@ -622,7 +614,7 @@
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .footer {
-    padding: 0px;
+    padding: 10px;
   }
   .footer .container {
     display: block;
@@ -825,6 +817,15 @@ h4 {
 
 .inner--bg {
   width: 100%;
+}
+
+.back {
+  position: absolute;
+  z-index: -1;
+}
+.back img {
+  width: 100%;
+  opacity: 20%;
 }
 
 .alerta {

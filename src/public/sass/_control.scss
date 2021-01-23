@@ -43,7 +43,6 @@
                                 margin: 4px;
                                 font-size: 18px;
                                 .icon-trash-1 {
-                                    color: red;
                                     &:hover {
                                         color: $red;
                                     }
@@ -57,7 +56,6 @@
                                 }
 
                                 .icon-plus-circled {
-                                    color: green;
                                     &:hover {
                                         color: $green;
                                     }
@@ -96,10 +94,8 @@
     .container {
         text-align: center;
         .row {
-            border: 1px solid green;
             justify-content: center;
             .card {
-                border: 1px solid red;
                 color: black;
                 width: 100%;
                 .card-body {

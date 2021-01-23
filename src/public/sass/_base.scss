@@ -38,6 +38,16 @@ h4 {
     width: 100%;
 }
 
+.back {
+    position: absolute;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        opacity: 20%;
+    }
+}
+
 .alerta {
     position: absolute;
     z-index: 1;
