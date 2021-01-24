@@ -345,6 +345,7 @@
 .users__table--mob .container .row .card {
   color: black;
   width: 100%;
+  padding: 20px;
 }
 .users__table--mob .container .row .card .card-body .container .listado__usuario {
   list-style: none;
