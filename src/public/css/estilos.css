@@ -247,7 +247,24 @@
   margin-top: 6px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+.servicio__individual .container .card {
+  background: #d591f565;
+  color: #1c0327;
+  margin: 40px;
+}
+.servicio__individual .container .card .card-header {
+  text-align: center;
+}
+.servicio__individual .container .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicio__individual .container .card .card-body .ser__img {
+  margin: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 1080px) {
   .servicios {
     margin-top: 40px;
   }
@@ -282,6 +299,29 @@
 .servicios .bser .ser-a .sera-txt .container,
 .servicios .bser .ser-a .sera-img .container {
     margin: 10px 0px 10px 0px;
+  }
+
+  .servicio__individual .container .card {
+    background: #d591f565;
+    color: #1c0327;
+    margin: 20px;
+  }
+  .servicio__individual .container .card .card-header {
+    text-align: center;
+  }
+  .servicio__individual .container .card .card-body {
+    display: block;
+  }
+  .servicio__individual .container .card .card-body .ser__img {
+    width: 100%;
+    margin: 0px;
+  }
+  .servicio__individual .container .card .card-body .ser__item {
+    list-style: none;
+    padding: 0px;
+  }
+  .servicio__individual .container .card .card-body .ser__item li {
+    margin: 10px;
   }
 }
 .acceso__control .container .access__ctrl .ctrl__body .col-md-4 .card .card-body .img-form {

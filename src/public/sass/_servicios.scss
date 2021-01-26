@@ -39,7 +39,30 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+.servicio__individual {
+  .container {
+    .card {
+      background: $morc;
+      color: $morb;
+      margin: 40px;
+      .card-header {
+        text-align: center;
+      }
+
+      .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ser__img {
+          margin: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1080px) {
   .servicios {
     margin-top: 40px;
     img {
@@ -67,6 +90,35 @@
 
           .container {
             margin: 10px 0px 10px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .servicio__individual {
+    .container {
+      .card {
+        background: $morc;
+        color: $morb;
+        margin: 20px;
+        .card-header {
+          text-align: center;
+        }
+  
+        .card-body {
+          display: block;  
+          .ser__img {
+            width: 100%;
+            margin: 0px;
+          }
+
+          .ser__item {
+            list-style: none;
+            padding: 0px;
+            li {
+              margin: 10px;
+            }
           }
         }
       }
