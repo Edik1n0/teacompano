@@ -23,4 +23,8 @@ router.get('/control/logout', isLoggedIn, (req, res) => {
     res.redirect('/control/');
 });
 
+router.get('/control/enfermeras', isLoggedIn, (req, res) => {
+    res.render('control/nurse-signup');
+});
+
 module.exports = router;

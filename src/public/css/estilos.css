@@ -409,18 +409,23 @@
   margin: 10px;
 }
 
-.perfil .container .perfil__body .container .menu__control {
+.perfil .container {
+  display: block;
+  justify-content: center;
+  margin: 80px;
+}
+.perfil .container .card .perfil__body .container .menu__control {
   list-style: none;
   padding: 0px;
 }
-.perfil .container .perfil__body .container .menu__control .control__items {
+.perfil .container .card .perfil__body .container .menu__control .control__items {
   margin: 10px;
 }
-.perfil .container .perfil__body .container .menu__control .control__items .control__links {
+.perfil .container .card .perfil__body .container .menu__control .control__items .control__links {
   color: #5b2674;
   text-decoration: none;
 }
-.perfil .container .perfil__body .container .menu__control .control__items .control__links:hover {
+.perfil .container .card .perfil__body .container .menu__control .control__items .control__links:hover {
   transition: all 0.6s;
   color: #1c0327;
 }
@@ -664,6 +669,27 @@
     width: 100%;
   }
 }
+.historia__individiual .container .paciente__info .paciente__body {
+  display: flex;
+  justify-content: space-between;
+}
+.historia__individiual .container .paciente__info .paciente__body .ficha__indi .form__section .icon-plus-circled,
+.historia__individiual .container .paciente__info .paciente__body .ficha__indi .form__section .icon-menu {
+  text-decoration: none;
+  color: green;
+  font-size: 18px;
+  cursor: pointer;
+}
+.historia__individiual .container .paciente__info .paciente__body .ficha__indi .form__section .icon-pencil {
+  text-decoration: none;
+  color: #5b2674;
+  font-size: 18px;
+  cursor: pointer;
+}
+.historia__individiual .container .paciente__info .paciente__body .ficha__indi .form__section .modal .modal-dialog .modal-content .modal-body .container .paciente--kardex {
+  display: flex;
+}
+
 .claims .hclaims {
   text-align: center;
 }

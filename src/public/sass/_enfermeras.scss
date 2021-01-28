@@ -1,0 +1,43 @@
+.historia__individiual {
+    .container {
+        .paciente__info {
+            .paciente__body {
+                display: flex;
+                justify-content: space-between;
+
+                .ficha__indi {
+                    .form__section {
+                        .icon-plus-circled,
+                        .icon-menu {
+                            text-decoration: none;
+                            color: green;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
+
+                        .icon-pencil {
+                            text-decoration: none;
+                            color: $mor;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
+
+                        .modal {
+                            .modal-dialog {
+                                .modal-content {
+                                    .modal-body {
+                                        .container {
+                                            .paciente--kardex {
+                                                display: flex;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

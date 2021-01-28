@@ -1,0 +1,46 @@
+<div class="historia__individiual">
+    <div class="container">
+        <div class="paciente__info">
+            <div class="paciente__header">
+                <h1>Listado de pacientes registrados</h1>
+            </div>
+            <div class="paciente__body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Diagnóstico</th>
+                            <th scope="col">teléfono</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    {{#each pacientes}}
+                    <tbody>
+                        <tr>
+                            <th scope="row">{{id}}</th>
+                            <td><a href="/personal/historias/individual/{{id}}">{{pacientenombre}}</a></td>
+                            <td>{{pacientediagnostico}}</td>
+                            <td>{{pacientetel}}</td>
+                            <td>{{estado}}</td>
+                        </tr>
+                        {{else}}
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Hola</td>
+                            <td>No tienes pacientes registrados</td>
+                            <td><a href="/personal/historias/agregar" class="btn btn-danger">Agrega uno nuevo</a></td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="col-md-4 mx-auto m-4">
+        <a href="/personal/historias/agregar" class="btn btn-danger">Añadir nuevo paciente</a>
+    </div>
+</div>

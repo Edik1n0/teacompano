@@ -12,6 +12,7 @@ const { database } = require('./keys');
 // Init
 const app = express();
 require('./lib/passport');
+require('./lib/passportdos');
 
 // Sett
 app.set('port', process.env.PORT || 8000);
@@ -50,6 +51,9 @@ app.use((req, res, next) => {
 // Routes
 app.use(require('./routes'));
 app.use(require('./routes/auth'));
+app.use(require('./routes/authdos'));
+app.use(require('./routes/enfermeras'));
+app.use(require('./routes/servicios'));
 app.use('/control', require('./routes/control'));
 app.use('/usuarios', require('./routes/users'));
 
