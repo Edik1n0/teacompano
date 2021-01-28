@@ -25,7 +25,7 @@ exports.sendEmail = function (req, res) {
         } else {
             console.log("Email sent");
             //res.status(200).jsonp(req.body);
-            //req.flash('success', 'Datos registrados correctamente');
+            req.flash('success', 'Datos registrados correctamente');
             res.redirect('/');
         }
     });
@@ -44,7 +44,7 @@ exports.sendNurseEmail = function (req, res) {
     const mailNurse = {
         from: 'kinotrance@gmail.com',
         to: 'teacompano300@gmail.com',
-        subject: 'Nuevo servicio solicitado',
+        subject: 'Historia Clínica actualizada',
         text: 'Se ha registrado una nueva Historia Clínica'
     };
     // Enviamos el email
@@ -56,7 +56,7 @@ exports.sendNurseEmail = function (req, res) {
         } else {
             console.log("Email sent");
             //res.status(200).jsonp(req.body);
-            //req.flash('success', 'Datos registrados correctamente');
+            req.flash('success', 'Datos registrados correctamente');
             res.render('enfermeras/agregar');
         }
     });
