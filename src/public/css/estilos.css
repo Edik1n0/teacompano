@@ -332,6 +332,12 @@
   width: 30%;
 }
 
+.users__table .container .users__title {
+  margin: 60px;
+}
+.users__table .container .row {
+  margin: 40px;
+}
 .users__table a {
   color: black;
   text-decoration: none;
