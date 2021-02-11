@@ -59,5 +59,73 @@ router.get('/control/users/delete/:id', isLoggedIn, async (req, res) => {
     res.redirect('/control/users');
 });
 
+router.get('/control/historias/agregar', isLoggedIn, (req, res) => {
+    res.render('control/historias/add');
+});
+
+router.post('/control/historias/agregar', isLoggedIn, async (req, res) => {
+    const { pacientenombre, pacienteedad, pacienteeps, pacientediagnostico, pacienteservicio, pacientetel, pacienteingreso, pacientesalida, pacienteresponsable, pacienteparentezco, estado } = req.body;
+    const newPaciente = {
+        pacientenombre,
+        pacienteedad,
+        pacienteeps,
+        pacientediagnostico,
+        pacienteservicio,
+        pacientetel,
+        pacienteingreso,
+        pacientesalida,
+        pacienteresponsable,
+        pacienteparentezco,
+        estado
+    };
+    await pool.query('INSERT INTO pacientes SET ?', [newPaciente]);
+    req.flash('success', 'Paciente registrado correctamente');
+    res.redirect('/control/historias');
+    console.log(req.body);
+});
+
+router.get('/control/historias/individual/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const pacientes = await pool.query('SELECT * FROM pacientes WHERE id = ?', [id]);
+    res.render('control/individual', { pacientes: pacientes[0] });
+});
+
+router.post('/control/pacientes/estado/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const { estado } = req.body;
+    const newEstado = {
+        estado
+    };
+    await pool.query('UPDATE pacientes set ? WHERE id=?', [newEstado, id]);
+    req.flash('success', 'Estado actualizado correctamente');
+    res.redirect('/control/historias');
+});
+
+router.post('/control/pacientes/evolucion/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const { evolucion } = req.body;
+    const newEvo = {
+        evolucion
+    };
+    await pool.query('UPDATE pacientes set ? WHERE id=?', [newEvo, id]);
+    req.flash('success', 'Evolución agregada correctamente');
+    res.redirect('/control/historias');
+});
+
+router.post('/control/pacientes/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const { pacientepeso, pacientedieta, pacienteoxigeno, tratamiento, plan, evolucion } = req.body;
+    const newKardex = {
+        pacientepeso,
+        pacientedieta,
+        pacienteoxigeno,
+        tratamiento,
+        plan,
+        evolucion
+    };
+    await pool.query('UPDATE pacientes set ? WHERE id=?', [newKardex, id]);
+    req.flash('success', 'Kárdex actualizado correctamente');
+    res.redirect('/control/historias/');
+});
 
 module.exports = router;

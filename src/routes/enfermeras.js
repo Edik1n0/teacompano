@@ -13,6 +13,11 @@ router.get('/personal/perfil', (req, res) => {
     res.render('enfermeras/perfil-nurse');
 });
 
+router.get('/personal/users', async (req, res) => {
+    const usuarios = await pool.query('SELECT * FROM usuarios');
+    res.render('enfermeras/servicios', {usuarios});
+});
+
 router.get('/personal/historias/agregar', isLoggedIn, EmailCtrl.sendNurseEmail, (req, res) => {
     res.render('enfermeras/agregar');
 });

@@ -1,9 +1,9 @@
-<div class="miga__pan container">
+<div class="miga__pan container m-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/personal/perfil">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="/personal/historias">Historias</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{pacientes.pacientenombre}}</a></li>
+            <li class="breadcrumb-item"><a href="/control">Control</a></li>
+            <li class="breadcrumb-item"><a href="/control/historias">Historias</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{pacientes.pacientenombre}}</li>
         </ol>
     </nav>
 </div>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="form__section d-flex m-4">
-                        <form action="/personal/pacientes/estado/{{pacientes.id}}" method="POST">
+                        <form action="/control/pacientes/estado/{{pacientes.id}}" method="POST">
                             <div class="form-group m-2 d-flex">
                                 <select type="text" name="estado" class="form-select form-select-lg m-2"
                                     style="cursor-pointer" aria-label="Default select example">
@@ -119,7 +119,7 @@
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form action="/personal/pacientes/evolucion/{{pacientes.id}}"
+                                                <form action="/control/pacientes/evolucion/{{pacientes.id}}"
                                                     method="POST">
                                                     <div class="form__section d-flex m-4">
                                                         <div class="form-group m-2">
@@ -156,7 +156,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="/personal/pacientes/evolucion/{{pacientes.id}}" method="POST">
+                                        <form action="/control/pacientes/evolucion/{{pacientes.id}}" method="POST">
                                             <div class="form__section d-flex m-4">
                                                 <div class="form-group m-2">
                                                     <label>Evolución</label>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="ficha__indi">
-                    <form action="/personal/pacientes/{{pacientes.id}}" method="POST">
+                    <form action="/control/pacientes/{{pacientes.id}}" method="POST">
                         <div class="form__section d-flex m-4">
                             {{#if pacientes.pacientepeso}}
                             <p><strong>Ver Kárdex</strong></p>
