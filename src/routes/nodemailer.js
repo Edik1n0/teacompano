@@ -1,12 +1,11 @@
 const nodemailer = require('nodemailer');
-// email sender function
 exports.sendEmail = function (req, res) {
     // Definimos el transporter
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
             user: 'kinotrance@gmail.com',
-            pass: 'Edi1017194099'
+            pass: 'n|yOm*Vx]p{X~IhNi'
         }
     });
     // Definimos el email
@@ -25,8 +24,8 @@ exports.sendEmail = function (req, res) {
         } else {
             console.log("Email sent");
             //res.status(200).jsonp(req.body);
-            req.flash('success', 'Datos registrados correctamente');
-            res.redirect('/');
+            //req.flash('success', 'Datos registrados correctamente');
+            res.render('usuarios/add');
         }
     });
 };
@@ -51,8 +50,6 @@ exports.sendNurseEmail = function (req, res) {
     transporter.sendMail(mailNurse, function (error, info) {
         if (error) {
             console.log(error);
-            //res.send(500, error.message);
-            //res.redirect('/personal/');
         } else {
             console.log("Email sent");
             //res.status(200).jsonp(req.body);

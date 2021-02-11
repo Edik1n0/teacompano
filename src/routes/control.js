@@ -22,11 +22,4 @@ router.get('/control/users', isLoggedIn, async(req, res) => {
     res.render('control/users', {usuarios});
 });
 
-router.get('/control/users/delete/:id', isLoggedIn, async (req, res) => {
-    const { id } = req.params;
-    await pool.query('DELETE FROM usuarios WHERE id = ?', [id]);
-    req.flash('success', 'Usuario eliminado satisfactoriamente')
-    res.redirect('/control/users');
-});
-
 module.exports = router;
