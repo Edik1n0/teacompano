@@ -71,3 +71,26 @@
 
 -- ALTER TABLE pacientes
 --     MODIFY evolucion VARCHAR(500) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+
+-- CREATE TABLE blog(
+--     id INT(11) NOT NULL,
+--     tema VARCHAR(30) NOT NULL,
+--     urlimg VARCHAR(60) NOT NULL,
+--     titulo VARCHAR(60) NOT NULL,
+--     subtitulo VARCHAR(60) NOT NULL,
+--     subtitleone VARCHAR(60) NOT NULL,
+--     paraguno TEXT NOT NULL,
+--     subtitledos VARCHAR(60) NOT NULL,
+--     paragdos TEXT NOT NULL,
+--     subtitletres VARCHAR(60) NOT NULL,
+--     paragtres TEXT NOT NULL,
+--     subtitlecuatro VARCHAR(60) NOT NULL,
+--     paragcuatro TEXT NOT NULL,
+--     subtitlecinco VARCHAR(60) NOT NULL,
+--     paragseis TEXT NOT NULL,
+--     subtitleseis VARCHAR(60) NOT NULL,
+--     paragseis TEXT NOT NULL,
+--     city VARCHAR(60) NOT NULL,
+--     autor VARCHAR(60) NOT NULL,
+--     created_at timestamp NOT NULL DEFAULT current_timestamp,
+-- );

@@ -1,0 +1,20 @@
+.dia__saludable {
+    a {
+        color: $morb;
+        text-decoration: none;
+        &:hover {
+            color: $morc;
+            transition: all .6s;
+        }
+    }
+    .container {
+        .listado__blogs {
+            list-style: none;
+            padding: 30px;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+}

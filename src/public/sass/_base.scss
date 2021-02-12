@@ -26,6 +26,15 @@ h4 {
     margin: 20px;
     position: relative;
     z-index: 1;
+
+    a {
+        color: $mor;
+        text-decoration: none;
+        &:hover {
+            color: $morb;
+            transition: all .6s;
+        }
+    }
 }
 
 .log {

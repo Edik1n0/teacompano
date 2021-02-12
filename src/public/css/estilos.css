@@ -324,6 +324,13 @@
     margin: 10px;
   }
 }
+a {
+  color: #d591f565;
+}
+a:hover {
+  color: #1c0327;
+}
+
 .acceso__control .container .access__ctrl .ctrl__body .col-md-4 .card .card-body .img-form {
   display: flex;
   justify-content: center;
@@ -434,6 +441,24 @@
 .perfil .container .card .perfil__body .container .menu__control .control__items .control__links:hover {
   transition: all 0.6s;
   color: #1c0327;
+}
+
+.historia__individiual .container .paciente__info .paciente__body .table tbody a {
+  color: #5b2674;
+  text-decoration: none;
+}
+.historia__individiual .container .paciente__info .paciente__body .table tbody a:hover {
+  color: #1c0327;
+  transition: all 0.6s;
+}
+
+.blogs__info a {
+  color: #5b2674;
+  text-decoration: none;
+}
+.blogs__info a:hover {
+  color: #1c0327;
+  transition: all 0.6s;
 }
 
 @media (min-width: 320px) and (max-width: 1080px) {
@@ -852,6 +877,51 @@
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.dia__saludable a {
+  color: #1c0327;
+  text-decoration: none;
+}
+.dia__saludable a:hover {
+  color: #d591f565;
+  transition: all 0.6s;
+}
+.dia__saludable .container .listado__blogs {
+  list-style: none;
+  padding: 30px;
+}
+.dia__saludable .container .listado__blogs li {
+  list-style: none;
+}
+
+.articulo .container .articulo__body .encabezado {
+  text-align: center;
+}
+.articulo .container .articulo__body .encabezado .contexto__art {
+  width: 50%;
+  padding-left: 20px;
+}
+.articulo .container .articulo__body .encabezado .imagen__art .piedefoto {
+  font-size: 12px;
+  color: #373331;
+}
+.articulo .container .articulo__body .cuerpo {
+  width: 90%;
+  padding-left: 20%;
+}
+.articulo .container .articulo__body .cuerpo .parrafo {
+  margin: 20px;
+}
+.articulo .container .articulo__body .cuerpo .parrafo .parag__title {
+  margin: 30px 0px 10px 20px;
+}
+.articulo .container .articulo__body .pie {
+  width: 80%;
+}
+.articulo .container .articulo__body .pie .atributos ul {
+  list-style: none;
+  color: #373331;
+}
+
 * {
   font-family: "Quicksand", sans-serif;
 }
@@ -880,6 +950,14 @@ h4 {
   margin: 20px;
   position: relative;
   z-index: 1;
+}
+.miga__pan a {
+  color: #5b2674;
+  text-decoration: none;
+}
+.miga__pan a:hover {
+  color: #1c0327;
+  transition: all 0.6s;
 }
 
 .log {

@@ -5,7 +5,6 @@ const EmailCtrl = require('./nodemailer');
 const pool = require('../db');
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
-
 router.get('/', (req, res) => {
     res.render('layouts/home');
 });
@@ -126,6 +125,98 @@ router.post('/control/pacientes/:id', isLoggedIn, async (req, res) => {
     await pool.query('UPDATE pacientes set ? WHERE id=?', [newKardex, id]);
     req.flash('success', 'Kárdex actualizado correctamente');
     res.redirect('/control/historias/');
+});
+
+router.get('/control/dia-saludable/agregar', isLoggedIn, (req, res) => {
+    res.render('control/dia-saludable/add');
+});
+
+router.post('/control/dia-saludable/agregar', async (req, res) => {
+    const {tema, urlimg, enlace, titulo, subtitulo, subtitleone, paraguno, subtitledos, paragdos, subtitletres, paragtres, subtitlecuatro, paragcuatro, subtitlecinco, paragcinco, subtitleseis, paragseis, autor, city} = req.body;
+    const newComUser = {
+        tema,
+        urlimg,
+        enlace,
+        titulo,
+        subtitulo,
+        subtitleone,
+        paraguno,
+        subtitledos,
+        paragdos,
+        subtitletres,
+        paragtres,
+        subtitlecuatro,
+        paragcuatro,
+        subtitlecinco,
+        paragcinco,
+        subtitleseis,
+        paragseis,
+        autor,
+        city
+    };
+    await pool.query('INSERT INTO blog SET ?', [newComUser]);
+    req.flash('success', 'Artículo enviado satisfactoriamente');
+    res.redirect('/control/dia-saludable');
+});
+
+router.get('/control/dia-saludable/', isLoggedIn, async (req, res) => {
+    const blog = await pool.query('SELECT * FROM blog');
+    res.render('control/dia-saludable/dia-saludable', { blog });
+});
+
+router.post('/control/dia-saludable/editar/:id', async (req, res) => {
+    const { id } = req.params;
+    const {tema, urlimg, enlace, titulo, subtitulo, subtitleone, paraguno, subtitledos, paragdos, subtitletres, paragtres, subtitlecuatro, paragcuatro, subtitlecinco, paragcinco, subtitleseis, paragseis, autor, city} = req.body;
+    const newBlog = {
+        tema,
+        urlimg,
+        enlace,
+        titulo,
+        subtitulo,
+        subtitleone,
+        paraguno,
+        subtitledos,
+        paragdos,
+        subtitletres,
+        paragtres,
+        subtitlecuatro,
+        paragcuatro,
+        subtitlecinco,
+        paragcinco,
+        subtitleseis,
+        paragseis,
+        autor,
+        city
+    };
+    await pool.query('UPDATE blog set ? WHERE id=?', [newBlog, id]);
+    req.flash('success', 'Artículo actualizado correctamente');
+    res.redirect('/control/dia-saludable');
+});
+
+router.get('/control/dia-saludable/eliminar/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    await pool.query('DELETE FROM blog WHERE id = ?', [id]);
+    req.flash('success', 'Artículo eliminado satisfactoriamente')
+    res.redirect('/control/dia-saludable/');
+});
+
+router.get('/control/dia-saludable/editar/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const blog = await pool.query('SELECT * FROM blog WHERE id = ?', [id]);
+    res.render('control/dia-saludable/editar', { blog: blog[0] });
+});
+
+// Blog
+
+router.get('/dia-saludable', async (req, res) => {
+    const blog = await pool.query('SELECT * FROM blog');
+    res.render('dia-saludable/', { blog });
+});
+
+router.get('/dia-saludable/:id', async (req, res) => {
+    const { id } = req.params;
+    const blog = await pool.query('SELECT * FROM blog WHERE id = ?', [id]);
+    res.render('dia-saludable/articulo', { blog: blog[0] });
 });
 
 module.exports = router;

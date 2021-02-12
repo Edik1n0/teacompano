@@ -1,3 +1,10 @@
+a {
+    color: $morc;
+    &:hover {
+        color: $morb;
+    }
+}
+
 .acceso__control {
     .container {
         .access__ctrl {
@@ -165,6 +172,38 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.historia__individiual {
+    .container {
+        .paciente__info {
+            .paciente__body {
+                .table {
+                    tbody {
+                        a {
+                            color: $mor;
+                            text-decoration: none;
+                            &:hover {
+                                color: $morb;
+                                transition: all .6s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blogs__info {
+    a {
+        color: $mor;
+        text-decoration: none;
+        &:hover {
+            color: $morb;
+            transition: all .6s;
         }
     }
 }
