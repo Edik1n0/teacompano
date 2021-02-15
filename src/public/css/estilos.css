@@ -638,6 +638,9 @@ a:hover {
 .footer .container .footer__section .logo-footer a img {
   width: 80px;
 }
+.footer .container .footer__section .logo-footer a .logo-appstore {
+  width: 120px;
+}
 .footer .derechos {
   text-align: center;
   height: 30px;
@@ -721,57 +724,60 @@ a:hover {
   display: flex;
 }
 
-.claims .hclaims {
+.claims {
+  display: block;
+}
+.claims .container .hclaims {
   text-align: center;
 }
-.claims .bclaims {
+.claims .container .bclaims {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
   margin-right: 40px;
 }
-.claims .bclaims .claim-a,
-.claims .bclaims .claim-b,
-.claims .bclaims .claim-c {
+.claims .container .bclaims .claim-a,
+.claims .container .bclaims .claim-b,
+.claims .container .bclaims .claim-c {
   text-align: center;
 }
-.claims .bclaims .claim-a a,
-.claims .bclaims .claim-b a,
-.claims .bclaims .claim-c a {
+.claims .container .bclaims .claim-a a,
+.claims .container .bclaims .claim-b a,
+.claims .container .bclaims .claim-c a {
   color: #5b2674;
   text-decoration: none;
 }
-.claims .bclaims .claim-a a p,
-.claims .bclaims .claim-b a p,
-.claims .bclaims .claim-c a p {
+.claims .container .bclaims .claim-a a p,
+.claims .container .bclaims .claim-b a p,
+.claims .container .bclaims .claim-c a p {
   opacity: 0%;
   margin: 10px;
 }
-.claims .bclaims .claim-a a img,
-.claims .bclaims .claim-b a img,
-.claims .bclaims .claim-c a img {
+.claims .container .bclaims .claim-a a img,
+.claims .container .bclaims .claim-b a img,
+.claims .container .bclaims .claim-c a img {
   width: 80px;
 }
-.claims .bclaims .claim-a a img:hover,
-.claims .bclaims .claim-b a img:hover,
-.claims .bclaims .claim-c a img:hover {
+.claims .container .bclaims .claim-a a img:hover,
+.claims .container .bclaims .claim-b a img:hover,
+.claims .container .bclaims .claim-c a img:hover {
   transition: all 0.6s;
   opacity: 80%;
 }
-.claims .bclaims .claim-a a:hover,
-.claims .bclaims .claim-b a:hover,
-.claims .bclaims .claim-c a:hover {
+.claims .container .bclaims .claim-a a:hover,
+.claims .container .bclaims .claim-b a:hover,
+.claims .container .bclaims .claim-c a:hover {
   transition: all 0.6s;
 }
-.claims .bclaims .claim-a a:hover p,
-.claims .bclaims .claim-b a:hover p,
-.claims .bclaims .claim-c a:hover p {
+.claims .container .bclaims .claim-a a:hover p,
+.claims .container .bclaims .claim-b a:hover p,
+.claims .container .bclaims .claim-c a:hover p {
   opacity: 100%;
   transition: all 0.6s;
   color: #1c0327;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .claims {
     display: none;
   }
@@ -920,6 +926,107 @@ a:hover {
 .articulo .container .articulo__body .pie .atributos ul {
   list-style: none;
   color: #373331;
+}
+
+.socios__comerciales {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.socios__comerciales .container {
+  text-align: center;
+}
+.socios__comerciales .container .socios__body {
+  margin-top: 40px;
+}
+.socios__comerciales .container .socios__body .container {
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .socios__comerciales .container .socios__body .container {
+    display: block;
+  }
+}
+.socios__comerciales .container .socios__body .container .socio {
+  width: 30%;
+  margin: 20px;
+  display: block;
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .socios__comerciales .container .socios__body .container .socio {
+    width: 100%;
+    margin: 0px;
+  }
+}
+.socios__comerciales .container .socios__body .container .socio .socio__img img {
+  height: 60px;
+}
+.socios__comerciales .container .socios__body .container .socio .socio__img img:hover {
+  transition: all 0.6s;
+  opacity: 90%;
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .socios__comerciales .container .socios__body .container .socio .socio__img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .socios__comerciales .container .socios__body .container .socio .socio__img .k1n0 {
+    width: 40%;
+  }
+}
+.socios__comerciales .container .socios__body .container .socio .socio__txt {
+  margin: 20px;
+  display: block;
+}
+
+.privacy {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.privacy a {
+  color: #5b2674;
+  text-decoration: none;
+}
+.privacy a:hover {
+  transition: all;
+  color: #1c0327;
+}
+.privacy .container .privacy__header {
+  margin-top: 60px;
+  text-align: center;
+}
+.privacy .container .container {
+  margin-top: 60px;
+}
+.privacy .container .container .privacy__body {
+  width: 90%;
+}
+
+.cookies {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.cookies a {
+  color: #5b2674;
+  text-decoration: none;
+}
+.cookies a:hover {
+  transition: all;
+  color: #1c0327;
+}
+.cookies .container {
+  margin-top: 60px;
+}
+.cookies .container .cookies__header {
+  margin-top: 60px;
+  text-align: center;
+}
+.cookies .container .cookies__body {
+  margin-top: 60px;
+}
+.cookies .container .cookies__body .container .bodycookies .container {
+  text-align: center;
 }
 
 * {

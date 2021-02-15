@@ -219,4 +219,14 @@ router.get('/dia-saludable/:id', async (req, res) => {
     res.render('dia-saludable/articulo', { blog: blog[0] });
 });
 
+// Políticas
+
+router.get('/politica-privacidad', (req, res) => {
+    res.render('partials/politica-privacidad');
+});
+
+router.get('/politica-cookies', (req, res) => {
+    res.render('partials/politica-cookies');
+});
+
 module.exports = router;
