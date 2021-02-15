@@ -619,6 +619,9 @@ a:hover {
 .footer .container .footer__section ul {
   list-style: none;
 }
+.footer .container .footer__section .fss-body ul {
+  padding: 0px;
+}
 .footer .container .footer__section .section__contacts .whats a img,
 .footer .container .footer__section .section__contacts .email a img,
 .footer .container .footer__section .section__contacts .tel a img {
