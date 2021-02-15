@@ -65,7 +65,7 @@
 
 .nosotros {
   text-align: center;
-  margin-top: 160px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 .nosotros .hnos {
@@ -641,6 +641,9 @@ a:hover {
 .footer .container .footer__section .logo-footer a .logo-appstore {
   width: 120px;
 }
+.footer .container .footer__section .dir-footer {
+  margin-top: 40px;
+}
 .footer .derechos {
   text-align: center;
   height: 30px;
@@ -784,8 +787,8 @@ a:hover {
 }
 .contacto {
   text-align: center;
-  margin-top: 120px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .contacto .container {
   margin-bottom: 80px;
