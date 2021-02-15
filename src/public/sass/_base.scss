@@ -70,3 +70,13 @@ h4 {
     display: flex;
     justify-content: center;
 }
+
+.form-group {
+    a {
+        color: $mor;
+        &:hover {
+            transition: all .6s;
+            color: $morb;
+        }
+    }
+}
