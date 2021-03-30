@@ -5,7 +5,7 @@ const EmailCtrl = require('./nodemailer');
 const pool = require('../db');
 
 router.get('/add', EmailCtrl.sendEmail, (req, res) => {
-    //res.render('usuarios/add');
+    res.render('usuarios/add');
 });
 
 // router.post('/usuarios/add', async (req, res) => {

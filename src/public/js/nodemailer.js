@@ -36,7 +36,7 @@ exports.sendNurseEmail = function (req, res) {
         service: 'Gmail',
         auth: {
             user: 'kinotrance@gmail.com',
-            pass: 'Edi1017194099'
+            pass: 'n|yOm*Vx]p{X~IhNi'
         }
     });
     // Definimos el email
