@@ -4,7 +4,7 @@ const EmailCtrl = require('./nodemailer');
 
 const pool = require('../db');
 
-router.get('/add', EmailCtrl.sendEmail, (req, res) => {
+router.get('/add', (req, res) => {
     res.render('usuarios/add');
 });
 
