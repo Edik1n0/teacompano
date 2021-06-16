@@ -9,6 +9,13 @@
                 }
 
                 .imagen__art {
+                    display: block;
+                    justify-content: center;
+                    padding-left: 10%;
+                    iframe {
+                        width: 980px;
+                        height: 720px;
+                    }
                     .piedefoto {
                         font-size: 12px;
                         color: $gris;
@@ -27,7 +34,7 @@
                     }
                 }
             }
-            
+
             .pie {
                 width: 80%;
                 .atributos {
