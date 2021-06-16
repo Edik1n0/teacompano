@@ -11,15 +11,15 @@
 -- ALTER TABLE nurse
 --     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
--- CREATE TABLE usuarios (
+-- CREATE TABLE teusuarios (
 --     id INT(11) NOT NULL,
 --     username VARCHAR(60) NOT NULL,
 --     phone VARCHAR(60) NOT NULL,
 --     email VARCHAR(60) NOT NULL,
 --     description TEXT,
---     user_id INT(11),
+--     teuser_id INT(11),
 --     created_at timestamp NOT NULL DEFAULT current_timestamp,
---     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id)
+--     CONSTRAINT fk_user FOREIGN KEY (teuser_id) REFERENCES users(id)
 -- );
 
 -- ALTER TABLE usuarios

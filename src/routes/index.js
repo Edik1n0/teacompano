@@ -22,7 +22,7 @@ router.post('/control/', isNotLoggedIn, (req, res, next) => {
 });
 
 router.get('/control/users', isLoggedIn, async(req, res) => {
-    const usuarios = await pool.query('SELECT * FROM usuarios');
+    const usuarios = await pool.query('SELECT * FROM teusuarios');
     res.render('control/users', {usuarios});
 });
 
@@ -46,14 +46,14 @@ router.post('/usuarios/add', async (req, res) => {
         phone,
         description
     };
-    await pool.query('INSERT INTO usuarios SET ?', [newComUser]);
+    await pool.query('INSERT INTO teusuarios SET ?', [newComUser]);
     req.flash('success', 'Mensaje enviado satisfactoriamente');
     res.redirect('/');
 });
 
 router.get('/control/users/delete/:id', isLoggedIn, async (req, res) => {
     const { id } = req.params;
-    await pool.query('DELETE FROM usuarios WHERE id = ?', [id]);
+    await pool.query('DELETE FROM teusuarios WHERE id = ?', [id]);
     req.flash('success', 'Usuario eliminado satisfactoriamente')
     res.redirect('/control/users');
 });
