@@ -452,11 +452,14 @@ a:hover {
   transition: all 0.6s;
 }
 
-.blogs__info a {
+.container .btn {
+  margin: 20px;
+}
+.container .blogs__info a {
   color: #5b2674;
   text-decoration: none;
 }
-.blogs__info a:hover {
+.container .blogs__info a:hover {
   color: #1c0327;
   transition: all 0.6s;
 }

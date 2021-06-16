@@ -197,13 +197,18 @@ a {
     }
 }
 
-.blogs__info {
-    a {
-        color: $mor;
-        text-decoration: none;
-        &:hover {
-            color: $morb;
-            transition: all .6s;
+.container {
+    .btn {
+        margin: 20px;
+    }
+    .blogs__info {
+        a {
+            color: $mor;
+            text-decoration: none;
+            &:hover {
+                color: $morb;
+                transition: all .6s;
+            }
         }
     }
 }

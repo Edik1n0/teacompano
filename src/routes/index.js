@@ -127,8 +127,8 @@ router.post('/control/pacientes/:id', isLoggedIn, async (req, res) => {
     res.redirect('/control/historias/');
 });
 
-router.get('/control/dia-saludable/agregar', isLoggedIn, (req, res) => {
-    res.render('control/dia-saludable/add');
+router.get('/control/dia-saludable/agregar', isLoggedIn, async (req, res) => {
+    await res.render('control/dia-saludable/add');
 });
 
 router.post('/control/dia-saludable/agregar', async (req, res) => {

@@ -6,3 +6,12 @@ module.exports = {
         database: 'heroku_1227e6c80baa656'
     }
 };
+
+// module.exports = {
+//     database: {
+//         host: '127.0.0.1',
+//         user: 'root',
+//         password: '',
+//         database: 'demo'
+//     }
+// };
