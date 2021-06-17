@@ -907,6 +907,9 @@ a:hover {
 .dia__saludable .container .listado__blogs li {
   list-style: none;
 }
+.dia__saludable .container .container .listado__articulos .card iframe {
+  width: 100%;
+}
 
 .articulo .container .articulo__body .encabezado {
   text-align: center;

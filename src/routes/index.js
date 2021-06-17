@@ -132,12 +132,13 @@ router.get('/control/dia-saludable/agregar', isLoggedIn, async (req, res) => {
 });
 
 router.post('/control/dia-saludable/agregar', async (req, res) => {
-    const {tema, urlimg, enlace, piefoto, titulo, subtitulo, subtitleone, paraguno, subtitledos, paragdos, subtitletres, paragtres, subtitlecuatro, paragcuatro, subtitlecinco, paragcinco, subtitleseis, paragseis, autor, city} = req.body;
+    const {tema, urlimg, enlace, piefoto, miniatura, titulo, subtitulo, subtitleone, paraguno, subtitledos, paragdos, subtitletres, paragtres, subtitlecuatro, paragcuatro, subtitlecinco, paragcinco, subtitleseis, paragseis, autor, city} = req.body;
     const newComUser = {
         tema,
         urlimg,
         enlace,
         piefoto,
+        miniatura,
         titulo,
         subtitulo,
         subtitleone,
@@ -167,12 +168,13 @@ router.get('/control/dia-saludable/', isLoggedIn, async (req, res) => {
 
 router.post('/control/dia-saludable/editar/:id', async (req, res) => {
     const { id } = req.params;
-    const {tema, urlimg, enlace, piefoto, titulo, subtitulo, subtitleone, paraguno, subtitledos, paragdos, subtitletres, paragtres, subtitlecuatro, paragcuatro, subtitlecinco, paragcinco, subtitleseis, paragseis, autor, city} = req.body;
+    const {tema, urlimg, enlace, piefoto, miniatura, titulo, subtitulo, subtitleone, paraguno, subtitledos, paragdos, subtitletres, paragtres, subtitlecuatro, paragcuatro, subtitlecinco, paragcinco, subtitleseis, paragseis, autor, city} = req.body;
     const newBlog = {
         tema,
         urlimg,
         enlace,
         piefoto,
+        miniatura,
         titulo,
         subtitulo,
         subtitleone,
