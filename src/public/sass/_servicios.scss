@@ -15,7 +15,8 @@
     .ser-a,
     .ser-b {
       display: flex;
-      margin-top: 120px;
+      margin-top: 60px;
+      align-items: center;
 
       img {
         border-radius: 30px;
@@ -44,7 +45,6 @@
     .card {
       background: $morc;
       color: $morb;
-      margin: 40px;
       .card-header {
         text-align: center;
       }
