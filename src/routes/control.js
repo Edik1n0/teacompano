@@ -17,7 +17,7 @@ router.post('/control/', isNotLoggedIn, (req, res, next) => {
 });
 
 router.get('/control/users', isLoggedIn, async (req, res) => {
-    const usuarios = await pool.query('SELECT * FROM teusuarios');
+    const usuarios = await pool.query('SELECT * FROM usuarios');
     console.log(usuarios);
     res.render('control/users', {usuarios});
 });

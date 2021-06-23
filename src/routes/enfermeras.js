@@ -14,7 +14,7 @@ router.get('/personal/perfil', (req, res) => {
 });
 
 router.get('/personal/users', async (req, res) => {
-    const usuarios = await pool.query('SELECT * FROM teusuarios');
+    const usuarios = await pool.query('SELECT * FROM usuarios');
     res.render('enfermeras/servicios', {usuarios});
 });
 
