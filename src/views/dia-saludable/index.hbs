@@ -1,5 +1,14 @@
 {{> inner}}
 
+<div class="miga__pan container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Día Saludable</a></li>
+        </ol>
+    </nav>
+</div>
+
 <div class="dia__saludable">
     <div class="container">
         <div class="dia__saludable--title text-center m-4">
@@ -8,7 +17,7 @@
 
         <div class="container">
 
-            <div class="listado__articulos m-6 d-flex text-center">
+            <div class="listado__articulos m-6 text-center">
                 {{#each blog}}
                 <div class="card text-dark bg-light m-4 text-center" style="max-width: 18rem;">
                     <iframe height="200" src="https://www.teacompano.com.co/img/blog/{{miniatura}}.jpg" class="card-img" alt="..." frameborder="0"></iframe>

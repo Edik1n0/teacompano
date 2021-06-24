@@ -895,10 +895,22 @@ a:hover {
 .dia__saludable .container .listado__blogs li {
   list-style: none;
 }
+.dia__saludable .container .container .listado__articulos {
+  display: flex;
+}
 .dia__saludable .container .container .listado__articulos .card iframe {
   width: 100%;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .dia__saludable .container .container {
+    display: flex;
+    justify-content: center;
+  }
+  .dia__saludable .container .container .listado__articulos {
+    display: block;
+  }
+}
 .articulo .container .articulo__body .encabezado {
   text-align: center;
 }
