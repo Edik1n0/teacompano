@@ -137,6 +137,7 @@ h4 {
             display: block;
             width: 100%;
             opacity: 20%;
+            height: 5200px;
 
             @media (min-width: 375px) {
                 height: 5200px;
@@ -155,7 +156,7 @@ h4 {
 
             .bg-link {
                 position: absolute;
-                right: 130px;
+                right: 36%;
                 background: $mor;
                 border-radius: 6px;
                 color: white;

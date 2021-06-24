@@ -9,6 +9,10 @@ router.get('/', (req, res) => {
     res.render('layouts/home');
 });
 
+router.get('/nosotros', (req, res) => {
+    res.render('layouts/nosotros');
+});
+
 router.get('/control', isNotLoggedIn, (req, res) => {
     res.render('control/');
 });

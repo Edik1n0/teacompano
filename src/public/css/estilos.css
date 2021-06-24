@@ -10,6 +10,71 @@
   margin: 40px;
 }
 
+.nos__section {
+  height: 860px;
+}
+.nos__section .nos__access {
+  width: 100%;
+}
+.nos__section .nos__txt--section {
+  position: relative;
+  bottom: 640px;
+  z-index: 2;
+  display: flex;
+  padding: 20px;
+  justify-content: start;
+  text-align: start;
+}
+.nos__section .nos__txt--section .container {
+  display: block;
+}
+.nos__section .nos__txt--section .container .text-sect {
+  width: 50%;
+  border-radius: 12px;
+  padding: 10px;
+}
+.nos__section .nos__txt--section .container .text-sect p {
+  font-size: 18px;
+}
+
+.ser__section {
+  height: 880px;
+}
+.ser__section .ser__access {
+  width: 100%;
+}
+.ser__section .ser__txt--section {
+  padding-left: 50%;
+  position: relative;
+  bottom: 680px;
+  z-index: 2;
+}
+.ser__section .ser__txt--section .container {
+  width: 90%;
+}
+.ser__section .ser__txt--section .container .text-but {
+  margin-left: 0px;
+}
+
+.text-but {
+  margin: 10px;
+}
+.text-but .nos-link {
+  background: #5b2674;
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  width: 110px;
+  text-align: center;
+  text-decoration: none;
+}
+.text-but .nos-link:hover {
+  transition: all 0.4s;
+  background: #d591f565;
+  color: #5b2674;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .intro {
     text-align: center;
@@ -24,6 +89,32 @@
     width: 100%;
     margin: 0px;
     padding: 10px;
+  }
+
+  .nos__section {
+    height: 620px;
+    display: block;
+  }
+  .nos__section .nos__txt--section {
+    text-align: center;
+    bottom: 0px;
+  }
+  .nos__section .nos__txt--section .container .text-sect {
+    width: 100%;
+  }
+
+  .ser__section {
+    height: 520px;
+  }
+  .ser__section .ser__txt--section {
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    padding: 10px;
+  }
+
+  .inner--bg {
+    display: none;
   }
 }
 /* Nosotros */
@@ -1076,6 +1167,7 @@ h4 {
     display: block;
     width: 100%;
     opacity: 20%;
+    height: 5200px;
   }
 }
 @media (min-width: 320px) and (max-width: 1024px) and (min-width: 375px) {
@@ -1096,7 +1188,7 @@ h4 {
   }
   .bg__mobile .bg-trans .bg-link {
     position: absolute;
-    right: 130px;
+    right: 36%;
     background: #5b2674;
     border-radius: 6px;
     color: white;
