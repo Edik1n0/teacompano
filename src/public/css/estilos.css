@@ -502,6 +502,13 @@ a:hover {
   color: #1c0327;
 }
 
+.historia__individiual .container .paciente__info .paciente__header .alerta {
+  width: 40%;
+  position: inherit;
+}
+.historia__individiual .container .paciente__info .paciente__header .alerta p {
+  font-size: 14px;
+}
 .historia__individiual .container .paciente__info .paciente__body .table tbody a {
   color: #5b2674;
   text-decoration: none;

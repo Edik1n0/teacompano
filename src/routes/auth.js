@@ -9,7 +9,7 @@ router.get('/control/signup', isLoggedIn, (req, res) => {
 });
 
 router.post('/control/signup', passport.authenticate('local.signup', {
-    successRedirect: '/control/signup',
+    successRedirect: '/control/perfil',
     failureRedirect: '/control/signup',
     failureFlash: true
 }));

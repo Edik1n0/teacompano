@@ -179,6 +179,17 @@ a {
 .historia__individiual {
     .container {
         .paciente__info {
+
+            .paciente__header {
+                .alerta {
+                    p {
+                        font-size: 14px;
+                    }
+                    width: 40%;
+                    position: inherit;
+                }
+            }
+
             .paciente__body {
                 .table {
                     tbody {
