@@ -957,6 +957,12 @@ a:hover {
 .articulo .container .articulo__body .cuerpo .parrafo {
   margin: 20px;
 }
+.articulo .container .articulo__body .cuerpo .parrafo .imagen__intro--a {
+  border: 1px solid red;
+}
+.articulo .container .articulo__body .cuerpo .parrafo .imagen__intro--a img {
+  width: 280px;
+}
 .articulo .container .articulo__body .cuerpo .parrafo .parag__title {
   margin: 30px 0px 10px 20px;
 }

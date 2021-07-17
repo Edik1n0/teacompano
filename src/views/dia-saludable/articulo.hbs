@@ -8,7 +8,7 @@
             <li class="breadcrumb-item active" aria-current="page">{{blog.titulo}}</a></li>
         </ol>
     </nav>
-</div> 
+</div>
 
 <div class="articulo">
     <div class="container m-4">
@@ -25,8 +25,10 @@
                 </div>
 
                 <div class="imagen__art text-center">
-                    {{!-- <iframe src="https://www.teacompano.com.co/img/blog/{{blog.urlimg}}.jpg" title="Día Saludable | Teacompaño" frameborder="0"></iframe>
-                    <iframe src="https://www.teacompano.com.co/img/blog/{{blog.urlimg}}.jpg" title="Día Saludable | Teacompaño" frameborder="0"></iframe>
+                    {{!-- <iframe src="https://www.teacompano.com.co/img/blog/{{blog.urlimg}}.jpg"
+                        title="Día Saludable | Teacompaño" frameborder="0"></iframe>
+                    <iframe src="https://www.teacompano.com.co/img/blog/{{blog.urlimg}}.jpg"
+                        title="Día Saludable | Teacompaño" frameborder="0"></iframe>
                     <p class="piedefoto">
                         {{blog.piefoto}}
                     </p>
@@ -89,15 +91,21 @@
                         {{blog.paragseis}}
                     </p>
                 </div>
-                
+
             </div>
 
             <div class="pie container">
                 <div class="atributos container m-6">
                     <ul>
-                        <li><p><strong>Autor:</strong> <i>{{blog.autor}}</i></p></li>
-                        <li><p><i>{{blog.created_at}}</i></p></li>
-                        <li><p><strong>En:</strong> <i>{{blog.city}}</i></p></li>
+                        <li>
+                            <p><strong>Autor:</strong> <i>{{blog.autor}}</i></p>
+                        </li>
+                        <li>
+                            <p><i>{{blog.created_at}}</i></p>
+                        </li>
+                        <li>
+                            <p><strong>En:</strong> <i>{{blog.city}}</i></p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -112,7 +120,8 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/control">Control</a></li>
             <li class="breadcrumb-item"><a href="/control/dia-saludable">Listado de artículos</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Hacer frente a los hábitos en este 2021 Postcovid</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hacer frente a los hábitos en este 2021 Postcovid</a>
+            </li>
         </ol>
     </nav>
 </div>
@@ -173,8 +182,10 @@
                 </div>
 
                 <div class="imagen__intro--a">
-                    <iframe src="https://www.teacompano.com.co/img/blog/habitos-saludables-a.png"
-                        title="Día Saludable | Teacompaño" frameborder="0"></iframe>
+                    <img src="/img/blog/habitos-saludables-a.png"
+                        style="width: 220px; position: absolute; z-index: -1; opacity: 40%;" alt="">
+                    {{!-- <iframe src="https://www.teacompano.com.co/img/blog/habitos-saludables-a.png"
+                        title="Día Saludable | Teacompaño" frameborder="0"></iframe> --}}
                 </div>
 
                 <div class="parrafo">
@@ -253,6 +264,13 @@
                         </div>
                     </li>
                 </ul>
+
+                <div class="imagen__intro--b">
+                    <img src="/img/blog/habitos-saludables-b.png"
+                        style="width: 220px; position: absolute; z-index: -1; opacity: 40%;" alt="">
+                    {{!-- <iframe src="https://www.teacompano.com.co/img/blog/habitos-saludables-b.png"
+                        title="Día Saludable | Teacompaño" frameborder="0"></iframe> --}}
+                </div>
 
                 <div class="parrafo">
                     <div class="parag__title">
@@ -339,11 +357,6 @@
                         </div>
                     </li>
                 </ul>
-
-                <div class="imagen__intro--b">
-                    <iframe src="https://www.teacompano.com.co/img/blog/habitos-saludables-b.png"
-                        title="Día Saludable | Teacompaño" frameborder="0"></iframe>
-                </div>
 
                 <div class="parrafo">
                     <div class="parag__title">

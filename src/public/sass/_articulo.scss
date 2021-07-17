@@ -6,6 +6,7 @@
         ul {
             list-style: none;
             padding-left: 6%;
+
             li {
                 margin-top: 40px;
                 p {
@@ -41,6 +42,14 @@
 
                 .parrafo {
                     margin: 20px;
+
+                    .imagen__intro--a {
+                        border: 1px solid red;
+                        img {
+                            width: 280px;
+                        }
+                    }
+
                     .parag__title {
                         margin: 30px 0px 10px 20px;
                     }
