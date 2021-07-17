@@ -8,9 +8,9 @@ router.get('/control/enfermeras', isLoggedIn, (req, res) => {
     res.render('/control/nurse-signup');
 });
 
-router.post('/control/nurse-signup', (req, res) => {
-    console.log(req.body);
-});
+// router.post('/control/nurse-signup', (req, res) => {
+//     console.log(req.body);
+// });
 
 router.post('/control/nurse-signup', passport.authenticate('local.nursesignup', {
     successRedirect: '/control/perfil',

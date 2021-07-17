@@ -25,21 +25,21 @@ passport.use('local.nursesignin', new Strategy({
 }));
 
 passport.use('local.nursesignup', new Strategy({
-   usernameField: 'enfermera',
-   passwordField : 'pass',
-   passReqToCallback: true
-}, async (req, enfermera, pass, done) => {
-    const { nombre } = req.body;
-    const newEnfermera = {
-        nombre,
-        enfermera,
-        pass
-    };
-    newEnfermera.pass = await helpers.encryptPassword(pass);
-    const result = await pool.query('INSERT INTO enfermeras SET ?', [newEnfermera]);
-    newEnfermera.id = result.insertId;
-    return done(null, newEnfermera);
-}));
+    usernameField: 'enfermera',
+    passwordField : 'pass',
+    passReqToCallback: true
+ }, async (req, enfermera, pass, done) => {
+     const { nombre } = req.body;
+     const newEnfermera = {
+         nombre,
+         enfermera,
+         pass
+     };
+     newEnfermera.pass = await helpers.encryptPassword(pass);
+     const result = await pool.query('INSERT INTO enfermeras SET ?', [newEnfermera]);
+     newEnfermera.id = result.insertId;
+     return done(null, newEnfermera);
+ }));
 
 passport.serializeUser((nurse, done) => {
     done(null, nurse.id);

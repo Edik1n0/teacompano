@@ -1,9 +1,11 @@
 const express = require('express');
 const passport = require('passport');
 const router = express.Router();
-const EmailCtrl = require('./nodemailer');
+// const EmailCtrl = require('./nodemailer');
 const pool = require('../db');
 const { isLoggedIn, isNotLoggedIn } = require('../lib/authdos');
+
+// EmailCtrl.sendNurseEmail,
 
 router.get('/personal', (req, res) => {
     res.render('enfermeras/');
@@ -18,7 +20,7 @@ router.get('/personal/users', async (req, res) => {
     res.render('enfermeras/servicios', {usuarios});
 });
 
-router.get('/personal/historias/agregar', isLoggedIn, EmailCtrl.sendNurseEmail, (req, res) => {
+router.get('/personal/historias/agregar', isLoggedIn, (req, res) => {
     res.render('enfermeras/agregar');
 });
 
