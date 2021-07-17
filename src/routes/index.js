@@ -227,6 +227,11 @@ router.get('/dia-saludable/:id', async (req, res) => {
     res.render('dia-saludable/articulo', { blog: blog[0] });
 });
 
+router.get('/dia-saludable/habitos-2021-postcovid', async (req, res) => {
+    const blog = await pool.query('SELECT * FROM blog');
+    res.render('dia-saludable/habitos-2021-postcovid', { blog });
+});
+
 // Políticas
 
 router.get('/politica-privacidad', (req, res) => {

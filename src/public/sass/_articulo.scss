@@ -1,5 +1,19 @@
 .articulo {
+    display: flex;
+    justify-content: center;
     .container {
+
+        ul {
+            list-style: none;
+            padding-left: 6%;
+            li {
+                margin-top: 40px;
+                p {
+                    padding-left: 4%;
+                }
+            }
+        }
+
         .articulo__body {
             .encabezado {
                 text-align: center;
@@ -11,7 +25,6 @@
                 .imagen__art {
                     display: block;
                     justify-content: center;
-                    padding-left: 10%;
                     iframe {
                         width: 1080px;
                         height: 720px;
@@ -25,7 +38,6 @@
 
             .cuerpo {
                 width: 90%;
-                padding-left: 20%;
 
                 .parrafo {
                     margin: 20px;
@@ -35,12 +47,16 @@
                 }
             }
 
-            .pie {
+            .pie-container {
                 width: 80%;
                 .atributos {
                     ul {
+                        display: flex;
                         list-style: none;
                         color: $gris;
+                        li {
+                            margin-right: 20px;
+                        }
                     }
                 }
             }

@@ -1,113 +1,7 @@
-{{!-- {{> inner}} --}}
-
-{{!-- <div class="miga__pan container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/control">Control</a></li>
-            <li class="breadcrumb-item"><a href="/control/dia-saludable">Listado de artículos</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{blog.titulo}}</a></li>
-        </ol>
-    </nav>
-</div> 
-
-<div class="articulo">
-    <div class="container m-4">
-        <div class="articulo__title m-4 text-center">
-            <h1>{{blog.titulo}} | Teacompaño</h1>
-        </div>
-        <div class="articulo__body container m-4">
-
-            <div class="encabezado">
-                <div class="contexto__art">
-                    <p>
-                        <strong>{{blog.tema}}</strong> | Opinión
-                    </p>
-                </div>
-
-                <div class="imagen__art text-center">
-                    {{!-- <iframe src="https://www.teacompano.com.co/img/blog/{{blog.urlimg}}.jpg" title="Día Saludable | Teacompaño" frameborder="0"></iframe>
-                    <iframe src="https://www.teacompano.com.co/img/blog/{{blog.urlimg}}.jpg" title="Día Saludable | Teacompaño" frameborder="0"></iframe>
-                    <p class="piedefoto">
-                        {{blog.piefoto}}
-                    </p>
-                </div>
-                <div class="contexto__subt">
-                    <p class="subtitle text-center">
-                        <i>{{blog.subtitulo}}</i>
-                    </p>
-                </div>
-            </div>
-
-            <div class="cuerpo container m-4">
-                <div class="parrafo">
-                    <p>
-                        {{blog.paraguno}}
-                    </p>
-                </div>
-
-                <div class="parrafo">
-                    <div class="parag__title">
-                        <h2>{{blog.subtitledos}}</h2>
-                    </div>
-                    <p>
-                        {{blog.paragdos}}
-                    </p>
-                </div>
-
-                <div class="parrafo">
-                    <div class="parag__title">
-                        <h2>{{blog.subtitletres}}</h2>
-                    </div>
-                    <p>
-                        {{blog.paragtres}}
-                    </p>
-                </div>
-
-                <div class="parrafo">
-                    <div class="parag__title">
-                        <h2>{{blog.subtitlecuatro}}</h2>
-                    </div>
-                    <p>
-                        {{blog.paragcuatro}}
-                    </p>
-                </div>
-
-                <div class="parrafo">
-                    <div class="parag__title">
-                        <h2>{{blog.subtitlecinco}}</h2>
-                    </div>
-                    <p>
-                        {{blog.paragcinco}}
-                    </p>
-                </div>
-
-                <div class="parrafo">
-                    <div class="parag__title">
-                        <h2>{{blog.subtitleseis}}</h2>
-                    </div>
-                    <p>
-                        {{blog.paragseis}}
-                    </p>
-                </div>
-                
-            </div>
-
-            <div class="pie container">
-                <div class="atributos container m-6">
-                    <ul>
-                        <li><p><strong>Autor:</strong> <i>{{blog.autor}}</i></p></li>
-                        <li><p><i>{{blog.created_at}}</i></p></li>
-                        <li><p><strong>En:</strong> <i>{{blog.city}}</i></p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-
 {{> inner}}
 
 <div class="miga__pan container">
+    <p>Hola mundo</p>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/control">Control</a></li>
@@ -119,7 +13,7 @@
 
 <div class="articulo">
     <div class="container m-4">
-        <div class="articulo__title m-4">
+        <div class="articulo__title m-4 text-center">
             <h1>Hacer frente a los hábitos en este 2021 Postcovid | Teacompaño</h1>
         </div>
         <div class="articulo__body container m-4">
@@ -170,11 +64,6 @@
                         población, ha visto un notable aumento en los últimos meses como efecto adverso del largo tiempo
                         de encierro en la cuarentena generada por el Covid-19.
                     </p>
-                </div>
-
-                <div class="imagen__intro--a">
-                    <iframe src="https://www.teacompano.com.co/img/blog/habitos-saludables-a.png"
-                        title="Día Saludable | Teacompaño" frameborder="0"></iframe>
                 </div>
 
                 <div class="parrafo">
@@ -340,11 +229,6 @@
                     </li>
                 </ul>
 
-                <div class="imagen__intro--b">
-                    <iframe src="https://www.teacompano.com.co/img/blog/habitos-saludables-b.png"
-                        title="Día Saludable | Teacompaño" frameborder="0"></iframe>
-                </div>
-
                 <div class="parrafo">
                     <div class="parag__title">
                         <h2>Enfermedades por prevenir</h2>
@@ -361,17 +245,17 @@
                 </div>
             </div>
 
-            <div class="pie-container">
+            <div class="pie container">
                 <div class="atributos container m-6">
                     <ul>
                         <li>
-                            <p><strong>Autor:</strong> <i>Teacompaño</i></p>
+                            <p><strong>Autor:</strong> <i>{{blog.autor}}</i></p>
                         </li>
                         <li>
-                            <p>El 17 de julio de 2021 a las<i> 2:50 p.m.</i></p>
+                            <p><i>{{blog.created_at}}</i></p>
                         </li>
                         <li>
-                            <p><strong>En:</strong> <i>Medellín</i></p>
+                            <p><strong>En:</strong> <i>{{blog.city}}</i></p>
                         </li>
                     </ul>
                 </div>
