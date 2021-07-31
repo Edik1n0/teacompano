@@ -24,6 +24,8 @@
     "nodemailer": "^6.4.17",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "pdfkit": "^0.12.1",
+    "pdfmake": "^0.2.0",
     "timeago.js": "^4.0.2",
     "web-push": "^3.4.4"
   },

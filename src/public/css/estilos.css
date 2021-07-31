@@ -538,6 +538,10 @@ a:hover {
   .users__table--mob {
     display: block;
   }
+
+  .perfil .container {
+    margin: 0px;
+  }
 }
 @font-face {
   font-family: "fontello";
@@ -763,6 +767,38 @@ a:hover {
 }
 .historia__individiual .container .paciente__info .paciente__body .ficha__indi .form__section .modal .modal-dialog .modal-content .modal-body .container .paciente--kardex {
   display: flex;
+}
+.historia__individiual .container .paciente__info .paciente__body .boton__pdf {
+  height: 40px;
+  background: #d591f565;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.historia__individiual .container .paciente__info .paciente__body .boton__pdf a {
+  color: white;
+  text-decoration: none;
+}
+.historia__individiual .container .paciente__info .paciente__body .boton__pdf:hover {
+  transition: all 0.6s;
+  background: #5b2674;
+}
+
+.paciente__historia--pdf .container .paciente__info .paciente__body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+}
+.paciente__historia--pdf .container .paciente__info .paciente__body ul {
+  padding-left: 0px;
+  list-style: none;
+}
+.paciente__historia--pdf .container .paciente__info .paciente__body .info__list--dos,
+.paciente__historia--pdf .container .paciente__info .paciente__body .info__list--tres {
+  margin-left: 60px;
 }
 
 .claims {

@@ -5,6 +5,9 @@ const router = express.Router();
 const pool = require('../db');
 const { isLoggedIn, isNotLoggedIn } = require('../lib/authdos');
 
+const PdfPrinter = require('pdfmake');
+const fs = require('fs');
+
 // EmailCtrl.sendNurseEmail,
 
 router.get('/personal', (req, res) => {

@@ -214,6 +214,12 @@ router.get('/control/dia-saludable/editar/:id', isLoggedIn, async (req, res) => 
     res.render('control/dia-saludable/editar', { blog: blog[0] });
 });
 
+router.get('/control/historias/imprimir/:id', isLoggedIn, async (req, res) => {
+    const { id } = req.params;
+    const pacientes = await pool.query('SELECT * FROM pacientes WHERE id = ?', [id]);
+    res.render('enfermeras/historia', { pacientes: pacientes[0] });
+});
+
 // Blog
 
 router.get('/dia-saludable', async (req, res) => {
