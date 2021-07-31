@@ -59,6 +59,10 @@
                     }
                 }
             }
+
+            .paciente__body--mov {
+                display: none;
+            }
         }
     }
 }
@@ -79,6 +83,44 @@
                 .info__list--dos,
                 .info__list--tres {
                     margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1080px) {
+    .historia__individiual {
+        .container {
+            .paciente__info {
+                .paciente__body {
+                    display: none;
+                }
+
+                .paciente__body--mov {
+                    display: block;
+                    .card {
+                        margin-top: 20px;
+                        .card-header {
+                            display: flex;
+                            align-items: center;
+                            padding-top: 16px;
+                            background: $mor;
+                            color: white;
+                            .id__link {
+                                margin-left: 20px;
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+
+                        .card-body {
+                            ul {
+                                list-style: none;
+                                padding-left: 0px;
+                            }
+                        }
+                    }
                 }
             }
         }

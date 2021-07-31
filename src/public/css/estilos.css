@@ -486,6 +486,9 @@ a:hover {
   justify-content: center;
   margin: 80px;
 }
+.perfil .container .card .perfil__body .subtitle {
+  padding-left: 100px;
+}
 .perfil .container .card .perfil__body .container .menu__control {
   list-style: none;
   padding: 0px;
@@ -541,6 +544,9 @@ a:hover {
 
   .perfil .container {
     margin: 0px;
+  }
+  .perfil .container .card .perfil__body .subtitle {
+    padding-left: 22px;
   }
 }
 @font-face {
@@ -786,6 +792,9 @@ a:hover {
   transition: all 0.6s;
   background: #5b2674;
 }
+.historia__individiual .container .paciente__info .paciente__body--mov {
+  display: none;
+}
 
 .paciente__historia--pdf .container .paciente__info .paciente__body {
   margin-top: 40px;
@@ -801,6 +810,33 @@ a:hover {
   margin-left: 60px;
 }
 
+@media (min-width: 320px) and (max-width: 1080px) {
+  .historia__individiual .container .paciente__info .paciente__body {
+    display: none;
+  }
+  .historia__individiual .container .paciente__info .paciente__body--mov {
+    display: block;
+  }
+  .historia__individiual .container .paciente__info .paciente__body--mov .card {
+    margin-top: 20px;
+  }
+  .historia__individiual .container .paciente__info .paciente__body--mov .card .card-header {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    background: #5b2674;
+    color: white;
+  }
+  .historia__individiual .container .paciente__info .paciente__body--mov .card .card-header .id__link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  .historia__individiual .container .paciente__info .paciente__body--mov .card .card-body ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+}
 .claims {
   display: block;
 }

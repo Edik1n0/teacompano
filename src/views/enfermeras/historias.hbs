@@ -44,6 +44,31 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="paciente__body--mov">
+                {{#each pacientes}}
+                <div class="card">
+                    <div class="card-header">
+                        <h4><strong class="id__mov">{{id}}</strong><a class="id__link" href="/personal/historias/individual/{{id}}">{{pacientenombre}}</a></h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="bodypaciente__mov">
+                            <li class="pac__item">
+                                <p><strong>Diagnóstico: </strong>{{pacientediagnostico}}</p>
+                            </li>
+                            <li class="pac__item">
+                                <p><strong>Teléfono: </strong>{{pacientetel}}</p>
+                            </li>
+                            <li class="pac__item">
+                                <p><strong>Estado: </strong>{{estado}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {{else}}
+                <p>No hay pacientes todavía</p>
+                {{/each}}
+            </div>
         </div>
     </div>
 </div>

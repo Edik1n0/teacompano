@@ -94,3 +94,11 @@
 --     autor VARCHAR(60) NOT NULL,
 --     created_at timestamp NOT NULL DEFAULT current_timestamp,
 -- );
+
+-- pass local control
+-- master01 
+-- master
+
+-- pass local Enfermeras
+-- enfermera
+-- enfermera

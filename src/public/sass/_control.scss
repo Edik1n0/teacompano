@@ -154,6 +154,9 @@ a {
         margin: 80px;
         .card {
             .perfil__body {
+                .subtitle {
+                    padding-left: 100px;
+                }
                 .container {
                     .menu__control {
                         list-style: none;
@@ -236,6 +239,13 @@ a {
     .perfil {
         .container {
             margin: 0px;
+            .card {
+                .perfil__body {
+                    .subtitle {
+                        padding-left: 22px;
+                    }
+                }
+            }
         }
     }
 }
