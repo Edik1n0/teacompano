@@ -58,6 +58,11 @@
 
         .container {
             width: 90%;
+            .text-sect {
+                .ser__list {
+                    list-style: none;
+                }
+            }
             .text-but {
                 margin-left: 0px;
             }

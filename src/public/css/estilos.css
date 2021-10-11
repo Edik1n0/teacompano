@@ -52,6 +52,9 @@
 .ser__section .ser__txt--section .container {
   width: 90%;
 }
+.ser__section .ser__txt--section .container .text-sect .ser__list {
+  list-style: none;
+}
 .ser__section .ser__txt--section .container .text-but {
   margin-left: 0px;
 }
