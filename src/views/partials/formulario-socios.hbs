@@ -1,0 +1,64 @@
+<div class="formulario-servicio container">
+    <div class="fs__header text-center">
+        <h1 class="fs__title">
+            Formulario de Alianzas | Teacompaño CIS
+        </h1>
+    </div>
+
+    <div class="fs__body">
+        <div class="fs__body--header text-center">
+            <h3 class="fs__body--title">
+                Rellene los campos a continuación y en breve nos pondremos en contacto.
+            </h3>
+            <p class="fs__body--subt">
+                <i>Los campos marcados con (*) son obligatorios</i>
+            </p>
+        </div>
+
+        <div class="fs__body--body d-flex">
+            <form action="/formulario-socios" class="form" method="POST">
+                <div class="form-group">
+                    <label>Titular responsable (*)</label>
+                    <input type="text" name="titular" id="" class="form-control m-2" placeholder="Ernesto Cárdenas" autofocus>
+                </div>
+                <div class="form-group">
+                    <label>Cargo (*)</label>
+                    <input type="text" name="cargo" id="" class="form-control m-2" placeholder="Comunicador/Director/Ejecutivo, etc" autofocus>
+                </div>
+                <div class="form-group">
+                    <label>Contacto (*)</label>
+                    <input type="text" name="contacto" id="" class="form-control m-2" placeholder="+57 313 522 74 74">
+                </div>
+                <div class="form-group">
+                    <label>Correo corporativo (*)</label>
+                    <input type="text" name="ecorpo" id="" class="form-control m-2" placeholder="ernestocar@mailcorp.com">
+                </div>
+                <div class="form-group">
+                    <label>Ubicación/Localidad (*)</label>
+                    <input type="text" name="addcorpo" id="" class="form-control m-2" placeholder="Medellín/Antioquia">
+                </div>
+                <div class="form-group">
+                    <label>Indique un tipo de alianza (opcional)</label>
+                    <select class="form-select m-2" name="alianza" aria-label="Default select example">
+                        <option selected>Seleccione un tipo de alianza</option>
+                        <option value="proovedor">Proveedor productos/servicios</option>
+                        <option value="publicidad">Marketing/publicidad</option>
+                        <option value="salud">Centros de salud</option>
+                        <option value="educativos">Centros educativos</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Descripción (opcional)</label>
+                    <textarea name="descorpo" id="" cols="30" rows="10" class="form-control m-2" placeholder="Máx. 500 Caracteres"></textarea>
+                </div>
+                <p class="fs__body--footer">
+                    <i>Al enviar los datos, está aceptando nuestra <a href="/politica-privacidad">Política de privacidad</a></i>
+                </p>
+                <div class="form-group d-flex text-center boton-enviar">
+                    <button class="btn btn-danger">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

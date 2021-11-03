@@ -1,17 +1,18 @@
-@import 'variables';
-@import 'home';
-@import 'nosotros';
-@import 'servicios';
-@import 'control';
-@import 'fontello';
-@import 'footer';
-@import 'enfermeras';
-@import 'claims';
-@import 'mapa';
-@import 'wp';
-@import 'dia-saludable';
-@import 'articulo';
-@import 'socios';
-@import 'politicas';
+// Bases
+@import "variables";
+@import "base";
+@import "fontello";
 
-@import 'base'
+// Módulos
+@import "intro";
+@import "destacados";
+@import "blog";
+@import "claims";
+@import "contacto";
+@import "aliados";
+@import "footer";
+@import "social";
+
+// Páginas
+@import "nosotros";
+@import "servicios";

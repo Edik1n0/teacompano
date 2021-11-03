@@ -3,13 +3,13 @@ module.exports = {
         if (req.isAuthenticated()) {
             return next();
         }
-        return res.redirect('/control/');
+        return res.redirect('/personal');
     },
 
     isNotLoggedIn(req, res, next) {
         if (!req.isAuthenticated()) {
             return next();
         }
-        return res.redirect('/control/perfil');
+        return res.redirect('/personal/perfil');
     }
 }

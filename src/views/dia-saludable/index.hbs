@@ -1,45 +1,20 @@
-{{> inner}}
+<title>Día Saludable 💚 Teacompaño CIS | Cuidado Integral en Salud</title>
 
-<div class="miga__pan container">
+{{> nav}}
+
+<div class="bg__nos">
+    <img src="/img/bg/bg-teacompano-ds-a.jpg" alt="" class="bg__nos--img">
+</div>
+
+<div class="bread__interno container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Inicio</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Día Saludable</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Día Saludable</li>
         </ol>
     </nav>
 </div>
 
-<div class="dia__saludable">
-    <div class="container">
-        <div class="dia__saludable--title text-center m-4">
-            <h1>Día Saludable | Teacompaño</h1>
-        </div>
-
-        <div class="container">
-
-            <div class="listado__articulos m-6 text-center">
-                {{#each blog}}
-                <div class="card text-dark bg-light m-4 text-center" style="max-width: 18rem;">
-                    <iframe height="200" src="https://www.teacompano.com.co/img/blog/{{miniatura}}.jpg" class="card-img"
-                        alt="..." frameborder="0"></iframe>
-                    <div class="card-header"><a href="/dia-saludable/habitos-2021-postcovid">{{titulo}}</a></div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{tema}}</h5>
-                        <p class="card-text">{{subtitulo}}</p>
-                    </div>
-                </div>
-                {{else}}
-                <div class="card text-dark bg-light m-4 text-center" style="max-width: 18rem;">
-                    <iframe height="200" src="https://www.teacompano.com.co/img/blog/habitos-saludables-min.jpg" class="card-img"
-                        alt="..." frameborder="0"></iframe>
-                    <div class="card-header"><a href="/dia-saludable/habitos-2021-postcovid">Hacer frente a los hábitos en este 2021 Postcovid</a></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Salud</h5>
-                        <p class="card-text">Conozca las acciones más recomendables para hacer frente a algunos hábitos como la actividad física y el consumo de alimentos más saludables.</p>
-                    </div>
-                </div>
-                {{/each}}
-            </div>
-        </div>
-    </div>
-</div>
+{{> ds}}
+{{> social}}
+{{> footer}}

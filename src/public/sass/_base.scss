@@ -1,9 +1,21 @@
 * {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Mulish", sans-serif;
+    // font-family: "Poppins", sans-serif;
+    color: $Ng;
 }
 
-p {
-    font-size: 18px;
+body {
+    background: url("../img/bg/bg-teacompano.jpg");
+}
+
+a {
+    color: $Mor;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.4s;
+        color: $Ros;
+    }
 }
 
 h1 {
@@ -19,165 +31,139 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 22px;
 }
 
-.miga__pan {
-    margin: 20px;
-    position: relative;
-    z-index: 1;
+p {
+    font-size: 18px;
+}
 
-    a {
-        color: $mor;
-        text-decoration: none;
-        &:hover {
-            color: $morb;
-            transition: all 0.6s;
+// Solicitud de servicios
+
+.fs__body--body {
+    justify-content: center;
+    padding: 20px;
+
+    .form {
+        background: $Plata;
+        margin-top: 40px;
+        width: 50%;
+        padding: 40px;
+
+        .boton-enviar {
+            justify-content: center;
         }
     }
 }
 
-.log {
-    width: 60px;
-}
+// Menú
 
-.slogan {
-    background: $mor;
-    color: white;
-    h2 {
-        font-weight: lighter;
-    }
-}
+.navdos,
+.user__nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: $BlTr;
 
-.inner--bg {
-    width: 100%;
-}
-
-.back {
-    position: absolute;
-    z-index: -1;
-
-    .bg__desk {
-        width: 100%;
-        opacity: 20%;
-    }
-
-    .bg__mob {
+    .nav__social {
         display: none;
     }
-}
 
-.alerta {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.form-group {
-    a {
-        color: $mor;
-        &:hover {
-            transition: all 0.6s;
-            color: $morb;
-        }
-    }
-}
-
-.bg__mobile {
-    display: none;
-}
-
-.bg__desktop {
-    .bg-trans {
-        z-index: 2;
-        position: relative;
-        img {
-            width: 100%;
-        }
-
-        .bg-link {
-            position: absolute;
-            right: 180px;
-            background: $mor;
-            border-radius: 6px;
-            color: white;
-            width: 100px;
-            text-align: center;
-            height: 30px;
-            display: inline-grid;
-            z-index: 5;
-            align-items: center;
-            top: 340px;
-            text-decoration: none;
-            &:hover {
-                transition: all 0.4s;
-                background: $morc;
-                color: $mor;
-            }
-        }
-    }
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        z-index: 3;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 1024px) {
-    .back {
+    .container {
         width: 100%;
-
-        .bg__desk {
-            display: none;
-        }
-
-        .bg__mob {
-            display: block;
-            width: 100%;
-            opacity: 20%;
-            height: 5200px;
-
-            @media (min-width: 375px) {
-                height: 5200px;
+        .navbar-brand {
+            .d-inline-block {
+                width: 280px;
             }
         }
     }
 
-    .bg__mobile {
-        display: block;
-        .bg-trans {
-            z-index: 2;
-            position: relative;
-            img {
-                width: 100%;
-            }
+    .sep__men {
+        padding-right: 60px;
+    }
 
-            .bg-link {
-                position: absolute;
-                right: 36%;
-                background: $mor;
-                border-radius: 6px;
-                color: white;
-                width: 100px;
-                text-align: center;
-                height: 30px;
-                display: inline-grid;
-                z-index: 5;
-                align-items: center;
-                top: 80%;
-                text-decoration: none;
-                &:hover {
-                    transition: all 0.4s;
-                    background: $morc;
-                    color: $mor;
+    @media (min-width: 320px) and (max-width: 1280px) {
+        .container {
+            margin-left: 0px;
+            width: 50%;
+            .navbar-brand {
+                .d-inline-block {
+                    width: 220px;
                 }
             }
         }
-    }
 
-    .bg__desktop {
-        display: none;
+        .nav__social {
+            display: flex;
+        }
+
+        .sep__men {
+            padding-right: 0px;
+        }
+    }
+}
+
+// Perfil enfermeras
+
+.enfermera_perfil {
+    .ep__body {
+        margin-top: 40px;
+        border: 2px solid $Gr;
+        border-radius: 8px;
+
+        .ob__img {
+            font-size: 80px;
+        }
+
+        .ep__opt {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .option {
+                width: 30%;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+// Listado de pacientes
+
+.listado__pacientes {
+    .icon-pencil,
+    .icon-phone {
+        font-size: 22px;
+    }
+}
+
+// Miga de pan
+.bread__interno {
+    margin-top: 40px;
+}
+
+// Mensaje éxito
+
+.success__message {
+    position: absolute;
+    top: 220px;
+    z-index: 11;
+    width: 50%;
+    .alert {
+        width: 60%;
+        .icon-cancel {
+            cursor: pointer;
+        }
+    }
+}
+
+// Formularios
+
+@media (min-width: 320px) and (max-width: 1280px) {
+    .fs__body--body {
+        .form {
+            width: 100%;
+            padding: 20px;
+        }
     }
 }

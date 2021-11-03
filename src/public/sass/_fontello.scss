@@ -1,10 +1,10 @@
 @font-face {
     font-family: "fontello";
-    src: url("../font/fontello.eot?21836580");
-    src: url("../font/fontello.eot?21836580#iefix") format("embedded-opentype"),
-        url("../font/fontello.woff2?21836580") format("woff2"), url("../font/fontello.woff?21836580") format("woff"),
-        url("../font/fontello.ttf?21836580") format("truetype"),
-        url("../font/fontello.svg?21836580#fontello") format("svg");
+    src: url("../font/fontello.eot?52594571");
+    src: url("../font/fontello.eot?52594571#iefix") format("embedded-opentype"),
+        url("../font/fontello.woff2?52594571") format("woff2"), url("../font/fontello.woff?52594571") format("woff"),
+        url("../font/fontello.ttf?52594571") format("truetype"),
+        url("../font/fontello.svg?52594571#fontello") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -14,11 +14,10 @@
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
       font-family: 'fontello';
-      src: url('../font/fontello.svg?21836580#fontello') format('svg');
+      src: url('../font/fontello.svg?52594571#fontello') format('svg');
     }
   }
   */
-
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
     font-family: "fontello";
@@ -97,9 +96,144 @@
 .icon-pencil:before {
     content: "\e80d";
 } /* '' */
+.icon-home:before {
+    content: "\e80e";
+} /* '' */
+.icon-home-1:before {
+    content: "\e80f";
+} /* '' */
+.icon-picture:before {
+    content: "\e810";
+} /* '' */
+.icon-phone:before {
+    content: "\e811";
+} /* '' */
+.icon-briefcase:before {
+    content: "\e812";
+} /* '' */
+.icon-location:before {
+    content: "\e813";
+} /* '' */
+.icon-mail:before {
+    content: "\e814";
+} /* '' */
+.icon-adult:before {
+    content: "\e815";
+} /* '' */
+.icon-videocam:before {
+    content: "\e816";
+} /* '' */
+.icon-video:before {
+    content: "\e817";
+} /* '' */
+.icon-link:before {
+    content: "\e818";
+} /* '' */
+.icon-cancel:before {
+    content: "\e819";
+} /* '' */
+.icon-check:before {
+    content: "\e81a";
+} /* '' */
+.icon-credit-card:before {
+    content: "\e81b";
+} /* '' */
+.icon-floppy:before {
+    content: "\e81c";
+} /* '' */
+.icon-phone-1:before {
+    content: "\e81d";
+} /* '' */
+.icon-print:before {
+    content: "\e81e";
+} /* '' */
+.icon-download:before {
+    content: "\e81f";
+} /* '' */
+.icon-star:before {
+    content: "\e820";
+} /* '' */
+.icon-star-empty:before {
+    content: "\e821";
+} /* '' */
+.icon-star-half:before {
+    content: "\e822";
+} /* '' */
+.icon-bell:before {
+    content: "\e823";
+} /* '' */
+.icon-comment:before {
+    content: "\e824";
+} /* '' */
+.icon-twitter:before {
+    content: "\f099";
+} /* '' */
 .icon-menu:before {
     content: "\f0c9";
 } /* '' */
+.icon-comment-empty:before {
+    content: "\f0e5";
+} /* '' */
+.icon-chat-empty:before {
+    content: "\f0e6";
+} /* '' */
+.icon-user-md:before {
+    content: "\f0f0";
+} /* '' */
+.icon-bell-alt:before {
+    content: "\f0f3";
+} /* '' */
+.icon-medkit:before {
+    content: "\f0fa";
+} /* '' */
+.icon-circle-empty:before {
+    content: "\f10c";
+} /* '' */
+.icon-circle:before {
+    content: "\f111";
+} /* '' */
+.icon-youtube-squared:before {
+    content: "\f166";
+} /* '' */
+.icon-youtube-play:before {
+    content: "\f16a";
+} /* '' */
+.icon-instagram-1:before {
+    content: "\f16d";
+} /* '' */
+.icon-circle-thin:before {
+    content: "\f1db";
+} /* '' */
+.icon-cc-visa:before {
+    content: "\f1f0";
+} /* '' */
+.icon-cc-mastercard:before {
+    content: "\f1f1";
+} /* '' */
 .icon-trash:before {
     content: "\f1f8";
 } /* '' */
+.icon-venus:before {
+    content: "\f221";
+} /* '' */
+.icon-mars:before {
+    content: "\f222";
+} /* '' */
+.icon-whatsapp:before {
+    content: "\f232";
+} /* '' */
+.icon-twitter-squared:before {
+    content: "\f304";
+} /* '' */
+.icon-facebook-squared:before {
+    content: "\f308";
+} /* '' */
+.icon-twitter-1:before {
+    content: "\f309";
+} /* '' */
+.icon-facebook-circled:before {
+    content: "\f30d";
+} /* '' */
+.icon-instagram:before {
+    content: "\f32d";
+} /* '' */

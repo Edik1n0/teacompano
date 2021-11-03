@@ -28,6 +28,17 @@
 -- ALTER TABLE usuarios
 --     MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
+-- CREATE TABLE registros (
+--     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--     nombreuser VARCHAR(60) NOT NULL,
+--     teluser VARCHAR(60) NOT NULL,
+--     emailuser VARCHAR(60) NOT NULL,
+--     addressuser VARCHAR(120) NOT NULL,
+--     serviceuser VARCHAR(120) NOT NULL,
+--     descuser TEXT,
+--     created_at timestamp NOT NULL DEFAULT current_timestamp
+-- );
+
 -- CREATE TABLE suser(
 --      id INT(11) NOT NULL,
 --      fullname VARCHAR(60) NOT NULL,
@@ -54,11 +65,34 @@
 --     ADD CONSTRAINT fk_pacient FOREIGN KEY (nurse_id) REFERENCES enfermeras(id)
 -- );
 
+-- CREATE TABLE aliados(
+--     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--     titular VARCHAR(120) NOT NULL,
+--     cargo VARCHAR(60) NOT NULL,
+--     contacto VARCHAR(120) NOT NULL,
+--     ecorpo VARCHAR(100) NOT NULL,
+--     addcorpo VARCHAR(120) NOT NULL,
+--     alianza VARCHAR(120) NOT NULL,
+--     descorpo VARCHAR(120) NOT NULL,
+--     created_at timestamp NOT NULL DEFAULT current_timestamp,
+-- );
+
 -- CREATE TABLE enfermeras(
 --     id INT(11) NOT NULL,
 --     enfermera VARCHAR(16) NOT NULL,
 --     pass VARCHAR(60) NOT NULL,
 --     nombre VARCHAR(100) NOT NULL
+-- );
+
+-- CREATE TABLE personal(
+--     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+--     pernombre VARCHAR(16) NOT NULL,
+--     percargo VARCHAR(60) NOT NULL,
+--     perfoto VARCHAR(16) NOT NULL,
+--     perdate VARCHAR(60) NOT NULL,
+--     perid VARCHAR(16) NOT NULL,
+--     peruser VARCHAR(60) NOT NULL,
+--     perpass VARCHAR(100) NOT NULL
 -- );
 
 -- ALTER TABLE pacientes
@@ -72,7 +106,19 @@
 -- ALTER TABLE pacientes
 --     MODIFY evolucion VARCHAR(500) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
--- CREATE TABLE blog(
+-- ALTER TABLE blogdos
+--     ADD enlace VARCHAR() NOT NULL,
+
+-- ALTER TABLE blogdos
+--     ADD piefoto VARCHAR() NOT NULL,
+
+-- ALTER TABLE blogdos
+--     ADD miniatura VARCHAR() NOT NULL,
+
+-- ALTER TABLE blogdos
+--     ADD paragcinco VARCHAR() NOT NULL,
+
+-- CREATE TABLE blogdos (
 --     id INT(11) NOT NULL,
 --     tema VARCHAR(30) NOT NULL,
 --     urlimg VARCHAR(60) NOT NULL,
@@ -89,7 +135,6 @@
 --     subtitlecinco VARCHAR(60) NOT NULL,
 --     paragseis TEXT NOT NULL,
 --     subtitleseis VARCHAR(60) NOT NULL,
---     paragseis TEXT NOT NULL,
 --     city VARCHAR(60) NOT NULL,
 --     autor VARCHAR(60) NOT NULL,
 --     created_at timestamp NOT NULL DEFAULT current_timestamp,

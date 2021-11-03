@@ -1,0 +1,55 @@
+<title>Listado de pacientes 💊 Enfermería | Teacompaño</title>
+
+{{> navdos}}
+
+<div class="container m-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/enfermeras/perfil">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Lista de pacientes</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="listado__pacientes container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Fecha de nacimiento</th>
+                <th scope="col">EPS</th>
+                <th scope="col">Teléfono</th>
+            </tr>
+        </thead>
+        {{#each pacientes}}
+        <tbody>
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td><a href="/enfermeras/individual/{{id}}">{{pacientenombre}}</a></td>
+                <td>{{pacienteedad}}</td>
+                <td>{{pacienteeps}}</td>
+                <td>{{pacientetel}}</td>
+            </tr>
+            {{else}}
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Sura</td>
+                <td>@mdo</td>
+            </tr>
+            {{/each}}
+        </tbody>
+        
+    </table>
+</div>
+
+<div class="container text-center">
+    <div class="col-md-4 mx-auto m-4">
+        <a href="/enfermeras/agregar" class="btn btn-danger">Añadir nuevo paciente</a>
+    </div>
+</div>
+
+{{> footer}}

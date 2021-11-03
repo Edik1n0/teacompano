@@ -1,0 +1,34 @@
+<div class="usuario container">
+    <div class="usuario__nombre m-4">
+        <label><strong>Nombre del usuario:</strong></label>
+        <p class="usuario__nombre--txt">{{registros.nombreuser}}</p>
+    </div>
+    <div class="usuario__tel m-4">
+        <label><strong>Teléfono del usuario:</strong></label><br>
+        <a href="" class="usuario__tel--link">{{registros.teluser}}</a>
+    </div>
+    <div class="usuario__email m-4">
+        <label><strong>Correo electrónico:</strong></label><br>
+        <a href="mailto:{{registros.emailuser}}" class="usuario__tel--link">{{registros.emailuser}}</a>
+    </div>
+    <div class="usuario__dir m-4">
+        <label><strong>Dirección:</strong></label><br>
+        <p class="usuario__dir--txt">{{registros.addressuser}}</p>
+    </div>
+    <div class="usuario__ser m-4">
+        <label><strong>Servicio solicitado:</strong></label>
+        <p class="usuario__ser--txt">{{registros.serviceuser}}</p>
+    </div>
+    <div class="usuario__desc m-4">
+        <label for=""><strong>Descripción:</strong></label>
+        <p class="usuario__desc--txt">
+            {{registros.descuser}}
+        </p>
+    </div>
+    <div class="usuario__created m-4">
+        <label for=""><strong>Registrado:</strong></label>
+        <p class="usuario__created--txt">
+            {{timeago registros.created_at}}
+        </p>
+    </div>
+</div>

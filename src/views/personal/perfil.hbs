@@ -1,0 +1,91 @@
+<title>{{user.pernombre}} 👩🏻‍⚕️ Personal | Teacompaño CIS</title>
+
+{{> navdos}}
+{{> message}}
+
+<div class="container m-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Perfil de {{user.pernombre}}</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="enfermera_perfil">
+    <div class="container">
+        <div class="ep__title text-center">
+            <p class="ep__title--welcome">
+                Bienvenid@ a tu perfil Teacompaño
+            </p>
+            <div class="ep__title--name">
+                <h1>{{user.pernombre}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-4 ep__body">
+        <div class="ep__subt">
+            <h2 class="text-center">¿Qué deseas hacer hoy?</h2>
+        </div>
+        <div class="ep__opt">
+            <div class="card option">
+                <a class="int__link" href="/enfermeras/lista">
+                    <div class="card-header option__header">
+                        <h4 class="option__header--title">
+                            Lista
+                        </h4>
+                    </div>
+                    <div class="card-body option__body">
+                        <div class="icon-adult ob__img"></div>
+                        <div class="option__body--text">
+                            <p class="ob__txt--desc">
+                                <i>Consulta el listado de pacientes</i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card option">
+                <a class="int__link" href="/">
+                    <div class="card-header option__header">
+                        <h4 class="option__header--title">
+                            Agregar
+                        </h4>
+                    </div>
+                    <div class="card-body option__body">
+                        <div class="icon-plus-circled ob__img"></div>
+                        <div class="option__body--text">
+                            <p class="ob__txt--desc">
+                                <i>Agrega un nuevo paciente</i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card option">
+                <a class="int__link" href="/enfermeras/solicitudes">
+                    <div class="card-header option__header">
+                        <h4 class="option__header--title">
+                            solicitudes
+                        </h4>
+                    </div>
+                    <div class="card-body option__body">
+                        <div class="icon-star ob__img"></div>
+                        <div class="option__body--text">
+                            <p class="ob__txt--desc">
+                                <i>Solicitudes de usuarios</i>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{{> footer}}

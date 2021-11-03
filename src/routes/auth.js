@@ -1,30 +1,26 @@
 const express = require('express');
-const router = express.Router();
-
 const passport = require('passport');
+const router = express.Router();
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
-router.get('/control/signup', isLoggedIn, (req, res) => {
-    res.render('auth/signup');
+const pool = require('../db');
+
+router.get('/personal', isNotLoggedIn, (req, res) => {
+    res.render('personal/');
 });
 
-router.post('/control/signup', passport.authenticate('local.signup', {
-    successRedirect: '/control/perfil',
-    failureRedirect: '/control/signup',
-    failureFlash: true
-}));
-
-router.get('/control/perfil', isLoggedIn, (req, res) => {
-    res.render('perfil');
+router.post('/personal', (req, res, next) => {
+    passport.authenticate('local.signin', {
+        successRedirect: '/personal/perfil',
+        failureRedirect: '/personal/',
+        failureFlash: true
+    })(req, res, next);
 });
 
-router.get('/control/logout', isLoggedIn, (req, res) => {
+router.get('/salir', isLoggedIn, (req, res) => {
     req.logOut();
-    res.redirect('/control/');
-});
-
-router.get('/control/enfermeras', isLoggedIn, (req, res) => {
-    res.render('control/nurse-signup');
+    req.flash('success', 'Ha cerrado sesión correctamente');
+    res.redirect('/');
 });
 
 module.exports = router;

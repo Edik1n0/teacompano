@@ -12,25 +12,24 @@ const { database } = require('./keys');
 // Init
 const app = express();
 require('./lib/passport');
-require('./lib/passportdos');
 
-// Sett
-app.set('port', process.env.PORT || 8000);
-app.set('views', path.join(__dirname, 'views'));
+//Settings
+app.set('port', process.env.PORT || 4000); // Puerto
+app.set('views', path.join(__dirname, 'views')); // HBS
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs',
+    extname: '.hbs', // Nodejs
     helpers: require('./lib/handlebars')
 }));
 app.set('view engine', '.hbs');
 
-// Middle
+// Middleware
 app.use(session({
-    secret: 'teacompanonode',
-    resave: false,
-    saveUninitialized: false,
+    secret: 'teacsession',
+    resave: 'false',
+    saveUninitialized: 'false',
     store: new MySQLStore(database)
 }));
 app.use(flash());
@@ -40,7 +39,7 @@ app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Global
+//Globales
 app.use((req, res, next) => {
     app.locals.success = req.flash('success');
     app.locals.message = req.flash('message');
@@ -48,19 +47,18 @@ app.use((req, res, next) => {
     next();
 });
 
-// Routes
+//Rutas
 app.use(require('./routes'));
 app.use(require('./routes/auth'));
-app.use(require('./routes/authdos'));
-app.use(require('./routes/enfermeras'));
-app.use(require('./routes/servicios'));
-app.use('/control', require('./routes/control'));
-app.use('/usuarios', require('./routes/users'));
+app.use(require('./routes/control'));
+app.use(require('./routes/personal'));
+app.use(require('./routes/usuarios'));
+app.use(require('./routes/dia-saludable'));
 
-// Public
+// Publicos
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Start
+//Servidor
 app.listen(app.get('port'), () => {
     console.log('Servidor en el puerto', app.get('port'));
 });

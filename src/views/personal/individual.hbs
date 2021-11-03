@@ -1,0 +1,18 @@
+<title>{{pacientes.pacientenombre}} 🤒 Pacientes | Teacompaño CIS</title>
+
+{{> navdos}}
+
+<div class="container m-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/enfermeras/perfil">Perfil</a></li>
+            <li class="breadcrumb-item"><a href="/enfermeras/lista">Pacientes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{pacientes.pacientenombre}}</li>
+        </ol>
+    </nav>
+</div>
+
+{{> indi}}
+
+{{> footer}}
