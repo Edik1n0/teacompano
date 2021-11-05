@@ -1150,7 +1150,7 @@ p {
   display: none;
   position: absolute;
   right: 16%;
-  bottom: -480px;
+  bottom: -520px;
   background: linear-gradient(to bottom right, #d6d1d7, #FFFFFF, #686868);
   border-radius: 12px;
   width: 40%;
@@ -1161,6 +1161,16 @@ p {
 .ser .ser__body .ser__section .ser__item .ser__item--info .ser__item--img .item__info--img {
   width: 440px;
   margin: 20px;
+}
+.ser .ser__body .ser__section .ser__item .ser__item--info .ser__item--mode .item__mode--list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.ser .ser__body .ser__section .ser__item .ser__item--info .ser__item--mode .item__mode--list .mode__list--item {
+  margin: 10px;
+  width: 20%;
 }
 .ser .ser__body .ser__section .ser__item:hover {
   transition: all 0.4s;

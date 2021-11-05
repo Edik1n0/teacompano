@@ -62,7 +62,7 @@
                     display: none;
                     position: absolute;
                     right: 16%;
-                    bottom: -480px;
+                    bottom: -520px;
                     background: $Plata;
                     border-radius: 12px;
                     width: 40%;
@@ -74,6 +74,20 @@
                         .item__info--img {
                             width: 440px;
                             margin: 20px;
+                        }
+                    }
+
+                    .ser__item--mode {
+                        .item__mode--list {
+                            display: flex;
+                            list-style: none;
+                            justify-content: center;
+                            align-items: center;
+
+                            .mode__list--item {
+                                margin: 10px;
+                                width: 20%;
+                            }
                         }
                     }
                 }
