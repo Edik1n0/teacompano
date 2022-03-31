@@ -1,0 +1,88 @@
+.blog {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    .container {
+        text-align: center;
+    }
+
+    .blog__body {
+        .carousel-inner {
+            .carousel-item {
+                .bb__item {
+                    margin-top: 40px;
+
+                    .bb__item--img {
+                        height: 440px;
+                    }
+
+                    .bb__item--body {
+                        background: $BlTr;
+                        width: 80%;
+                        text-align: start;
+                        padding: 20px 20px 20px 20px;
+                        margin: 80px 20px 20px 20px;
+                        position: absolute;
+                        top: 40px;
+                        z-index: 9;
+
+                        .bb__item--title,
+                        .bb__item--footer {
+                            margin: 10px;
+                        }
+
+                        .bb__item--desc {
+                            margin: 20px;
+                        }
+
+                        @media (min-width: 320px) and (max-width: 1280px) {
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .carousel__button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 380px;
+
+            .carousel__button--text {
+                width: 180px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                color: $Bl;
+                background: linear-gradient(to bottom right, $Ros, $Mor);
+                &:hover {
+                    transition: all 0.4s;
+                    background: linear-gradient(to bottom right, $Mor, $Ros);
+                }
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 1280px) {
+            .carousel-inner {
+                height: 580px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+
+                .carousel-item {
+                    .bb__item {
+                        .bb__item--img {
+                            height: 540px;
+                        }
+                    }
+                }
+            }
+
+            .carousel__button {
+                top: 480px;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.ali {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .container {
+        .ali__body {
+            .ali__section {
+                display: flex;
+                justify-content: space-between;
+                .ali__item {
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    margin: 10px;
+                    width: 30%;
+
+                    .objects {
+                        .ali__item--body {
+                            padding: 8px;
+                            width: 100%;
+                            height: 100px;
+                            .alii__body--img {
+                                width: 220px;
+                                opacity: 80%;
+
+                                &:hover {
+                                    transition: all .6s;
+                                    opacity: 100%;
+                                }
+                            }
+
+                            .kino {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+                @media (min-width: 320px) and (max-width: 1280px) {
+                    display: block;
+
+                    .ali__item {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .carousel {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                .carousel-item {
+                    height: 280px;
+                    align-items: center;
+                    .ali__body--img {
+                        width: 220px;
+                    }
+                }
+            }
+
+
+        }
+
+        .ali__footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .ali__footer--inv {
+                width: 280px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                color: $Bl;
+                background: linear-gradient(to bottom right, $Ros, $Mor);
+                
+                &:hover {
+                    transition: all .4s;
+                    background: linear-gradient(to bottom right, $Mor, $Ros);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 410px) {
+        margin-top: 580px;
+        .container {
+            .ali__body {
+                .carousel {
+                    .carousel-item {
+                        height: 320px;
+                        .carousel-caption {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 411px) and (max-width: 1280px) {
+        margin-top: 500px;
+
+        .container {
+            .ali__body {
+                .carousel {
+                    .carousel-item {
+                        height: 320px;
+                        .carousel-caption {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

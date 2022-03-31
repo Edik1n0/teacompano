@@ -1,0 +1,47 @@
+<title>Listado de solicitudes 💊 Enfermería | Teacompaño</title>
+
+{{> navdos}}
+
+<div class="container m-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/enfermeras/perfil">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Lista de solicitudes</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="listado__pacientes container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Servicio solicitado</th>
+                <th scope="col">Teléfono</th>
+            </tr>
+        </thead>
+        {{#each registros}}
+        <tbody>
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td><a href="/enfermeras/solicitud/{{id}}">{{nombreuser}}</a></td>
+                <td>{{serviceuser}}</td>
+                <td>{{teluser}}</td>
+            </tr>
+            {{else}}
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Sura</td>
+                <td>@mdo</td>
+            </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+</div>
+
+{{> footer}}

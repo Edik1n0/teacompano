@@ -1,0 +1,68 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-5 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        Registro de personal
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <form action="/control/registro-personal" method="POST" class="form" enctype="multipart/form-data">
+                        <div class="form-section">
+                            <div class="section-title">
+                                <h4 class="section__title--txt">
+                                    Registro de datos personales
+                                </h4>
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Nombre Completo (*)</label>
+                                <input type="text" name="pernombre" id="" class="form-control"
+                                    placeholder="Joana Barrera" autofocus>
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Cargo (*)</label>
+                                <input type="text" name="percargo" id="" class="form-control"
+                                    placeholder="Enfermera">
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Foto asignada (*)</label>
+                                <input type="file" name="perfoto" id="" class="form-control">
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Fecha de nacimiento (*)</label>
+                                <input type="date" name="perdate" id="" class="form-control"
+                                    placeholder="dd/mm/aaaa">
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Cédula de ciudadanía (*)</label>
+                                <input type="number" name="perid" id="" class="form-control"
+                                    placeholder="Sin guiones, puntos u otros caracteres">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="section-title">
+                                <h4 class="section__title--txt">
+                                    Registro de datos de acceso
+                                </h4>
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Nombre de usuario (*)</label>
+                                <input type="text" name="peruser" id="" class="form-control">
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="">Contraseña (*)</label>
+                                <input type="password" name="perpass" id="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group m-4">
+                            <button class="btn btn-danger">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

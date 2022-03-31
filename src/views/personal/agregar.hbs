@@ -1,0 +1,85 @@
+<title>Agregar paciente | Enfermería | Teacompaño</title>
+
+{{> navdos}}
+
+<div class="container m-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/enfermeras/perfil">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registro de paciente</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <form method="POST" action="/agregar-paciente">
+                        <label>
+                            <h4>Datos personales del paciente</h4>
+                        </label>
+                        <div class="form-group">
+                            <label class="m-2"><i>Nombre completo (*)</i></label>
+                            <input type="text" name="pacientenombre" class="form-control m-2" placeholder="Pepito Pérez"
+                                autofocus>
+                            <label class="m-2"><i>Fecha de nacimiento (*)</i></label>
+                            <input type="date" name="pacienteedad" class="form-control m-2"
+                                placeholder="Fecha de nacimiento">
+                        </div>
+                        <label>
+                            <h4>Datos de contacto</h4>
+                        </label>
+                        <div class="form-group">
+                            <label class="m-2"><i>Teléfono/Celular</i></label>
+                            <input type="text" name="pacientetel" class="form-control m-2"
+                                placeholder="255 42 01/320 288 7171">
+                            <label class="m-2"><i>Correo electrónico</i></label>
+                            <input type="email" name="pacientecorreo" class="form-control m-2"
+                                placeholder="pepito@mailservice.com">
+                        </div>
+                        <label>
+                            <h4>Información del servicio</h4>
+                        </label>
+                        <div class="form-group">
+                            <label class="mt-2">Fecha de ingreso:</label>
+                            <input type="date" name="pacienteingreso" class="form-control"
+                                placeholder="Teléfono del paciente">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2">Fecha de salida (opcional):</label>
+                            <input type="date" name="pacientesalida" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2">Responsable</label>
+                            <input type="text" name="pacienteeps" class="form-control"
+                                placeholder="Responsable del paciente">
+                            <input type="text" name="pacienteparentezco" class="form-control w-50 mt-4"
+                                placeholder="Parentezco">
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2">Diagnóstico inicial</label>
+                            <textarea name="pacientediagnostico" class="form-control"
+                                placeholder="Diagnóstico"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="mt-2">Servicio solicitado</label>
+                            <select type="text" name="pacienteservicio" class="form-select"
+                                aria-label="Default select example">
+                                <option selected>Seleccione un servicio</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-4">
+                            <button class="btn btn-danger">Agregar paciente</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

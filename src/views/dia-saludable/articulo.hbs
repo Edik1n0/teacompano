@@ -1,0 +1,32 @@
+
+<title>Nombre del artículo | Día Saludable 💚 Teacompaño CIS | Cuidado Integral en Salud</title>
+
+{{> nav}}
+
+<div class="bg__nos">
+    <img src="/img/bg/bg-teacompano-ds-a.jpg" alt="" class="bg__nos--img">
+</div>
+{{#each blog}}
+<div class="bread__interno container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/">Día Saludable</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{blogdos.titulo}}</li>
+        </ol>
+    </nav>
+</div>
+{{else}}
+<div class="bread__interno container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/">Día Saludable</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Testing</li>
+        </ol>
+    </nav>
+</div>
+{{/each}}
+{{> art}}
+{{> social}}
+{{> footer}}

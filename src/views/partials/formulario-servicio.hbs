@@ -1,0 +1,60 @@
+<div class="formulario-servicio container">
+    <div class="fs__header text-center">
+        <h1 class="fs__title">
+            Formulario de Solicitud de servicios | Teacompaño CIS
+        </h1>
+    </div>
+
+    <div class="fs__body">
+        <div class="fs__body--header text-center">
+            <h3 class="fs__body--title">
+                Rellene los campos a continuación y en breve nos pondremos en contacto.
+            </h3>
+            <p class="fs__body--subt">
+                <i>Los campos marcados con (*) son obligatorios</i>
+            </p>
+        </div>
+
+        <div class="fs__body--body d-flex">
+            <form action="/formulario-solicitud" class="form" method="POST">
+                <div class="form-group">
+                    <label>Nombre Completo (*)</label>
+                    <input type="text" name="nombreuser" id="" class="form-control m-2" placeholder="Ernesto Cárdenas" autofocus>
+                </div>
+                <div class="form-group">
+                    <label>Teléfono/Celular (*)</label>
+                    <input type="text" name="teluser" id="" class="form-control m-2" placeholder="+57 313 522 74 74">
+                </div>
+                <div class="form-group">
+                    <label>Correo electrónico (*)</label>
+                    <input type="text" name="emailuser" id="" class="form-control m-2" placeholder="ernestocar@mailcorp.com">
+                </div>
+                <div class="form-group">
+                    <label>Ubicación/Localidad (*)</label>
+                    <input type="text" name="addressuser" id="" class="form-control m-2" placeholder="Medellín/Antioquia">
+                </div>
+                <div class="form-group">
+                    <label>Servicio que desea consultar</label>
+                    <select class="form-select m-2" name="serviceuser" aria-label="Default select example">
+                        <option selected>Seleccione un servicio</option>
+                        <option value="enfermeria">Cuidados de Enfermería</option>
+                        <option value="psicologia">Psicología</option>
+                        <option value="medicina">Medicina General</option>
+                        <option value="nutricion">Nutrición</option>
+                        <option value="asosria">Asesoría Jurídica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Descripción de la situación</label>
+                    <textarea name="descuser" id="" cols="30" rows="10" class="form-control m-2" placeholder="Máx. 500 Caracteres"></textarea>
+                </div>
+                <p class="fs__body--footer">
+                    <i>Al enviar los datos, está aceptando nuestra <a href="/politica-privacidad">Política de privacidad</a></i>
+                </p>
+                <div class="form-group d-flex text-center boton-enviar">
+                    <button class="btn btn-danger">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
