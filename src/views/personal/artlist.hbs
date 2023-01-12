@@ -1,4 +1,4 @@
-<title>Listado de solicitudes 💊 Enfermería | Teacompaño</title>
+<title>Listado de artículos 💊 Enfermería | Teacompaño CIS</title>
 
 {{> navdos}}
 
@@ -6,8 +6,8 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="/personal/perfil">Perfil</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Lista de solicitudes</li>
+            <li class="breadcrumb-item"><a href="/enfermeras/perfil">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Lista de artículos</li>
         </ol>
     </nav>
 </div>
@@ -18,17 +18,19 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Nombre</th>
-                <th scope="col">Servicio solicitado</th>
+                <th scope="col">Fecha de nacimiento</th>
+                <th scope="col">EPS</th>
                 <th scope="col">Teléfono</th>
             </tr>
         </thead>
-        {{#each registros}}
+        {{#each blog}}
         <tbody>
             <tr>
                 <th scope="row">{{id}}</th>
-                <td><a href="/personal/solicitud/{{id}}">{{nombreuser}}</a></td>
-                <td>{{serviceuser}}</td>
-                <td>{{teluser}}</td>
+                <td><a href="/dia-saludable/editar/{{id}}">{{titulo}}</a></td>
+                <td>{{tema}}</td>
+                <td>{{subtitulo}}</td>
+                <td>{{created_at}}</td>
             </tr>
             {{else}}
             <tr>
@@ -40,8 +42,14 @@
             </tr>
             {{/each}}
         </tbody>
-
+        
     </table>
+</div>
+
+<div class="container text-center">
+    <div class="col-md-4 mx-auto m-4">
+        <a href="/enfermeras/agregar" class="btn btn-danger">Añadir nuevo paciente</a>
+    </div>
 </div>
 
 {{> footer}}

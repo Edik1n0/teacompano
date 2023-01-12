@@ -3,15 +3,15 @@ const router = express.Router();
 const pool = require('../db');
 const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
 
-router.get('/dia-saludable', isNotLoggedIn, async (req, res) => {
+router.get('/dia-saludable', async (req, res) => {
     const blog = await pool.query('SELECT * FROM blog');
     res.render('dia-saludable/', { blog });
 });
 
-router.get('/dia-saludable/articulos/:id', isNotLoggedIn, async (req, res) => {
+router.get('/dia-saludable/articulos/:id', async (req, res) => {
     const {id} = req.params;
-    const blogdos = await pool.query('SELECT * FROM blogdos WHERE id = ?', [id]);
-    res.render('dia-saludable/articulo', { blog: blogdos[0] });
+    const blog = await pool.query('SELECT * FROM blog WHERE id = ?', [id]);
+    res.render('dia-saludable/articulo', { blog: blog[0] });
 });
 
 router.get('/dia-saludable/add', isLoggedIn, (req, res) => {
@@ -65,7 +65,7 @@ router.post('/dia-saludable/add', isLoggedIn, async (req, res) => {
         autor,
         city
     };
-    await pool.query('INSERT INTO blogdos SET ?', [newBlog]);
+    await pool.query('INSERT INTO blog SET ?', [newBlog]);
     //req.flash('success', 'Artículo enviado satisfactoriamente');
     res.redirect('/dia-saludable');
 });

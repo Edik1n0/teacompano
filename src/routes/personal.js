@@ -62,4 +62,9 @@ router.get('/personal/individual/:id', isLoggedIn, async (req, res) => {
     res.render('personal/individual', { pacientes: pacientes[0] });
 });
 
+router.get('/personal/articulos', isLoggedIn, async (req, res) => {
+    const blog = await pool.query('SELECT * FROM blog');
+    res.render('personal/artlist', { blog })
+});
+
 module.exports = router;

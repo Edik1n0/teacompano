@@ -17,7 +17,7 @@ router.get('/control/perfil', isLoggedIn, (req, res) => {
     res.render('control/perfil');
 });
 
-router.post('/control/registro-personal', passport.authenticate('local.signup', {
+router.post('/registro-personal', passport.authenticate('local.signup', {
     successRedirect: '/control/perfil',
     failureRedirect: '/control/',
     failureFlash: true
