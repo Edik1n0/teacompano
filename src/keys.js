@@ -27,9 +27,9 @@
 
 module.exports = {
     database: {
-        host: 'eyw6324oty5fsovx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        user: 'e0lwlm13xfcrsty5',
-        password: 'oyct0qyoqhhet8qz',
-        database: 'snzxe6ux5pzgm3ao'
+        host: 'co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'sju3fpx26kudxzzo',
+        password: 'jhk09e2j9vlk6254',
+        database: 'ersoobj4q6qmazp2'
     }
 };
