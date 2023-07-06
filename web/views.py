@@ -5,60 +5,6 @@ from django.shortcuts import render
 from .models import Asesor, Video, Pagina
 from django.shortcuts import get_object_or_404, render
 from django.views.generic import DetailView
-# from django.views.generic.base import RedirectView
-
-# def tienda(request):
-#     # Resto del código para la función de vista
-#     productos = Product.objects.all()
-#     pagina_tienda = get_object_or_404(Pagina, pagename='Tienda')
-#     pageslogan = pagina_tienda.pageslogan
-#     pagetitle = pagina_tienda.pagetitle
-#     pagename = pagina_tienda.pagename
-#     pagebanner = pagina_tienda.pagebanner
-#     pagebannermov = pagina_tienda.pagebannermov
-#     pagemetatitle = pagina_tienda.pagemetatitle
-#     pageogtitle = pagina_tienda.pageogtitle
-#     pageogdesc = pagina_tienda.pageogdesc
-#     pagekeywords = pagina_tienda.pagekeywords
-#     pagemetadesc = pagina_tienda.pagemetadesc
-#     pageogurl = pagina_tienda.pageogurl
-#     pageogimg = pagina_tienda.pageogimg
-#     pageogurlsec = pagina_tienda.pageogurlsec
-#     return render(request, 'tienda.html', {
-#         'productos': productos,
-#         'pagemetatitle': pagemetatitle,
-#         'pageogtitle': pageogtitle,
-#         'pageogdesc': pageogdesc,
-#         'pagekeywords': pagekeywords,
-#         'pagemetadesc': pagemetadesc,
-#         'pageogurl': pageogurl, 'pageogimg': pageogimg,
-#         'pageogurlsec': pageogurlsec,
-#         'pagebanner': pagebanner,
-#         'pagename': pagename,
-#         'pagebannermov': pagebannermov,
-#         'pagetitle': pagetitle,
-#         'pageslogan': pageslogan
-#     })
-
-# class ProductDetailView(DetailView):
-#     model = Product
-#     template_name = 'producto-detalle.html'
-#     context_object_name = 'producto'
-
-#     def get_object(self):
-#         return Product.objects.get(producturl=self.kwargs['producturl'])
-
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         context['titulo'] = self.object.productogtitle
-#         context['keywords'] = self.object.productkeywords
-#         context['mdescription'] = self.object.productmetadesc
-#         context['ogurl'] = self.object.productogurl
-#         context['ogimg'] = self.object.productogimg
-#         context['ogtitle'] = self.object.productogtitle
-#         context['ogurlimg'] = self.object.productogurlsec
-#         context['ogdesc'] = self.object.productogdesc
-#         return context
 
 def servicios(request):
     pagina_servicios = get_object_or_404(Pagina, pagename='Servicios')

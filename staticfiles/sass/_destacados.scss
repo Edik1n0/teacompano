@@ -1,0 +1,68 @@
+.high {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    .container {
+
+        .high__body {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 10px 10px 10px;
+
+            .high__item {
+                width: 28%;
+                padding: 10px;
+
+                .high__item--body {
+                    
+                    .hi__body--img {
+                        width: 240px;
+                        border-radius: 50%;
+                        -webkit-box-shadow: 2px 2px 2px 0px rgba(40, 40, 40, 0.75);
+                        -moz-box-shadow: 2px 2px 2px 0px rgba(40, 40, 40, 0.75);
+                        box-shadow: 2px 2px 2px 0px rgba(40, 40, 40, 0.75);
+
+                        &:hover {
+                            transition: all 0.6s;
+                            -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+                            -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+                            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+                        }
+                    }
+
+                    .hi__body--txt {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            @media (min-width: 320px) and (max-width: 1280px) {
+                display: block;
+
+                .high__item {
+                    width: 100%;
+                }
+            }
+        }
+
+        .high__footer {
+            display: flex;
+            justify-content: center;
+            .high__footer--link {
+                width: 320px;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                color: $Bl;
+                background: linear-gradient(to bottom right, $Ros, $Mor);
+                
+                &:hover {
+                    transition: all .4s;
+                    background: linear-gradient(to bottom right, $Mor, $Ros);
+                }
+            }
+        }
+    }
+}

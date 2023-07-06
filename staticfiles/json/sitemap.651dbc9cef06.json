@@ -1,0 +1,86 @@
+{
+    "urlset": {
+      "url": [
+        {
+          "loc": "http://www.decortinasypersianas.co/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 1
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/nosotros/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/contacto/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/servicios/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/pauta/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/cookies/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/privacy/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/panel-japones/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/cortinas-en-tela/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/sheer-elegance/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.8
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/persiana-vertical/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.64
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/parasoles/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.64
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/bambulitas/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.64
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/enrrollable-screen/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.64
+        },
+        {
+          "loc": "http://www.decortinasypersianas.co/tienda/enrrollable-blackout/",
+          "lastmod": "2023-05-12T02:33:24+00:00",
+          "priority": 0.64
+        }
+      ]
+    }
+  }
