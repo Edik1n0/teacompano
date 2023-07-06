@@ -1,0 +1,312 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
+{% block content %}
+{% load static %}
+<div class="img__baner">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Teacompaño CIS" class="img__banner--img">
+    {% endif %}
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Teacompaño CIS" class="img__banner--imgmov">
+    {% endif %}
+</div>
+
+<div class="servicios">
+    <div class="container migapan">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="servicios__header text-center container">
+        <h1 class="servicios__header--title"><strong>{{ pagetitle }}</strong></h1>
+        <h2 class="servicios__header--subtitle">{{ pageslogan }}</h2>
+    </div>
+
+    <div class="ser">
+
+        <div class="ser__body container">
+            <div class="ser__section">
+                <div class="ser__item">
+                    <div class="ser__item--square">
+                        <div class="ser__item--header">
+                            <h3 class="ser__item--title">
+                                Cuidados de Enfermería
+                            </h3>
+                        </div>
+                        <div class="ser__item--body">
+                            <a href="/formulario-solicitud" class="ser__item--link">Pedir cita</a>
+                        </div>
+                    </div>
+                    <div class="ser__item--info">
+                        <h4 class="item__info--title text-center">
+                            Cuidados de Enfermería
+                        </h4>
+                        <div class="ser__item--img">
+                            <img src="{% static '/img/servicios/servicio-b.jpg' %}" alt="Cuidados de Enfermería | Teacompaño CIS"
+                                class="item__info--img">
+                        </div>
+                        <div class="ser__item--desc">
+                            <p class="item__info--txt">
+                                Desde el área profesional acompañamos a nuestros pacientes en la recuperación de la
+                                salud y
+                                el reintegro a su vida familiar y social, brindando bienestar al paciente y tranquilidad
+                                a
+                                su familia.
+                            </p>
+                        </div>
+                        <div class="ser__item--mode">
+                            <div class="item__mode--title">
+                                <h4 class="mode__title--txt">
+                                    Modalidad
+                                </h4>
+                            </div>
+                            <ul class="item__mode--list">
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-user">
+                                        <p class="item__link--txt">
+                                            Presencial
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ser__item">
+                    <div class="ser__item--square">
+                        <div class="ser__item--header">
+                            <h3 class="ser__item--title">
+                                Psicología
+                            </h3>
+                        </div>
+                        <div class="ser__item--body">
+                            <a href="/formulario-solicitud" class="ser__item--link">Pedir cita</a>
+                        </div>
+                    </div>
+                    <div class="ser__item--info">
+                        <h4 class="item__info--title text-center">
+                            Psicología
+                        </h4>
+                        <div class="ser__item--img">
+                            <img src="{% static '/img/servicios/servicio-e.jpg' %}" alt="Consulta Psicológica | Teacompaño CIS"
+                                class="item__info--img">
+                        </div>
+                        <div class="ser__item--desc">
+                            <p class="item__info--txt">
+                                Buscamos contribuir en el mejoramiento y recuperación de la salud mental de nuestros
+                                pacientes y sus familias con profesionales capacitados para brindarle un amplio
+                                portafolio.
+                            </p>
+                        </div>
+                        <div class="ser__item--mode">
+                            <div clas="item__mode--title">
+                                <h4 class="mode__title--txt">
+                                    Modalidad
+                                </h4>
+                            </div>
+                            <ul class="item__mode--list">
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-user">
+                                        <p class="item__link--txt">
+                                            Presencial
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-phone">
+                                        <p class="item__link--txt">
+                                            Virtual
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ser__item">
+                    <div class="ser__item--square">
+                        <div class="ser__item--header">
+                            <h3 class="ser__item--title">
+                                Medicina General
+                            </h3>
+                        </div>
+                        <div class="ser__item--body">
+                            <a href="/formulario-solicitud" class="ser__item--link">Pedir cita</a>
+                        </div>
+                    </div>
+                    <div class="ser__item--info">
+                        <h4 class="item__info--title text-center">
+                            Medicina General
+                        </h4>
+                        <div class="ser__item--img">
+                            <img src="{% static '/img/servicios/servicio-a.jpg' %}" alt="Consulta médica | Teacompaño CIS"
+                                class="item__info--img">
+                        </div>
+                        <div class="ser__item--desc">
+                            <p class="item__info--txt">
+                                Nuestros médicos cuentan con un alto perfil profesional que buscan promover y
+                                preservar la salud, aliviar y reconfortar al paciente y su familia.
+                            </p>
+                        </div>
+                        <div class="ser__item--mode">
+                            <div clas="item__mode--title">
+                                <h4 class="mode__title--txt">
+                                    Modalidad
+                                </h4>
+                            </div>
+                            <ul class="item__mode--list">
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-user">
+                                        <p class="item__link--txt">
+                                            Presencial
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-phone">
+                                        <p class="item__link--txt">
+                                            Virtual
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="ser__item">
+                    <div class="ser__item--square">
+                        <div class="ser__item--header">
+                            <h3 class="ser__item--title">
+                                Nutrición
+                            </h3>
+                        </div>
+                        <div class="ser__item--body">
+                            <a href="/formulario-solicitud" class="ser__item--link">Pedir cita</a>
+                        </div>
+                    </div>
+                    <div class="ser__item--info">
+                        <h4 class="item__info--title text-center">
+                            Nutrición
+                        </h4>
+                        <div class="ser__item--img">
+                            <img src="{% static '/img/servicios/servicio-c.jpg' %}" alt="Consulta con Nutricionista | Teacompaño CIS"
+                                class="item__info--img">
+                        </div>
+                        <div class="ser__item--desc">
+                            <p class="item__info--txt">
+                                Encuentra con nuestros profesionales asesoría en nutrición y bienestar, en donde
+                                evaluamos
+                                las necesidades de cada paciente promoviendo estilos de vida saludable y acompañarlos en
+                                el
+                                cumplimiento de los objetivos deseados.
+                            </p>
+                        </div>
+                        <div class="ser__item--mode">
+                            <div clas="item__mode--title">
+                                <h4 class="mode__title--txt">
+                                    Modalidad
+                                </h4>
+                            </div>
+                            <ul class="item__mode--list">
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-user">
+                                        <p class="item__link--txt">
+                                            Presencial
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li class="mode__list--item">
+                                    <a href="" class="list__item--link icon-phone">
+                                        <p class="item__link--txt">
+                                            Virtual
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="ser__item">
+                    <div class="ser__item--square">
+                        <div class="ser__item--header">
+                            <h3 class="ser__item--title">
+                                Asesoría Jurídica
+                            </h3>
+                        </div>
+                        <div class="ser__item--body">
+                            <a href="/formulario-solicitud" class="ser__item--link">Pedir cita</a>
+                        </div>
+                    </div>
+                    <div class="ser__item--info">
+                        <h4 class="item__info--title text-center">
+                            Asesoría Jurídica
+                        </h4>
+                        <div class="ser__item--img">
+                            <img src="{% static '/img/servicios/servicio-d.jpg' %}" alt="Asesoría Jurídica en Salud | Teacompaño CIS"
+                                class="item__info--img">
+                        </div>
+                        <div class="ser__item--desc">
+                            <p class="item__info--txt">
+                                Brindamos acompañamiento y guiamos a nuestros usuarios en aquellas situaciones jurídicas
+                                y
+                                administrativas donde se requiera reafirmar su derecho a la salud.
+                            </p>
+                            <div class="ser__item--mode">
+                                <div clas="item__mode--title">
+                                    <h4 class="mode__title--txt">
+                                        Modalidad
+                                    </h4>
+                                </div>
+                                <ul class="item__mode--list">
+                                    <li class="mode__list--item">
+                                        <a href="" class="list__item--link icon-user">
+                                            <p class="item__link--txt">
+                                                Presencial
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class="mode__list--item">
+                                        <a href="" class="list__item--link icon-phone">
+                                            <p class="item__link--txt">
+                                                Virtual
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

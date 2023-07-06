@@ -1,0 +1,170 @@
+{% load static %}
+
+<div class="footer">
+    <div class="footer__title">
+        <h3 class="footer__title--item">
+            Su bienestar nuestro objetivo. Su tranquilidad nuestra responsabilidad
+        </h3>
+    </div>
+
+    <div class="footer__body container">
+
+        <div class="fb__section">
+            <div class="fb__section--title">
+                <h4 class="fbs__title text-center">
+                    Teacompaño CIS
+                </h4>
+            </div>
+            <div class="fb__section--body">
+                <a href="/" class="fbs__link">
+                    <img src="{% static '/img/logos/logo-completo.png' %}" alt="Logo Teacompaño CIS" class="fbs__logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="fb__section">
+            <div class="fb__section--title">
+                <h4 class="fbs__title">
+                    Conoce más
+                </h4>
+            </div>
+            <div class="fb__section--body">
+                <ul class="fbs__body--list">
+                    <li class="fbsbl__item">
+                        <a href="" class="fbsbl__link">Nosotros</a>
+                    </li>
+                    <li class="fbsbl__item">
+                        <a href="" class="fbsbl__link">Contacto</a>
+                    </li>
+                    <li class="fbsbl__item">
+                        <a href="" class="fbsbl__link">Trabaja con nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fb__section">
+            <div class="fb__section--title">
+                <h4 class="fbs__title">
+                    Alianzas
+                </h4>
+            </div>
+            <div class="fb__section--body">
+                <ul class="fbs__body--list">
+                    <li class="fbsbl__item">
+                        <a href="" class="fbsbl__link">Conoce nuestras alianzas</a>
+                    </li>
+                    <li class="fbsbl__item">
+                        <a href="" class="fbsbl__link">Pauta con nosotros</a>
+                    </li>
+                    <li class="fbsbl__item">
+                        <a href="" class="fbsbl__link">Escríbenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fb__section">
+            <div class="fb__section--title">
+                <h4 class="fbs__title">
+                    Información legal
+                </h4>
+            </div>
+
+            <div class="fb__section--body">
+                <ul class="fbs__body--list">
+                    <li class="fbsbl__item">
+                        <a href="/politica-privacidad" class="fbsbl__link">Política de privacidad</a>
+                    </li>
+                    <li class="fbsbl__item">
+                        <a href="/politica-cookies" class="fbsbl__link">Política de Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer__footer text-center w-100">
+        <p class="ff__txt">
+            Todos los derechos reservados | <a href="https://www.facebook.com/k1n0com" target="blank" rel="nofollow">K1n0c0m® 2021</a> | Medellín, Colombia
+        </p>
+    </div>
+</div>
+
+<!-- <footer class="footer">
+    <div class="container">
+        <div class="footer__section">
+            <h5 class="footer__section--title">Decortinas e Interiores</h5>
+            <a href="/" class="footer__section--logolink">
+                <img src="{% static 'img/logo-blanco-decortinas.png' %}" alt="" class="logolink__footer">
+            </a>
+        </div>
+
+        <div class="footer__section">
+            <h5 class="footer__section--title">Mapa de Sitio</h5>
+            <ul class="footer__section--map">
+                <div class="section__list--a">
+                    <li class="footer__section--list">
+                        <a href="{% url 'index' %}" class="footer__section--link icon-home"> Inicio</a>
+                    </li>
+                    <li class="footer__section--list">
+                        <a href="{% url 'nosotros' %}" class="footer__section--link icon-group"> Nosotros</a>
+                    </li>
+                    <li class="footer__section--list">
+                        <a href="{% url 'contacto' %}" class="footer__section--link icon-phone-2"> Contacto</a>
+                    </li>
+                </div>
+
+                <div class="section__list--a">
+                    <li class="footer__section--list">
+                        <a href="{% url 'cookies' %}" class="footer__section--link icon-docs"> Política de Cookies</a>
+                    </li>
+                    <li class="footer__section--list">
+                        <a href="{% url 'privacy' %}" class="footer__section--link icon-doc-text-inv"> Política de
+                            Privacidad</a>
+                    </li>
+                    <li class="footer__section--list">
+                        <a href="{% url 'servicios' %}" class="footer__section--link icon-diamond"> Otros Servicios</a>
+                    </li>
+                    <li class="footer__section--list">
+                        <a href="{% url 'pauta' %}" class="footer__section--link icon-megaphone"> Pauta con nosotros</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="footer__section">
+            <h5 class="footer__section--title">Encuéntranos fácilmente</h5>
+            <ul class="footer__section--contact">
+                <li class="footer__section--list">
+                    <a href="https://bit.ly/wpdecortinas" class="footer__section--link icon-whatsapp" target="_blank"
+                        rel="nofollow"> 301 634 4239</a>
+                </li>
+                <li class="footer__section--list">
+                    <a href="https://bit.ly/mpdecortinas" class="footer__section--link icon-location-circled"
+                        target="_blank" rel="nofollow"> Cr 62 #45b42 | Rionegro, Antioquia</a>
+                </li>
+            </ul>
+            <h5 class="footer__section--title">Síguenos</h5>
+            <ul class="footer__section--social">
+                <li class="footer__section--list">
+                    <a href="https://bit.ly/3KXCUqj" class="footer__section--link icon-facebook-squared" target="_blank"
+                        rel="nofollow"></a>
+                </li>
+                <li class="footer__section--list">
+                    <a href="https://bit.ly/igdecortinas" class="footer__section--link icon-instagram" target="_blank"
+                        rel="nofollow"></a>
+                </li>
+                <li class="footer__section--list">
+                    <a href="https://www.youtube.com/@decortinaseinteriores3203/"
+                        class="footer__section--link icon-youtube-1" target="_blank" rel="nofollow"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container atributo">
+        <p class="atributo__k1n0">Desarrollado por <a href="https://www.facebook.com/k1n0com" target="_blank"
+                rel="nofollow" class="atributo__k1n0--enlace">K1n0 C0m ®</a> | Medellín 2023</p>
+    </div>
+</footer> -->

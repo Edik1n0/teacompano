@@ -1,0 +1,87 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
+{% block content %}
+{% load static %}
+<div class="img__baner">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--img">
+    {% endif %}
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--imgmov">
+    {% endif %}
+</div>
+<div class="privacy">
+    <div class="container migapan">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="privacy__header text-center">
+        <h1 class="privacy__header--title" style="margin-top: 100px;"><strong>{{ pagetitle }}</strong></h1>
+        <h2 class="privacy__header--subtitle">{{ pageslogan }}</h2>
+    </div>
+
+    <div class="privacy__body container">
+        <div class="privacy__body--section">
+            <p class="body__sect--text">
+                En <strong>Decortinas y Persianas</strong>, valoramos La privacidad y confianza de nuestros clientes
+                son y asegurarnos
+                que
+                tengan conocimiento que la privacidad y protección de sus datos personales de acuerdo a nuestra Política
+                de
+                Privacidad y en estricto acatamiento a la <i>Resolución 2256 de 2020 sobre Política de Seguridad y
+                    Privacidad de la Información</i>, incluyendo la <i>Resolución 924 de 2020 sobre Políticas de
+                    Tratamiento
+                    de Datos Personales del Ministerio de las TIC</i> sobre las <strong>Condiciones de uso</strong> del
+                sitio web <strong><a href="https://www.decortinasypersianas.co/">decortinasypersianas.co</a></strong>, a
+                efecto de garantizar la
+                privacidad y el derecho a la protección de los datos de las personas.
+            </p>
+        </div>
+        <div class="privacy__body--section">
+            <h3 class="body__sect--title">Responsables del uso de datos personales | Decortinas y Persianas</h3>
+
+            <p class="body__sect--text">
+                En representación de la Agencia de Comunicación Digital Decortinas y Persianas S.A.S, firma
+                <strong>John
+                    Edison
+                    Múnera Bedoya</strong>, en la ciudad de Medellín el 13 de enero de 2021, con registro en la
+                <strong>Calle 1B #66-94</strong>
+            </p>
+        </div>
+        <div class="privacy__body--section">
+            <h3 class="body__sect--title">Condiciones de uso de datos | Decortinas y Persianas</h3>
+            <p class="body__sect--text">
+                Los datos personales de los usuarios registrados en la web <strong><a
+                        href="https://www.decortinasypersianas.co/">decortinasypersianas.co</a></strong> serán
+                necesarios para cumplir con los
+                objetivos planteados para prestar servicios de Comunicación Digital a toda clase de empresas
+                industriales, comerciales o de servicios.
+            </p>
+        </div>
+        <div class="privacy__body--section">
+            <h3 class="body__sect--title">Medios de atención | Decortinas y Persianas</h3>
+            <p class="body__sect--text">
+                En caso de que alguno de nuestros usuarios sienta que el tratamiento de sus datos personales, así como
+                cualquier otro derecho ha sido vulnerado, o que han sido utilizados para otros fines, favor de presentar
+                una solicitud por escrito dirigida a nuestro Departamento Jurídico a través del siguiente correo
+                electrónico: <a href="mailto:decortinaseinteriores@gmail.com" target="_blank"
+                    rel="nofollow"><strong>decortinaseinteriores@gmail.com</strong></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

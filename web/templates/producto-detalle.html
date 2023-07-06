@@ -1,0 +1,122 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ ogtitle }}{% endblock %}
+{% block ogdesc %}{{ ogdesc }}{% endblock %}
+{% block oguimg %}{{ oguimg }}{% endblock %}
+{% block ogurls %}{{ ogurl }}{% endblock %}
+{% block ogurlimg %}{{ ogurlimg }}{% endblock %}
+
+{% block mdescription %}{{ mdescription }}{% endblock %}
+{% block keywords %}{{ keywords }}{% endblock %}
+{% block title %}{{ titulo }}{% endblock %}
+
+{% block content %}
+
+
+<div class="img__baner">
+    {% if producto.productbanner %}
+    <img src="{{ producto.productbanner.url }}" alt="{{producto.productname}}" class="img__banner--img">
+    {% endif %}
+    {% if producto.productbannermov %}
+    <img src="{{ producto.productbannermov.url }}" alt="{{producto.productname}}" class="img__banner--imgmov">
+    {% endif %}
+</div>
+
+<div class="detalle">
+    <div class="container migapan">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'tienda' %}">Tienda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{producto.productname}}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="detalle__header text-center">
+        <h1 class="detalle__header--title"><strong>{{producto.productname}}</strong></h1>
+        <h2 class="detalle__header--subtitle">{{producto.productslogan}}</h2>
+    </div>
+
+    <div class="detalle__body container">
+        {% if producto.productimg %}
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <img src="{{ producto.productimg.url }}" alt="{{producto.productname}}" class="d-block w-100"> -->
+                    <img src="{{ producto.productimg.url }}" alt="{{producto.productname}}" class="img__carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ producto.gallerya.url }}" alt="{{producto.productname}}" class="img__carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ producto.galleryb.url }}" alt="{{producto.productname}}" class="img__carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ producto.galleryc.url }}" alt="{{producto.productname}}" class="img__carousel">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- <img src="{{ producto.productimg.url }}" alt="{{producto.productname}}" class="detalle__body--img"> -->
+        {% endif %}
+        <!-- <p class="producto__descuento"><strong>{{producto.productdiscount}}% dcto.</strong></p> -->
+        <div class="detalle__body--description">
+            <p class="body__description">{{producto.productdescription | safe}}</p>
+            <div class="body__description--prices">
+                {% if producto.productdiscount > 0 %}
+                <p class="product__discount text-center">
+                    <strong class="producto__descuento text-center">{{producto.productdiscount}}<br>% dcto.</strong>
+                </p>
+                {% endif %}
+                <ul class="product__details">
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Entrega a domicilio
+                    </li>
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Pago contraentrega
+                    </li>
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Instalación sin costo
+                    </li>
+                    <li class="product__details--item"><strong class="icon-ok-circled2"></strong> Asesoría para el
+                        mantenimiento</li>
+                </ul>
+                {% if producto.productoldprice > 0 %}
+                <p class="producto_oldprice"><strong>Antes: </strong>
+                    <i class="oldprice">${{producto.productoldprice|floatformat:0}} COP (m²)</i>
+                </p>
+                <p class="producto__newprice"><strong>Ahora: </strong>
+                    <i class="newprice">${{producto.productprice|floatformat:0}} COP (m²)</i><br>
+                    <i class="priceadv">El precio final puede variar según especificaciones</i>
+                </p>
+                {% else %}
+                <p class="producto__else">Consulta precios vía WhatsApp:</p>
+                {% endif %}
+            </div>
+            <div class="body__description--footer">
+                <a href="https://bit.ly/wpdecortinas" class="buy__button icon-whatsapp" target="_blank"
+                    rel="nofollow">¡Comprar ahora!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'partials/promo.html' %}
+
+{% endblock %}

@@ -1,0 +1,177 @@
+{% load static %}
+<div class="comments">
+    <div class="comments__header container text-center">
+        <h3 class="comments__header--title"><strong>Zona de Comentarios</strong></h3>
+        <p class="comments__header--subtitle">Conoce las opiniones de nuestros clientes</p>
+    </div>
+    <div class="comments__body">
+        <div id="carouselExampleAutoplaying" data-bs-ride="carousel" class="carousel slide">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                {% for comment in comments %}
+                <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="usercomment container">
+                        <div class="uc__header">
+                            {% if comment.commentimg %}
+                            <img src="{{ comment.commentimg.url }}" alt="Comentario de {{ comment.commentname }}"
+                                class="uc__header--img">
+                            {% endif %}
+                            <h4 class="uc__header--name">{{ comment.commentname }}</h4>
+                            <p class="uc__header--place">{{ comment.commentplace }}</p>
+                        </div>
+                        <div class="uc__body">
+                            <div class="uc__body--txt">
+                                <p class="ucb__txt--desc">
+                                    <i>{{comment.commentdescription | safe}}</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="uc__footer">
+                            <div class="uc__footer--qualify">
+                                <!-- If 5 estrellas -->
+                                {% if comment.commentqualify == 5 %}
+                                <ul class="qualify">
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                </ul>
+                                <!-- If 4 estrellas -->
+                                {% elif comment.commentqualify == 4 %}
+                                <ul class="qualify">
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                </ul>
+                                <!-- If 3 estrellas -->
+                                {% elif comment.commentqualify == 3 %}
+                                <ul class="qualify">
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                </ul>
+                                <!-- If 2 estrellas -->
+                                {% elif comment.commentqualify == 2 %}
+                                <ul class="qualify">
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                </ul>
+                                <!-- If 1 estrellas -->
+                                {% elif comment.commentqualify == 1 %}
+                                <ul class="qualify">
+                                    <li class="qualify__item">
+                                        <i class="icon-star"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                    <li class="qualify__item">
+                                        <i class="icon-star-empty"></i>
+                                    </li>
+                                </ul>
+                                {% else %}
+                                <p>Calificación no especificada</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="comments__inv text-center">
+            <div class="cinv__header">
+                <h4 class="cinv__header--title">Tu opinión es importante para nosotros</h4>
+            </div>
+            <div class="cinv__body">
+                <ul class="cinv__list">
+                    <li class="cinv__item">
+                        <a href="https://bit.ly/mpdecortinas" target="_blank" rel="nofollow" class="cinv__link icon-google"></a>
+                    </li>
+                    <li class="cinv__item">
+                        <a href="https://bit.ly/cmfbdecortinas" target="_blank" rel="nofollow" class="cinv__link icon-facebook-squared"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

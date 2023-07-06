@@ -1,0 +1,22 @@
+{% extends 'base/index.html' %}
+
+{% block content %}
+{% load static %}
+<div class="error container">
+    <div class="error__heade text-center">
+        <h1 class="error__header--title">La página que estás buscando no existe</h1>
+        <h2 class="error__header--subtitle">La url especificada tal vez haya cambiado</h2>
+    </div>
+    <div class="error__body container">
+        <img src="{% static 'img/error-404.png' %}" alt="" class="error__body--img">
+        <p class="error__body--txt">
+            Revisa la url que has escrito o revisa nuestro menú de opciones para ayudarte
+            a encontrar lo que estás buscando.<br>
+
+            <br>También puedes regresar directamente a la página de Inicio haciendo clic
+            <a class="error__body--link" href="{% url 'index' %}"><strong>Aquí</strong></a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

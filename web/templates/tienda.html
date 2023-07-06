@@ -1,0 +1,73 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
+{% block content %}
+{% load static %}
+<div class="img__baner">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--img">
+    {% endif %}
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Decortinas y Persianas" class="img__banner--imgmov">
+    {% endif %}
+</div>
+<div class="tienda">
+    <div class="container migapan">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="tienda__header text-center">
+            <h1 class="tienda__header--title"><strong>{{ pagetitle }}</strong></h1>
+            <h2 class="tienda__header__subtitle">{{ pageslogan }}</h2>
+        </div>
+
+        <ul class="container tienda__listado">
+            {% for producto in productos %}
+            <li class="tienda__item">
+                <div class="card text-center" style="width: 18rem;">
+                    {% if producto.productimg %}
+                    <img src="{{ producto.productimg.url }}" class="card-img-top" alt="{{producto.productname}}">
+                    {% endif %}
+                    {% if producto.productdiscount > 0 %}
+                    <p class="producto__descuento"><strong>{{producto.productdiscount}}% dcto.</strong></p>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>{{producto.productname}}</strong></h5>
+                        {% if producto.productoldprice > 0 %}
+                        <div class="container card-price">
+                            <p class="producto_oldprice"><strong>Antes: </strong><i
+                                    class="oldprice">${{producto.productoldprice|floatformat:0}} COP (m²)</i></p>
+                            <p class="producto__newprice"><strong>Ahora: </strong><i
+                                    class="newprice">${{producto.productprice|floatformat:0}} COP (m²)</i>
+                            </p>
+                        </div>
+                        {% else %}
+                        <div class="container card-price">
+                            <p class="producto__else"><strong>Consulta precios vía <a href="https://bit.ly/wpdecortinas"
+                                target="_blank" rel="nofollow" class="producto__else--wp">WhatsApp</a></strong></p>
+                        </div>
+                        {% endif %}
+                        <a class="button__product" href="{% url 'product_detail' producturl=producto.producturl %}">Ver más</a>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% include 'partials/promo.html' %}
+
+{% endblock %}

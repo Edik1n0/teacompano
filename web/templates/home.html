@@ -1,0 +1,65 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
+{% block content %}
+{% load static %}
+<div class="home">
+    <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="{% static 'img/banner-ejemplo.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'img/banner-ejemplo-b.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/banner-ejemplo-c.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+    
+    {% include 'partials/carrusel.html' %}
+
+    <div class="estado__movil">
+        {% if videourl %}
+        <iframe src="https://www.youtube.com/embed/{{ videourl }}" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/xXLujA9XNxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        {% else %}
+        <img src="{% static 'img/img-video.jpg' %}" alt="" class="estado__movil--img">
+        {% endif %}
+    </div>
+
+    {% include 'partials/intro.html' %}
+
+    {% include 'partials/destacados.html' %}
+
+    {% include 'partials/claims.html' %}
+
+    {% include 'partials/contacto.html' %}
+
+    {% include 'partials/alianzas.html' %}
+
+    {% include 'partials/social.html' %}
+
+</div>
+
+{% endblock %}
