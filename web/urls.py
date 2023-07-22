@@ -14,7 +14,7 @@ urlpatterns = [
     # path('tienda/<slug:producturl>/', ProductDetailView.as_view(), name='product_detail'),
     path('servicios/', views.servicios, name="servicios"),
     path('pauta/', views.pauta, name="pauta"),
-    path('cookies/', views.cookies, name="cookies"),
-    path('privacy/', views.privacy, name="privacy"),
+    path('politica-cookies/', views.cookies, name="cookies"),
+    path('politica-privacidad/', views.privacy, name="privacy"),
     path("robots.txt", views.robots, name="robots"),
 ]

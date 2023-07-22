@@ -74,7 +74,6 @@ def pauta(request):
 
 def cookies(request):
     pagina_cookies = get_object_or_404(Pagina, pagename='Cookies')
-    comments = Comment.objects.all()
     pageslogan = pagina_cookies.pageslogan
     pagetitle = pagina_cookies.pagetitle
     pagename = pagina_cookies.pagename
@@ -108,7 +107,6 @@ def cookies(request):
 
 def privacy(request):
     pagina_privacy = get_object_or_404(Pagina, pagename='Privacy')
-    comments = Comment.objects.all()
     pageslogan = pagina_privacy.pageslogan
     pagetitle = pagina_privacy.pagetitle
     pagename = pagina_privacy.pagename
