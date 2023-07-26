@@ -148,22 +148,18 @@ def index(request):
     pagebanner = pagina_home.pagebanner
     pagebannermov = pagina_home.pagebannermov
     pagemetatitle = pagina_home.pagemetatitle
-    pageogtitle = pagina_home.pageogtitle
-    pageogdesc = pagina_home.pageogdesc
     pagekeywords = pagina_home.pagekeywords
     pagemetadesc = pagina_home.pagemetadesc
     pageogurl = pagina_home.pageogurl
     pageogimg = pagina_home.pageogimg
     pageogurlsec = pagina_home.pageogurlsec
     context= {
-        'pageogtitle': pageogtitle,
         'pageslogan': pageslogan,
         'pagetitle': pagetitle,
         'pagename': pagename,
         'pagebanner': pagebanner,
         'pagebannermov': pagebannermov,
         'pagemetatitle': pagemetatitle,
-        'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
         'pageogurl': pageogurl,
