@@ -144,6 +144,7 @@ def index(request):
     pagina_home = get_object_or_404(Pagina, pagename='Home')
     pageslogan = pagina_home.pageslogan
     pagetitle = pagina_home.pagetitle
+    pageogdesc = pagina_home.pageogdesc
     pagename = pagina_home.pagename
     pagebanner = pagina_home.pagebanner
     pagebannermov = pagina_home.pagebannermov
@@ -154,6 +155,7 @@ def index(request):
     pageogimg = pagina_home.pageogimg
     pageogurlsec = pagina_home.pageogurlsec
     context= {
+        'pageogdesc':pageogdesc,
         'pageslogan': pageslogan,
         'pagetitle': pagetitle,
         'pagename': pagename,
