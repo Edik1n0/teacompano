@@ -45,7 +45,6 @@ def pauta(request):
     pagebanner = pagina_pauta.pagebanner
     pagebannermov = pagina_pauta.pagebannermov
     pagemetatitle = pagina_pauta.pagemetatitle
-    pageogtitle = pagina_pauta.pageogtitle
     pageogdesc = pagina_pauta.pageogdesc
     pagekeywords = pagina_pauta.pagekeywords
     pagemetadesc = pagina_pauta.pagemetadesc
@@ -55,7 +54,6 @@ def pauta(request):
     return render(request, 'pauta.html', {
         'pagina': pagina_pauta,
         'pagemetatitle': pagemetatitle,
-        'pageogtitle': pageogtitle,
         'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
@@ -78,7 +76,6 @@ def cookies(request):
     pagebanner = pagina_cookies.pagebanner
     pagebannermov = pagina_cookies.pagebannermov
     pagemetatitle = pagina_cookies.pagemetatitle
-    pageogtitle = pagina_cookies.pageogtitle
     pageogdesc = pagina_cookies.pageogdesc
     pagekeywords = pagina_cookies.pagekeywords
     pagemetadesc = pagina_cookies.pagemetadesc
@@ -88,7 +85,6 @@ def cookies(request):
     return render(request, 'cookies.html', {
         'pagina': pagina_cookies,
         'pagemetatitle': pagemetatitle,
-        'pageogtitle': pageogtitle,
         'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
@@ -111,7 +107,6 @@ def privacy(request):
     pagebanner = pagina_privacy.pagebanner
     pagebannermov = pagina_privacy.pagebannermov
     pagemetatitle = pagina_privacy.pagemetatitle
-    pageogtitle = pagina_privacy.pageogtitle
     pageogdesc = pagina_privacy.pageogdesc
     pagekeywords = pagina_privacy.pagekeywords
     pagemetadesc = pagina_privacy.pagemetadesc
@@ -121,7 +116,6 @@ def privacy(request):
     return render(request, 'privacy.html', {
         'pagina': pagina_privacy,
         'pagemetatitle': pagemetatitle,
-        'pageogtitle': pageogtitle,
         'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
@@ -177,7 +171,6 @@ def contacto(request):
     pagebanner = pagina_contacto.pagebanner
     pagebannermov = pagina_contacto.pagebannermov
     pagemetatitle = pagina_contacto.pagemetatitle
-    pageogtitle = pagina_contacto.pageogtitle
     pageogdesc = pagina_contacto.pageogdesc
     pagekeywords = pagina_contacto.pagekeywords
     pagemetadesc = pagina_contacto.pagemetadesc
@@ -187,7 +180,6 @@ def contacto(request):
     return render(request, 'contacto.html', {
         'pagina': pagina_contacto,
         'pagemetatitle': pagemetatitle,
-        'pageogtitle': pageogtitle,
         'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
