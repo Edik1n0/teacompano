@@ -19972,3 +19972,94 @@ File C:\Python311\Lib\site-packages\whitenoise\compress.py first seen with mtime
 File C:\Python311\Lib\site-packages\django\template\context_processors.py first seen with mtime 1674615474.1399715
 File C:\Python311\Lib\site-packages\whitenoise\storage.py first seen with mtime 1674935812.2059474
 File C:\Python311\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1674615473.0324316
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\servicios.html previous mtime: 1690400854.2914376, current mtime: 1690401073.481724
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\servicios.html notified as changed. Signal results: [(<function template_changed at 0x00000215543991C0>, True), (<function translation_file_changed at 0x0000021555852B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\servicios.html previous mtime: 1690401073.481724, current mtime: 1690401115.3459835
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\servicios.html notified as changed. Signal results: [(<function template_changed at 0x00000215543991C0>, True), (<function translation_file_changed at 0x0000021555852B60>, None)].
+(0.094) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Servicios' LIMIT 21; args=('Servicios',); alias=default
+"GET /servicios/ HTTP/1.1" 200 30036
+"GET /static/img/servicios/servicio-c.jpg HTTP/1.1" 304 0
+"GET /nosotros HTTP/1.1" 301 0
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Nosotros' LIMIT 21; args=('Nosotros',); alias=default
+"GET /nosotros/ HTTP/1.1" 200 29287
+"GET /static/img/nosotros/docotor-sebastian.png HTTP/1.1" 200 356406
+"GET /static/img/nosotros/docotor-lina.png HTTP/1.1" 200 958863
+"GET /static/img/nosotros/docotor-a.png HTTP/1.1" 200 795168
+"GET /static/img/nosotros/nos-vision.png HTTP/1.1" 200 835659
+"GET /static/img/nosotros/nos-valores.png HTTP/1.1" 200 728756
+"GET /static/img/nosotros/nos-mision.png HTTP/1.1" 200 6601745
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:54:54.196471+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 54, 54, 196471, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.187) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.188) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'web' AND "django_content_type"."model" = 'pagina') LIMIT 21; args=('web', 'pagina'); alias=default
+"GET /admin/web/pagina/2/change/ HTTP/1.1" 200 15719
+(0.141) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:54:55.635709+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 54, 55, 635709, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+File C:\Python311\Lib\importlib\resources\readers.py first seen with mtime 1670375370.0
+(0.156) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+File C:\Python311\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\zipfile.py first seen with mtime 1670375372.0
+File C:\Python311\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1674615469.9812696
+File C:\Python311\Lib\site-packages\tzdata\__init__.py first seen with mtime 1674615469.954711
+File C:\Python311\Lib\importlib\readers.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\importlib\resources\_itertools.py first seen with mtime 1670375370.0
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern '' [name='index']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'contacto/' [name='contacto']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'nosotros/' [name='nosotros']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'servicios/' [name='servicios']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'pauta/' [name='pauta']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'politica-cookies/' [name='cookies']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'politica-privacidad/' [name='privacy']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'robots.txt' [name='robots']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3501
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T20:00:41.393741+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 20, 0, 41, 393741, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.203) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.094) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2023-07-26T20:00:42.654017+00:00'::timestamptz, 1, 8, '2', 'Nosotros', 2, '[{"changed": {"fields": ["Metat\u00edtulo(title) de la p\u00e1gina", "T\u00edtulo(h1) de la p\u00e1gina", "Slogan(h2) de la p\u00e1gina", "Meta descripci\u00f3n de la p\u00e1gina", "Palabras clave de la p\u00e1gina", "Descripci\u00f3n OG de la p\u00e1gina", "Url OG de la p\u00e1gina"]}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2023, 7, 26, 20, 0, 42, 654017, tzinfo=datetime.timezone.utc), 1, 8, '2', 'Nosotros', 2, '[{"changed": {"fields": ["Metat\\u00edtulo(title) de la p\\u00e1gina", "T\\u00edtulo(h1) de la p\\u00e1gina", "Slogan(h2) de la p\\u00e1gina", "Meta descripci\\u00f3n de la p\\u00e1gina", "Palabras clave de la p\\u00e1gina", "Descripci\\u00f3n OG de la p\\u00e1gina", "Url OG de la p\\u00e1gina"]}}]'); alias=default
+"POST /admin/web/pagina/2/change/ HTTP/1.1" 302 0
+(0.109) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T20:00:42.864381+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 20, 0, 42, 864381, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.203) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 2 LIMIT 21; args=(2,); alias=default
+"GET /admin/web/pagina/2/change/ HTTP/1.1" 200 16398
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T20:00:44.172186+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 20, 0, 44, 172186, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
