@@ -18728,3 +18728,259 @@ File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials
                 AND pg_catalog.pg_table_is_visible(c.oid)
         ; args=None; alias=default
 (0.094) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+File C:\Python311\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1674615474.0145652
+File C:\Python311\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\PIL\_util.py first seen with mtime 1682129550.5273342
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\cffi\lock.py first seen with mtime 1674533040.182334
+File C:\Python311\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1674615472.4011543
+File C:\Python311\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1674615474.0145652
+File C:\Python311\Lib\encodings\idna.py first seen with mtime 1670375370.0
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0007_remove_pagina_pageogdesc_remove_pagina_pageogtitle.py first seen with mtime 1690392385.2914045
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1674615472.4011543
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1674615474.045813
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1674615472.2008247
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\__init__.py first seen with mtime 1686757810.2772963
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\cffi\error.py first seen with mtime 1674533040.182334
+File C:\Python311\Lib\site-packages\cffi\__init__.py first seen with mtime 1674533040.166712
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0008_pagina_pageogdesc.py first seen with mtime 1690397555.8472486
+File C:\Python311\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1674615473.0324316
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0006_remove_pagina_pagebanner_delete_imagen_and_more.py first seen with mtime 1690391491.7680213
+File C:\Python311\Lib\site-packages\PIL\_deprecate.py first seen with mtime 1682129550.497406
+File C:\Python311\Lib\site-packages\whitenoise\__init__.py first seen with mtime 1674935812.199343
+File C:\Python311\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1674615473.702736
+File C:\Python311\Lib\site-packages\whitenoise\middleware.py first seen with mtime 1674935812.203946
+File C:\Python311\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1674615472.0004022
+File C:\Python311\Lib\site-packages\PIL\_binary.py first seen with mtime 1682129550.497406
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1674615472.2008247
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0003_alter_pagina_pagebanner_alter_pagina_pagebannermov.py first seen with mtime 1688649835.9770825
+File C:\Python311\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\django\middleware\common.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\whitenoise\string_utils.py first seen with mtime 1674935812.2069607
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0001_initial.py first seen with mtime 1686760346.036634
+File C:\Python311\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1674615471.9938679
+File C:\Python311\Lib\site-packages\cffi\api.py first seen with mtime 1674533040.166712
+File C:\Python311\Lib\site-packages\whitenoise\media_types.py first seen with mtime 1674935812.2029462
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\stringprep.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1674615472.2138338
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1674615471.6622846
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0002_pagina_pagebanner_pagina_pagebannermov.py first seen with mtime 1686773283.6552682
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1674615473.702736
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0004_alter_pagina_pagemetadesc.py first seen with mtime 1690386002.4313595
+File C:\Python311\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1674615474.0145652
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\migrations\0005_imagen_remove_pagina_pagebanner_pagina_pagebanner.py first seen with mtime 1690386833.4889014
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1674615473.514369
+File C:\Python311\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1674615472.4011543
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1674615472.2008247
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\teacompanocis\wsgi.py first seen with mtime 1686757221.6545014
+File C:\Python311\Lib\site-packages\django\middleware\security.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\whitenoise\base.py first seen with mtime 1674935812.2009454
+File C:\Python311\Lib\site-packages\PIL\_imaging.cp311-win_amd64.pyd first seen with mtime 1682129550.509237
+File C:\Python311\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1674615471.6622846
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1674615473.9065704
+File C:\Python311\Lib\site-packages\whitenoise\responders.py first seen with mtime 1674935812.203946
+File C:\Python311\Lib\site-packages\django\views\csrf.py first seen with mtime 1674615474.2184744
+File C:\Python311\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1674615472.2008247
+File C:\Python311\Lib\site-packages\cffi\model.py first seen with mtime 1674533040.182334
+File C:\Python311\Lib\site-packages\PIL\TiffTags.py first seen with mtime 1682129550.4922714
+File C:\Python311\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1674615474.0145652
+(0.094) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Nosotros' LIMIT 21; args=('Nosotros',); alias=default
+"GET /nosotros/ HTTP/1.1" 200 29263
+"GET /static/img/nosotros/docotor-sebastian.png HTTP/1.1" 200 356406
+"GET /static/img/nosotros/docotor-a.png HTTP/1.1" 200 795168
+"GET /static/img/nosotros/docotor-lina.png HTTP/1.1" 200 958863
+"GET /static/img/nosotros/nos-vision.png HTTP/1.1" 200 835659
+"GET /static/img/nosotros/nos-valores.png HTTP/1.1" 200 728756
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\whitenoise\compress.py first seen with mtime 1674935812.2019668
+File C:\Python311\Lib\site-packages\whitenoise\storage.py first seen with mtime 1674935812.2059474
+File C:\Python311\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1674615472.0004022
+File C:\Python311\Lib\site-packages\django\template\context_processors.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1674615473.514369
+"GET /static/img/nosotros/nos-mision.png HTTP/1.1" 200 6601745
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:26:23.859181+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 26, 23, 859181, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.109) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.109) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.094) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.109) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" ORDER BY "web_pagina"."id" DESC; args=(); alias=default
+"GET /admin/web/pagina/ HTTP/1.1" 200 8085
+File C:\Python311\Lib\importlib\resources\_itertools.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\zipfile.py first seen with mtime 1670375372.0
+File C:\Python311\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\importlib\resources\readers.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\tzdata\__init__.py first seen with mtime 1674615469.954711
+File C:\Python311\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1674615469.9812696
+File C:\Python311\Lib\importlib\readers.py first seen with mtime 1670375370.0
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:26:25.211254+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 26, 25, 211254, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.093) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:26:28.063215+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 26, 28, 63215, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.219) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 2 LIMIT 21; args=(2,); alias=default
+(0.093) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'web' AND "django_content_type"."model" = 'pagina') LIMIT 21; args=('web', 'pagina'); alias=default
+"GET /admin/web/pagina/2/change/ HTTP/1.1" 200 15691
+(0.125) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:26:29.421748+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 26, 29, 421748, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.172) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:27:17.297420+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 27, 17, 297420, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.157) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.187) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 2 LIMIT 21; args=(2,); alias=default
+File C:\Python311\Lib\site-packages\PIL\ImageFile.py first seen with mtime 1682129550.462454
+File C:\Python311\Lib\site-packages\PIL\MpoImagePlugin.py first seen with mtime 1682129550.4797804
+File C:\Python311\Lib\site-packages\PIL\ImImagePlugin.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\MpegImagePlugin.py first seen with mtime 1682129550.47878
+File C:\Python311\Lib\site-packages\PIL\GribStubImagePlugin.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\PaletteFile.py first seen with mtime 1682129550.4807794
+File C:\Python311\Lib\site-packages\PIL\ImageColor.py first seen with mtime 1682129550.4604552
+File C:\Python311\Lib\site-packages\PIL\IcnsImagePlugin.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\JpegPresets.py first seen with mtime 1682129550.4776814
+File C:\Python311\Lib\site-packages\PIL\GifImagePlugin.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\FtexImagePlugin.py first seen with mtime 1682129550.4511168
+File C:\Python311\Lib\site-packages\PIL\GbrImagePlugin.py first seen with mtime 1682129550.4519348
+File C:\Python311\Lib\site-packages\PIL\SunImagePlugin.py first seen with mtime 1682129550.490271
+File C:\Python311\Lib\site-packages\PIL\ImtImagePlugin.py first seen with mtime 1682129550.4746811
+File C:\Python311\Lib\site-packages\PIL\MspImagePlugin.py first seen with mtime 1682129550.4797804
+File C:\Python311\Lib\site-packages\PIL\ImageSequence.py first seen with mtime 1682129550.4716823
+File C:\Python311\Lib\site-packages\PIL\PngImagePlugin.py first seen with mtime 1682129550.4857433
+File C:\Python311\Lib\site-packages\PIL\SpiderImagePlugin.py first seen with mtime 1682129550.4892657
+File C:\Python311\Lib\site-packages\PIL\PdfImagePlugin.py first seen with mtime 1682129550.4837794
+File C:\Python311\Lib\site-packages\PIL\BlpImagePlugin.py first seen with mtime 1682129550.4428627
+File C:\Python311\Lib\site-packages\PIL\features.py first seen with mtime 1682129550.5273342
+File C:\Python311\Lib\site-packages\PIL\IptcImagePlugin.py first seen with mtime 1682129550.4756808
+File C:\Python311\Lib\site-packages\boto3\s3\inject.py first seen with mtime 1683142636.2933395
+File C:\Python311\Lib\site-packages\PIL\IcoImagePlugin.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\PsdImagePlugin.py first seen with mtime 1682129550.487259
+File C:\Python311\Lib\site-packages\PIL\_webp.cp311-win_amd64.pyd first seen with mtime 1682129550.5273342
+File C:\Python311\Lib\site-packages\PIL\JpegImagePlugin.py first seen with mtime 1682129550.4766815
+File C:\Python311\Lib\site-packages\PIL\McIdasImagePlugin.py first seen with mtime 1682129550.4776814
+File C:\Python311\Lib\site-packages\PIL\SgiImagePlugin.py first seen with mtime 1682129550.4892657
+File C:\Python311\Lib\site-packages\PIL\XVThumbImagePlugin.py first seen with mtime 1682129550.4933455
+File C:\Python311\Lib\site-packages\PIL\DcxImagePlugin.py first seen with mtime 1682129550.4458594
+File C:\Python311\Lib\site-packages\PIL\PcxImagePlugin.py first seen with mtime 1682129550.4837794
+File C:\Python311\Lib\site-packages\PIL\FliImagePlugin.py first seen with mtime 1682129550.449372
+File C:\Python311\Lib\site-packages\PIL\Hdf5StubImagePlugin.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\XpmImagePlugin.py first seen with mtime 1682129550.4933455
+File C:\Python311\Lib\site-packages\PIL\BmpImagePlugin.py first seen with mtime 1682129550.4438612
+File C:\Python311\Lib\site-packages\PIL\EpsImagePlugin.py first seen with mtime 1682129550.4473648
+File C:\Python311\Lib\site-packages\PIL\PalmImagePlugin.py first seen with mtime 1682129550.4817793
+File C:\Python311\Lib\site-packages\PIL\PpmImagePlugin.py first seen with mtime 1682129550.4867532
+File C:\Python311\Lib\site-packages\PIL\WebPImagePlugin.py first seen with mtime 1682129550.4933455
+File C:\Python311\Lib\site-packages\PIL\TiffImagePlugin.py first seen with mtime 1682129550.4922714
+File C:\Python311\Lib\site-packages\PIL\DdsImagePlugin.py first seen with mtime 1682129550.4458594
+File C:\Python311\Lib\site-packages\PIL\GimpGradientFile.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\PdfParser.py first seen with mtime 1682129550.4847815
+File C:\Python311\Lib\site-packages\PIL\BufrStubImagePlugin.py first seen with mtime 1682129550.4448605
+File C:\Python311\Lib\site-packages\PIL\Jpeg2KImagePlugin.py first seen with mtime 1682129550.4766815
+File C:\Python311\Lib\site-packages\PIL\CurImagePlugin.py first seen with mtime 1682129550.4458594
+File C:\Python311\Lib\site-packages\PIL\QoiImagePlugin.py first seen with mtime 1682129550.488266
+File C:\Python311\Lib\fractions.py first seen with mtime 1670375370.0
+File C:\Python311\Lib\site-packages\PIL\ImageOps.py first seen with mtime 1682129550.4686878
+File C:\Python311\Lib\site-packages\PIL\ImagePalette.py first seen with mtime 1682129550.4696953
+File C:\Python311\Lib\site-packages\PIL\PcdImagePlugin.py first seen with mtime 1682129550.4817793
+File C:\Python311\Lib\site-packages\PIL\ImageChops.py first seen with mtime 1682129550.4576504
+File C:\Python311\Lib\site-packages\PIL\GimpPaletteFile.py first seen with mtime 1682129550.4531436
+File C:\Python311\Lib\site-packages\PIL\PixarImagePlugin.py first seen with mtime 1682129550.4857433
+File C:\Python311\Lib\site-packages\PIL\WmfImagePlugin.py first seen with mtime 1682129550.4933455
+File C:\Python311\Lib\site-packages\PIL\TgaImagePlugin.py first seen with mtime 1682129550.491271
+File C:\Python311\Lib\site-packages\PIL\FitsStubImagePlugin.py first seen with mtime 1682129550.449372
+File C:\Python311\Lib\site-packages\PIL\XbmImagePlugin.py first seen with mtime 1682129550.4933455
+File C:\Python311\Lib\site-packages\PIL\FitsImagePlugin.py first seen with mtime 1682129550.4483726
+(0.109) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2023-07-26T19:27:20.901301+00:00'::timestamptz, 1, 8, '2', 'Nosotros', 2, '[{"changed": {"fields": ["Meta descripci\u00f3n de la p\u00e1gina", "Imagen Banner de la p\u00e1gina"]}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2023, 7, 26, 19, 27, 20, 901301, tzinfo=datetime.timezone.utc), 1, 8, '2', 'Nosotros', 2, '[{"changed": {"fields": ["Meta descripci\\u00f3n de la p\\u00e1gina", "Imagen Banner de la p\\u00e1gina"]}}]'); alias=default
+"POST /admin/web/pagina/2/change/ HTTP/1.1" 302 0
+(0.110) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:27:21.130174+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 27, 21, 130174, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.109) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.203) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 2 LIMIT 21; args=(2,); alias=default
+"GET /admin/web/pagina/2/change/ HTTP/1.1" 200 15947
+(0.109) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:27:22.466088+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 27, 22, 466088, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.094) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Nosotros' LIMIT 21; args=('Nosotros',); alias=default
+"GET /nosotros/ HTTP/1.1" 200 29287
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:09.037357+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 9, 37357, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.093) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.094) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.093) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" ORDER BY "web_pagina"."id" DESC; args=(); alias=default
+"GET /admin/web/pagina/ HTTP/1.1" 200 8085
+(0.109) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:10.300369+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 10, 300369, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.109) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:12.911170+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 12, 911170, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.078) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.188) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 3 LIMIT 21; args=(3,); alias=default
+"GET /admin/web/pagina/3/change/ HTTP/1.1" 200 16833
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:14.203089+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 14, 203089, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:32.352134+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 32, 352134, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.219) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 3 LIMIT 21; args=(3,); alias=default
+(0.094) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2023-07-26T19:33:33.689213+00:00'::timestamptz, 1, 8, '3', 'Servicios', 2, '[{"changed": {"fields": ["Descripci\u00f3n OG de la p\u00e1gina"]}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2023, 7, 26, 19, 33, 33, 689213, tzinfo=datetime.timezone.utc), 1, 8, '3', 'Servicios', 2, '[{"changed": {"fields": ["Descripci\\u00f3n OG de la p\\u00e1gina"]}}]'); alias=default
+"POST /admin/web/pagina/3/change/ HTTP/1.1" 302 0
+(0.078) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:33.906578+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 33, 906578, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.078) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.078) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.093) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" ORDER BY "web_pagina"."id" DESC; args=(); alias=default
+"GET /admin/web/pagina/ HTTP/1.1" 200 8285
+(0.109) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:33:35.099156+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 33, 35, 99156, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.078) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:36:08.335562+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 36, 8, 335562, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.188) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/web/pagina/1/change/ HTTP/1.1" 200 16318
+(0.078) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:36:09.631384+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 36, 9, 631384, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.110) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+(0.110) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:36:24.457371+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 36, 24, 457371, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.078) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.187) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.078) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2023-07-26T19:36:25.643591+00:00'::timestamptz, 1, 8, '1', 'Home', 2, '[{"changed": {"fields": ["Slogan(h2) de la p\u00e1gina"]}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2023, 7, 26, 19, 36, 25, 643591, tzinfo=datetime.timezone.utc), 1, 8, '1', 'Home', 2, '[{"changed": {"fields": ["Slogan(h2) de la p\\u00e1gina"]}}]'); alias=default
+"POST /admin/web/pagina/1/change/ HTTP/1.1" 302 0
+(0.109) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:36:25.845794+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 36, 25, 845794, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.110) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.093) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.110) SELECT COUNT(*) AS "__count" FROM "web_pagina"; args=(); alias=default
+(0.109) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" ORDER BY "web_pagina"."id" DESC; args=(); alias=default
+"GET /admin/web/pagina/ HTTP/1.1" 200 8280
+(0.078) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-07-26T19:36:27.196260+00:00'::timestamptz AND "django_session"."session_key" = 'zm9udearg8bj9hx3aae661nx6h2fcvqu') LIMIT 21; args=(datetime.datetime(2023, 7, 26, 19, 36, 27, 196260, tzinfo=datetime.timezone.utc), 'zm9udearg8bj9hx3aae661nx6h2fcvqu'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\servicios.html previous mtime: 1690399160.5062625, current mtime: 1690400496.2824523
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\servicios.html notified as changed. Signal results: [(<function template_changed at 0x000001E6CCA291C0>, True), (<function translation_file_changed at 0x000001E6CDEE2B60>, None)].
+(0.094) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Servicios' LIMIT 21; args=('Servicios',); alias=default
+"GET /servicios/ HTTP/1.1" 200 33247
+(0.093) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Servicios' LIMIT 21; args=('Servicios',); alias=default
+"GET /servicios/ HTTP/1.1" 200 33247
+"GET /static/css/estilos.css HTTP/1.1" 200 38387
+"GET /static/js/count.js HTTP/1.1" 200 675
+"GET /static/js/modal.js HTTP/1.1" 200 179
+"GET /static/js/carousel.js HTTP/1.1" 200 270
+"GET /static/img/logos/logo-part-png.png HTTP/1.1" 200 214532
+"GET /static/img/servicios/servicio-b.jpg HTTP/1.1" 200 567585
+"GET /static/img/servicios/servicio-c.jpg HTTP/1.1" 200 72187
+"GET /static/img/servicios/servicio-e.jpg HTTP/1.1" 200 673941
+"GET /static/img/servicios/servicio-a.jpg HTTP/1.1" 200 523594
+"GET /static/img/servicios/servicio-d.jpg HTTP/1.1" 200 383397
+"GET /static/img/logos/logo-completo.png HTTP/1.1" 200 501546
+"GET /static/font/fontello.woff2?68425470 HTTP/1.1" 200 35680
+"GET /static/img/bg/bg-teacompano.jpg HTTP/1.1" 200 3115570
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
