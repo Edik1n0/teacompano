@@ -10201,3 +10201,11 @@ File C:\Python311\Lib\site-packages\django\contrib\auth\context_processors.py fi
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\home.html previous mtime: 1690391870.7031953, current mtime: 1690393813.00643
 C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\home.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html previous mtime: 1690214089.1532068, current mtime: 1690395999.7312787
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html previous mtime: 1690395999.7312787, current mtime: 1690396023.7941387
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html previous mtime: 1690396023.7941387, current mtime: 1690396098.2771206
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html previous mtime: 1690396098.2771206, current mtime: 1690396111.905305
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
