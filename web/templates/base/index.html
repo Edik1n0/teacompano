@@ -82,7 +82,7 @@
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:local" content="es_LA">
     <meta property="og:description"
-        content="{% block pagemetadesc %}{{ pagemetadesc }}{% endblock %}">
+        content="{% block pagemetadesc %}{{ pagemetadesc | safe}}{% endblock %}">
     <meta property="og:site_name" content="k1n0c0m">
     <title>{% block title %}{% endblock %}</title>
     <!-- <title>Cortinas y Persianas | Decortinas e Interiores</title> -->

@@ -10209,3 +10209,5 @@ File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\ind
 C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
 File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html previous mtime: 1690396098.2771206, current mtime: 1690396111.905305
 C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html previous mtime: 1690396111.905305, current mtime: 1690396227.6484938
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\base\index.html notified as changed. Signal results: [(<function template_changed at 0x0000017BBFE891C0>, True), (<function translation_file_changed at 0x0000017BC1342B60>, None)].
