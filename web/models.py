@@ -27,7 +27,7 @@ class Pagina(models.Model):
     pagekeywords = RichTextField(verbose_name="Palabras clave de la página")
     pagebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página", default='/productos/static/img/default.jpg')
     pagebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página en Móvil", default='/productos/static/img/default-mov.jpg')
-    pageogdesc = models.CharField(max_length=200, verbose_name="Descripción OG de la página")
+    pageogdesc = models.CharField(max_length=400, verbose_name="Descripción OG de la página", default='Descripción del sitio web')
     pageogurl = models.CharField(max_length=200, verbose_name="Url OG de la página")
     pageogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato de la página")
     pageogurlsec = models.CharField(max_length=200, verbose_name="Url OG Segura de la página")
