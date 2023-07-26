@@ -209,7 +209,6 @@ def nosotros(request):
     pagebanner = pagina_nosotros.pagebanner
     pagebannermov = pagina_nosotros.pagebannermov
     pagemetatitle = pagina_nosotros.pagemetatitle
-    pageogtitle = pagina_nosotros.pageogtitle
     pageogdesc = pagina_nosotros.pageogdesc
     pagekeywords = pagina_nosotros.pagekeywords
     pagemetadesc = pagina_nosotros.pagemetadesc
@@ -219,7 +218,6 @@ def nosotros(request):
     return render(request, 'nosotros.html', {
         'pagina': pagina_nosotros,
         'pagemetatitle': pagemetatitle,
-        'pageogtitle': pageogtitle,
         'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
