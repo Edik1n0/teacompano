@@ -14,7 +14,6 @@ def servicios(request):
     pagebanner = pagina_servicios.pagebanner
     pagebannermov = pagina_servicios.pagebannermov
     pagemetatitle = pagina_servicios.pagemetatitle
-    pageogtitle = pagina_servicios.pageogtitle
     pageogdesc = pagina_servicios.pageogdesc
     pagekeywords = pagina_servicios.pagekeywords
     pagemetadesc = pagina_servicios.pagemetadesc
@@ -24,7 +23,6 @@ def servicios(request):
     return render(request, 'servicios.html', {
         'pagina': pagina_servicios,
         'pagemetatitle': pagemetatitle,
-        'pageogtitle': pageogtitle,
         'pageogdesc': pageogdesc,
         'pagekeywords': pagekeywords,
         'pagemetadesc': pagemetadesc,
