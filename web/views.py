@@ -1,5 +1,5 @@
 # Create your views here.
-import pytz
+from django.utils import timezone
 from .models import Asesor, Video, Pagina, Formulario
 from django.shortcuts import get_object_or_404, render, redirect
 from django.views.generic import DetailView
@@ -10,10 +10,9 @@ def form(request):
     if request.method == 'POST':
         form = FormularioForm(request.POST)
         if form.is_valid():
-            # Ajustar el valor de fecha_solicitud a la zona horaria de Bogotá antes de guardar
-            tz = pytz.timezone('America/Bogota')
-            form.instance.fecha_solicitud = tz.localize(form.instance.fecha_solicitud)
-            
+            # Configurar la fecha y hora de solicitud con la zona horaria 'America/Bogota'
+            form.instance.fecha_solicitud = timezone.now()  # Asignamos la fecha y hora actual en la zona horaria predeterminada de Django
+
             form.save()
             messages.success(request, 'Solicitud enviada correctamente. En breve nos pondremos en contacto con usted')
             # Puedes agregar una redirección después de guardar los datos exitosamente
@@ -49,7 +48,6 @@ def form(request):
             'pagetitle': pagetitle,
             'pageslogan': pageslogan,
         })
-
 def servicios(request):
     pagina_servicios = get_object_or_404(Pagina, pagename='Servicios')
     pageslogan = pagina_servicios.pageslogan

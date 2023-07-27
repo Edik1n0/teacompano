@@ -4,4 +4,5 @@ from .models import Formulario
 class FormularioForm(forms.ModelForm):
     class Meta:
         model = Formulario
-        fields = ['nombre', 'correo', 'celular', 'descripcion']
+        fields = ['nombre', 'correo', 'celular', 'descripcion', 'servicio']
+

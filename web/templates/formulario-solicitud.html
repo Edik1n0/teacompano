@@ -55,10 +55,19 @@
                 <label for="id_correo">Correo:</label>
                 <input type="email" class="form-control m-4 w-50" id="id_correo" name="correo" required>
             </div>
+            <label for="id_servicio">Servicio solicitado:</label>
+            <!-- Solicitud del servicio -->
+            <select class="form-control m-4 w-50" id="id_servicio" name="servicio" required>
+                <option value="" selected disabled>Seleccione un servicio</option>
+                {% for choice in form.servicio.field.choices %}
+                <option value="{{ choice.0 }}">{{ choice.1 }}</option>
+                {% endfor %}
+            </select>
             <!-- Descripcion -->
             <div class="form-group">
                 <label for="id_descripcion">Descripción:</label>
-                <textarea class="form-control m-4 w-50" id="id_descripcion" name="descripcion" rows="4" required></textarea>
+                <textarea class="form-control m-4 w-50" id="id_descripcion" name="descripcion" rows="4"
+                    required></textarea>
             </div>
             <!-- Botón de envío -->
             <button type="submit" class="btn btn-primary">Enviar</button>

@@ -7,11 +7,11 @@ admin.site.register(Pagina)
 admin.site.register(Video)
 
 class FormularioAdmin(admin.ModelAdmin):
-    readonly_fields = ('fecha_solicitud', 'get_timezone')
+    readonly_fields = ('fecha_solicitud', 'servicio')
 
     def get_timezone(self, obj):
         return obj.fecha_solicitud.timezone  # Retorna el valor de timezone de la fecha_solicitud
 
-    get_timezone.short_description = 'Timezone'  # Nombre descriptivo para el campo en el admin
+    #get_timezone.short_description = 'Timezone'  # Nombre descriptivo para el campo en el admin
 
 admin.site.register(Formulario, FormularioAdmin)
