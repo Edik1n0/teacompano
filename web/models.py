@@ -3,6 +3,7 @@ from ckeditor.fields import RichTextField
 from storages.backends.s3boto3 import S3Boto3Storage
 from django.urls import reverse
 from django.utils import timezone
+import pytz
 
 # Create your models here.
 class Asesor(models.Model):
@@ -35,4 +36,18 @@ class Pagina(models.Model):
     def __str__(self):
         return self.pagename
     
+class Formulario(models.Model):
+    nombre = models.CharField(max_length=200, verbose_name="Nombre del usuario", blank=True)
+    correo = models.EmailField(verbose_name="Email del usuario")
+    celular = models.CharField(max_length=15, blank=True)
+    descripcion = models.TextField(verbose_name="Descripción del paciente", blank=True)
+    fecha_solicitud = models.DateTimeField(default=timezone.now)
 
+    def __str__(self):
+        return self.nombre
+    
+    def save(self, *args, **kwargs):
+        # Configurar el dato de timezone a 'America/Bogota' antes de guardar
+        tz = pytz.timezone('America/Bogota')
+        self.fecha_solicitud = self.fecha_solicitud.astimezone(tz)
+        super().save(*args, **kwargs)

@@ -1,10 +1,54 @@
-from django.shortcuts import render
-
 # Create your views here.
-from django.shortcuts import render
-from .models import Asesor, Video, Pagina
-from django.shortcuts import get_object_or_404, render
+import pytz
+from .models import Asesor, Video, Pagina, Formulario
+from django.shortcuts import get_object_or_404, render, redirect
 from django.views.generic import DetailView
+from .forms import FormularioForm
+from django.contrib import messages
+
+def form(request):
+    if request.method == 'POST':
+        form = FormularioForm(request.POST)
+        if form.is_valid():
+            # Ajustar el valor de fecha_solicitud a la zona horaria de Bogotá antes de guardar
+            tz = pytz.timezone('America/Bogota')
+            form.instance.fecha_solicitud = tz.localize(form.instance.fecha_solicitud)
+            
+            form.save()
+            messages.success(request, 'Solicitud enviada correctamente. En breve nos pondremos en contacto con usted')
+            # Puedes agregar una redirección después de guardar los datos exitosamente
+            return redirect('servicios')
+    else:
+        form = FormularioForm()
+        pagina_formulario = get_object_or_404(Pagina, pagename='Formulario')
+        pageslogan = pagina_formulario.pageslogan
+        pagetitle = pagina_formulario.pagetitle
+        pagename = pagina_formulario.pagename
+        pagebanner = pagina_formulario.pagebanner
+        pagebannermov = pagina_formulario.pagebannermov
+        pagemetatitle = pagina_formulario.pagemetatitle
+        pageogdesc = pagina_formulario.pageogdesc
+        pagekeywords = pagina_formulario.pagekeywords
+        pagemetadesc = pagina_formulario.pagemetadesc
+        pageogurl = pagina_formulario.pageogurl
+        pageogimg = pagina_formulario.pageogimg
+        pageogurlsec = pagina_formulario.pageogurlsec
+        return render(request, 'formulario-solicitud.html', {
+            'pagina': pagina_formulario,
+            'form': form,
+            'pagemetatitle': pagemetatitle,
+            'pageogdesc': pageogdesc,
+            'pagekeywords': pagekeywords,
+            'pagemetadesc': pagemetadesc,
+            'pageogurl': pageogurl,
+            'pageogimg': pageogimg,
+            'pageogurlsec': pageogurlsec,
+            'pagebanner': pagebanner,
+            'pagename': pagename,
+            'pagebannermov': pagebannermov,
+            'pagetitle': pagetitle,
+            'pageslogan': pageslogan,
+        })
 
 def servicios(request):
     pagina_servicios = get_object_or_404(Pagina, pagename='Servicios')

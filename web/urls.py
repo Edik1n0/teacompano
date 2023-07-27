@@ -13,6 +13,7 @@ urlpatterns = [
     # path('tienda/', views.tienda, name="tienda"),
     # path('tienda/<slug:producturl>/', ProductDetailView.as_view(), name='product_detail'),
     path('servicios/', views.servicios, name="servicios"),
+    path('servicios/formulario-solicitud/', views.form, name="formulario"),
     path('pauta/', views.pauta, name="pauta"),
     path('politica-cookies/', views.cookies, name="cookies"),
     path('politica-privacidad/', views.privacy, name="privacy"),

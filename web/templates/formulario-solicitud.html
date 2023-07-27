@@ -1,0 +1,72 @@
+{% extends 'base/index.html' %}
+{% block ogtitle %}{{ pageogtitle }}{% endblock %}
+{% block ogdesc %}{{ pageogdesc }}{% endblock %}
+{% block oguimg %}{{ pageogimg }}{% endblock %}
+{% block ogurls %}{{ pageogurl }}{% endblock %}
+{% block ogurlimg %}{{ pageogurlsec }}{% endblock %}
+
+{% block mdescription %}{{ pagemetadesc }}{% endblock %}
+{% block keywords %}{{ pagekeywords }}{% endblock %}
+{% block title %}{{ pagemetatitle }}{% endblock %}
+{% block content %}
+{% load static %}
+<div class="img__baner">
+    {% if pagebanner %}
+    <img src="{{ pagebanner.url }}" alt="{{ pagename }} Teacompaño CIS" class="img__banner--img">
+    {% endif %}
+    {% if pagebannermov %}
+    <img src="{{ pagebannermov.url }}" alt="{{ pagename }} Teacompaño CIS" class="img__banner--imgmov">
+    {% endif %}
+</div>
+
+<div class="container formulario-solicitud">
+
+    <div class="container migapan">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'servicios' %}">Servicios</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ pagename }}</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="form__header text-center container">
+        <h1 class="form__header--title"><strong>{{ pagetitle }}</strong></h1>
+        <h2 class="form__header--subtitle">{{ pageslogan }}</h2>
+    </div>
+
+    <div class="container">
+        <h1>{{ pagina.title }}</h1>
+        <form class="form" method="post">
+            {% csrf_token %}
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="id_nombre">Nombre:</label>
+                <input type="text" class="form-control m-4 w-50" id="id_nombre" name="nombre" required>
+            </div>
+            <!-- Celular -->
+            <div class="form-group">
+                <label for="id_celular">Celular:</label>
+                <input type="tel" class="form-control m-4 w-50" id="id_celular" name="celular" required>
+            </div>
+            <!-- Correo -->
+            <div class="form-group">
+                <label for="id_correo">Correo:</label>
+                <input type="email" class="form-control m-4 w-50" id="id_correo" name="correo" required>
+            </div>
+            <!-- Descripcion -->
+            <div class="form-group">
+                <label for="id_descripcion">Descripción:</label>
+                <textarea class="form-control m-4 w-50" id="id_descripcion" name="descripcion" rows="4" required></textarea>
+            </div>
+            <!-- Botón de envío -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+</div>
+
+{% include 'partials/social.html' %}
+
+{% endblock %}
