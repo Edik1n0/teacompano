@@ -54,3 +54,17 @@ class Formulario(models.Model):
 
     def __str__(self):
         return self.nombre
+    
+class Kardex(models.Model):
+    paciente = models.CharField(max_length=200, verbose_name="Nombre del paciente", blank=True)
+    diagnosis = models.CharField(max_length=200, verbose_name="Diagnóstico", blank=True)
+    dieta = models.CharField(max_length=200, verbose_name="Dieta", blank=True)
+    edad = models.CharField(max_length=200, verbose_name="Edad", blank=True)
+    peso = models.CharField(max_length=200, verbose_name="Peso", blank=True)
+    tratamiento = RichTextField(verbose_name="Tratamiento Farmacológico", blank=True)
+    plan = RichTextField(verbose_name="Plan de cuidados de enfermería", blank=True)
+    fecha_kardex = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        fecha_formateada = self.fecha_kardex.strftime('%Y-%m-%d %H:%M:%S')  # Formatea la fecha como quieras
+        return f"{self.paciente} - {fecha_formateada}"

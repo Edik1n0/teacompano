@@ -1,10 +1,12 @@
 # Create your views here.
+from django.template.loader import get_template
 from django.utils import timezone
-from .models import Asesor, Video, Pagina, Formulario
-from django.shortcuts import get_object_or_404, render, redirect
+from .models import Asesor, Video, Pagina, Formulario, Kardex
+from django.shortcuts import get_object_or_404, render, redirect, HttpResponse
 from django.views.generic import DetailView
 from .forms import FormularioForm
 from django.contrib import messages
+from xhtml2pdf import pisa
 
 def form(request):
     if request.method == 'POST':
@@ -48,6 +50,7 @@ def form(request):
             'pagetitle': pagetitle,
             'pageslogan': pageslogan,
         })
+
 def servicios(request):
     pagina_servicios = get_object_or_404(Pagina, pagename='Servicios')
     pageslogan = pagina_servicios.pageslogan
@@ -277,3 +280,22 @@ def comments(request):
 
 def robots(request):
     return render(request, 'robots.txt')
+
+def generate_pdf(request, kardex_id):
+    kardex = get_object_or_404(Kardex, pk=kardex_id)
+    template_path = 'pdfs/kardex.html'
+    template = get_template(template_path)
+    context = {'kardex': kardex}
+    html = template.render(context)
+
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'filename="kardex.pdf"'
+
+    pdf_buffer = BytesIO()
+    pisa.CreatePDF(html, dest=pdf_buffer)
+    pdf_buffer.seek(0)
+
+    response.write(pdf_buffer.read())
+    pdf_buffer.close()
+
+    return response
