@@ -1,0 +1,179 @@
+* {
+    font-family: "Mulish", sans-serif;
+    // font-family: "Poppins", sans-serif;
+    color: $Ng;
+}
+
+body {
+    background: url("../img/bg/bg-teacompano.jpg");
+}
+
+a {
+    color: $Mor;
+    text-decoration: none;
+
+    &:hover {
+        transition: all 0.4s;
+        color: $Ros;
+    }
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.home {
+    .estado__movil {
+        display: none;
+    }
+
+    @media (min-width: 320px) and (max-width: 1280px) {
+        display: block;
+    }
+}
+
+// Solicitud de servicios
+
+.fs__body--body {
+    justify-content: center;
+    padding: 20px;
+
+    .form {
+        background: $Plata;
+        margin-top: 40px;
+        width: 50%;
+        padding: 40px;
+
+        .boton-enviar {
+            justify-content: center;
+        }
+    }
+}
+
+// Menú
+
+.navdos,
+.user__nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: $BlTr;
+
+    .nav__social {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        .navbar-brand {
+            .d-inline-block {
+                width: 80px;
+            }
+        }
+    }
+
+    .sep__men {
+        padding-right: 60px;
+    }
+
+    @media (min-width: 320px) and (max-width: 1280px) {
+        .container {
+            margin-left: 0px;
+            width: 50%;
+            .navbar-brand {
+                .d-inline-block {
+                    width: 80px;
+                }
+            }
+        }
+
+        .nav__social {
+            display: flex;
+        }
+
+        .sep__men {
+            padding-right: 0px;
+        }
+    }
+}
+
+// Perfil enfermeras
+
+.enfermera_perfil {
+    .ep__body {
+        margin-top: 40px;
+        border: 2px solid $Gr;
+        border-radius: 8px;
+
+        .ob__img {
+            font-size: 80px;
+        }
+
+        .ep__opt {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .option {
+                width: 30%;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+// Listado de pacientes
+
+.listado__pacientes {
+    .icon-pencil,
+    .icon-phone {
+        font-size: 22px;
+    }
+}
+
+// Miga de pan
+.bread__interno {
+    margin-top: 40px;
+}
+
+// Mensaje éxito
+
+.success__message {
+    position: absolute;
+    top: 220px;
+    z-index: 11;
+    width: 50%;
+    .alert {
+        width: 60%;
+        .icon-cancel {
+            cursor: pointer;
+        }
+    }
+}
+
+// Formularios
+
+@media (min-width: 320px) and (max-width: 1280px) {
+    .fs__body--body {
+        .form {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}
