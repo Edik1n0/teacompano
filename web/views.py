@@ -91,6 +91,7 @@ class ServiceDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['metatitulo'] = self.object.servicemetatitle
         context['titulo'] = self.object.servicename
         context['keywords'] = self.object.servicekeywords
         context['mdescription'] = self.object.servicemetadesc

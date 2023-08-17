@@ -22,6 +22,7 @@ class Service(models.Model):
     serviceslogan = models.CharField(max_length=200, verbose_name="Slogan del Servicio")
     # Elementos del header del Servicio
     servicemetadesc = models.CharField(max_length=300, verbose_name="Meta descripción del Servicio")
+    servicemetatitle = models.CharField(max_length=200, verbose_name="Metatítulo(title) del Servicio", default="Metatítulo por default")
     servicekeywords = RichTextField(verbose_name="Palabras clave del Servicio")
     servicebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del Servicio", default='/Servicios/static/img/default.jpg')
     servicebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del Servicio en Móvil", default='/Servicios/static/img/default-mov.jpg')
