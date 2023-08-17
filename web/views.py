@@ -96,7 +96,6 @@ class ServiceDetailView(DetailView):
         context['mdescription'] = self.object.servicemetadesc
         context['ogurl'] = self.object.serviceogurl
         context['ogimg'] = self.object.serviceogimg
-        context['ogtitle'] = self.object.serviceogtitle
         context['ogurlimg'] = self.object.serviceogurlsec
         context['ogdesc'] = self.object.serviceogdesc
 
