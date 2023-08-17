@@ -104,6 +104,8 @@
                     .ser__item--info {
                         transition: all 0.4s;
                         opacity: 100%;
+                        position: absolute;
+                        top: 90%;
                         //display: block;
                     }
                 }
