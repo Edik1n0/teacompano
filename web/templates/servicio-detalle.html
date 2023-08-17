@@ -1,5 +1,5 @@
 {% extends 'base/index.html' %}
-<!-- {% block ogtitle %}{{ metatitulo }}{% endblock %} -->
+{% block ogtitle %}{{ metatitulo }}{% endblock %}
 {% block ogdesc %}{{ ogdesc }}{% endblock %}
 {% block oguimg %}{{ oguimg }}{% endblock %}
 {% block ogurls %}{{ ogurl }}{% endblock %}
@@ -7,7 +7,7 @@
 
 {% block mdescription %}{{ mdescription }}{% endblock %}
 {% block keywords %}{{ keywords }}{% endblock %}
-{% block title %}{{ ogdesc }}{% endblock %} Titulo que aparece en el OG
+<!-- {% block title %}{{ ogdesc }}{% endblock %} Titulo que aparece en el OG -->
 
 {% block content %}
 
