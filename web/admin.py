@@ -1,15 +1,14 @@
-from django.http import HttpResponse
-from django.conf import settings
-from django.urls import reverse
-from reportlab.lib.pagesizes import landscape, letter
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Frame, Image, PageTemplate
-from io import BytesIO
-import os
-from django.template.defaultfilters import slugify
-from django.utils.html import format_html
 from django.contrib import admin
+from reportlab.platypus import SimpleDocTemplate, PageTemplate, Frame, Image
+from reportlab.lib.pagesizes import letter, landscape
+from reportlab.lib import colors
+from reportlab.platypus import Table, TableStyle, Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
+from io import BytesIO
+from django.utils.text import slugify
+from django.http import HttpResponse
+from django.urls import reverse
+from django.utils.html import format_html
 
 from .models import Kardex, Asesor, Formulario, Video, Pagina
 
@@ -33,12 +32,6 @@ class KardexAdmin(admin.ModelAdmin):
         content = []
 
         for kardex in queryset:
-            # Agregar imagen de fondo (ajustar la ruta)
-            img_path = os.path.join(settings.STATIC_ROOT, 'img', 'bg', 'hoja-horizontal.jpg')
-            img = Image(img_path, width=doc.width, height=doc.height)
-            img.wrapOn(doc, doc.width, doc.height)
-            img.drawOn(doc, 0, 0)
-            
             # Crear una lista para el contenido de la página
             page_content = []
 
@@ -69,21 +62,37 @@ class KardexAdmin(admin.ModelAdmin):
             table.setStyle(table_style)
             page_content.append(table)
 
+            # Agregar imagen de fondo (ajustar la ruta)
+            background_image = 'web/static/img/bg/hoja-horizontal.jpg'  # Ruta correcta
+
+            # Debug: Verificar si la imagen se carga correctamente
+            print("Ruta de la imagen:", background_image)
+
+            # Crear un PageTemplate con la imagen de fondo
+            img = Image(background_image, width=doc.width, height=doc.height)
+            img_frame = Frame(0, 0, doc.width, doc.height)
+            img_frame.addFromList([img], doc)
+            template = PageTemplate(id='background', frames=[img_frame])
+            doc.addPageTemplates([template])
+
+            # Debug: Verificar si el PageTemplate se crea correctamente
+            print("PageTemplate creado con la imagen de fondo:", template)
+
             # Agregar contenido de la página al documento
             content.extend(page_content)
 
-         # Generar un nombre de archivo usando el nombre del paciente y la fecha de creación
-            file_name = f"{slugify(kardex.paciente)}-{kardex.fecha_kardex.strftime('%d%m%y')}.pdf"
-            response = HttpResponse(content_type='application/pdf')
-            response['Content-Disposition'] = f'attachment; filename="{file_name}"'
+        # Generar un nombre de archivo usando el nombre del paciente y la fecha de creación
+        file_name = f"{slugify(kardex.paciente)}-{kardex.fecha_kardex.strftime('%d%m%y')}.pdf"
+        response = HttpResponse(content_type='application/pdf')
+        response['Content-Disposition'] = f'attachment; filename="{file_name}"'
 
-            doc.build(content)
+        doc.build(content)
 
-            pdf_buffer.seek(0)
-            response.write(pdf_buffer.read())
-            pdf_buffer.close()
+        pdf_buffer.seek(0)
+        response.write(pdf_buffer.read())
+        pdf_buffer.close()
 
-            return response
+        return response
 
     generate_pdf_action.short_description = "Generar PDF de Kardex"
 
