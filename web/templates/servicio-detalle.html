@@ -7,7 +7,7 @@
 
 {% block mdescription %}{{ mdescription }}{% endblock %}
 {% block keywords %}{{ keywords }}{% endblock %}
-{% block title %}{{ metatitulo }}{% endblock %} <!--Titulo que aparece en el OG -->
+{% block title %}{{ metatitulo  | safe }}{% endblock %} <!--Titulo que aparece en el OG -->
 
 {% block content %}
 
