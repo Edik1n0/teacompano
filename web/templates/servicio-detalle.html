@@ -1,6 +1,6 @@
 {% extends 'base/index.html' %}
-{% block ogtitle %}{{ ogtitle }}{% endblock %}
-{% block ogdesc %}{{ ogdesc }}{% endblock %}
+{% block ogtitle %}{{ ogtitle  | safe}}{% endblock %}
+{% block ogdesc %}{{ ogdesc | safe}}{% endblock %}
 {% block oguimg %}{{ oguimg }}{% endblock %}
 {% block ogurls %}{{ ogurl }}{% endblock %}
 {% block ogurlimg %}{{ ogurlimg }}{% endblock %}
