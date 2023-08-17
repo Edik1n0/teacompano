@@ -1,0 +1,285 @@
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692301244.893543, current mtime: 1692301610.0175288
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692301610.0175288, current mtime: 1692301847.230008
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.078) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.094) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+File C:\Python311\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1674615473.514369
+"GET / HTTP/1.1" 200 38139
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1674615473.0324316
+File C:\Python311\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1674615473.0324316
+"GET /static/css/estilos.css HTTP/1.1" 200 39011
+"GET /static/img/logos/logo-part-png.png HTTP/1.1" 200 214532
+"GET /static/img/bg/bg-teacompano.png HTTP/1.1" 200 210280
+"GET /static/img/bg/bg-teacompano-b.jpg HTTP/1.1" 200 189764
+"GET /static/img/bg/bg-teacompano-c.jpg HTTP/1.1" 200 208060
+"GET /static/img/bg/bg-teacompano-a.jpg HTTP/1.1" 200 249701
+"GET /static/js/modal.js HTTP/1.1" 200 179
+"GET /static/js/count.js HTTP/1.1" 200 675
+"GET /static/js/carousel.js HTTP/1.1" 200 270
+"GET /static/img/rec/separador.png HTTP/1.1" 200 22054
+"GET /static/img/high/tea-high-enfermeria.png HTTP/1.1" 200 200498
+"GET /static/img/high/tea-high-psicologia.png HTTP/1.1" 200 197441
+"GET /static/img/high/tea-high-medicina.png HTTP/1.1" 200 172631
+"GET /static/font/fontello.woff2?68425470 HTTP/1.1" 200 35680
+"GET /static/img/logos/logo-completo.png HTTP/1.1" 200 501546
+"GET /static/img/claims/claim-a.png HTTP/1.1" 200 13074
+"GET /static/img/claims/claim-b.png HTTP/1.1" 200 13255
+"GET /static/img/claims/claim-c.png HTTP/1.1" 200 23012
+"GET /static/img/aliados/logo-fs.png HTTP/1.1" 200 69080
+"GET /static/img/aliados/logo-k1n0.jpg HTTP/1.1" 200 120887
+"GET /static/img/aliados/logo-dralina.png HTTP/1.1" 200 198598
+"GET /static/img/aliados/logo-isis.png HTTP/1.1" 200 6665
+"GET /static/img/bg/bg-teacompano.jpg HTTP/1.1" 200 3115570
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+File C:\Python311\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1674615472.0004022
+File C:\Python311\Lib\site-packages\django\template\context_processors.py first seen with mtime 1674615474.1399715
+File C:\Python311\Lib\site-packages\whitenoise\compress.py first seen with mtime 1674935812.2019668
+File C:\Python311\Lib\site-packages\whitenoise\storage.py first seen with mtime 1674935812.2059474
+File C:\Python311\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1674615473.0324316
+(0.093) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-08-17T19:50:56.573770+00:00'::timestamptz AND "django_session"."session_key" = 'ebcws945o07p3uq06u1tnx6xttypatey') LIMIT 21; args=(datetime.datetime(2023, 8, 17, 19, 50, 56, 573770, tzinfo=datetime.timezone.utc), 'ebcws945o07p3uq06u1tnx6xttypatey'); alias=default
+(0.078) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+(0.094) SELECT COUNT(*) AS "__count" FROM "web_kardex"; args=(); alias=default
+(0.078) SELECT COUNT(*) AS "__count" FROM "web_kardex"; args=(); alias=default
+(0.078) SELECT "web_kardex"."id", "web_kardex"."paciente", "web_kardex"."diagnosis", "web_kardex"."dieta", "web_kardex"."edad", "web_kardex"."peso", "web_kardex"."tratamiento", "web_kardex"."plan", "web_kardex"."fecha_kardex" FROM "web_kardex" ORDER BY "web_kardex"."id" DESC; args=(); alias=default
+"GET /admin/web/kardex/ HTTP/1.1" 200 8965
+File C:\Python311\Lib\site-packages\tzdata\__init__.py first seen with mtime 1674615469.954711
+File C:\Python311\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1674615470.987508
+File C:\Python311\Lib\site-packages\tzdata\zoneinfo\America\__init__.py first seen with mtime 1674615470.1116824
+File C:\Python311\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1674615469.9812696
+File C:\Python311\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1674615470.987508
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-08-17T19:50:57.701055+00:00'::timestamptz AND "django_session"."session_key" = 'ebcws945o07p3uq06u1tnx6xttypatey') LIMIT 21; args=(datetime.datetime(2023, 8, 17, 19, 50, 57, 701055, tzinfo=datetime.timezone.utc), 'ebcws945o07p3uq06u1tnx6xttypatey'); alias=default
+(0.093) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\urls\resolvers.py", line 702, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern '' [name='index']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'contacto/' [name='contacto']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'nosotros/' [name='nosotros']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'servicios/' [name='servicios']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'servicios/formulario-solicitud/' [name='formulario']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'pauta/' [name='pauta']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'politica-cookies/' [name='cookies']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'politica-privacidad/' [name='privacy']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'robots.txt' [name='robots']>], [<URLResolver <module 'web.urls' from 'C:\\Users\\todo_\\OneDrive\\Documentos\\GitHub\\teacompano\\web\\urls.py'> (None:None) ''>, <URLPattern 'generate_pdf/<int:kardex_id>/' [name='generate_pdf']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3901
+(0.078) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-08-17T19:51:05.758278+00:00'::timestamptz AND "django_session"."session_key" = 'ebcws945o07p3uq06u1tnx6xttypatey') LIMIT 21; args=(datetime.datetime(2023, 8, 17, 19, 51, 5, 758278, tzinfo=datetime.timezone.utc), 'ebcws945o07p3uq06u1tnx6xttypatey'); alias=default
+(0.079) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.140) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'web' AND "django_content_type"."model" = 'kardex') LIMIT 21; args=('web', 'kardex'); alias=default
+"GET /admin/web/kardex/add/ HTTP/1.1" 200 13204
+"GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 1526
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19379
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 756028
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+(0.078) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-08-17T19:51:06.824748+00:00'::timestamptz AND "django_session"."session_key" = 'ebcws945o07p3uq06u1tnx6xttypatey') LIMIT 21; args=(datetime.datetime(2023, 8, 17, 19, 51, 6, 824748, tzinfo=datetime.timezone.utc), 'ebcws945o07p3uq06u1tnx6xttypatey'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/ckeditor/ckeditor/config.js?t=M6K9 HTTP/1.1" 200 336
+"GET /static/ckeditor/ckeditor/lang/en.js?t=M6K9 HTTP/1.1" 200 17503
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=M6K9 HTTP/1.1" 200 48309
+"GET /static/ckeditor/ckeditor/styles.js?t=M6K9 HTTP/1.1" 200 5577
+"GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=M6K9 HTTP/1.1" 200 419
+"GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=M6K9 HTTP/1.1" 200 381
+"GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css?t=M6K9 HTTP/1.1" 200 1145
+"GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css?t=M6K9 HTTP/1.1" 200 249
+"GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css?t=M6K9 HTTP/1.1" 200 1511
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=445cf24ebd HTTP/1.1" 200 12237
+"GET /static/ckeditor/ckeditor/contents.css?t=M6K9 HTTP/1.1" 200 3092
+(0.094) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2023-08-17T19:51:08.347785+00:00'::timestamptz AND "django_session"."session_key" = 'ebcws945o07p3uq06u1tnx6xttypatey') LIMIT 21; args=(datetime.datetime(2023, 8, 17, 19, 51, 8, 347785, tzinfo=datetime.timezone.utc), 'ebcws945o07p3uq06u1tnx6xttypatey'); alias=default
+(0.094) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.094) SELECT COUNT(*) AS "__count" FROM "web_kardex"; args=(); alias=default
+(0.093) SELECT COUNT(*) AS "__count" FROM "web_kardex"; args=(); alias=default
+(0.094) SELECT "web_kardex"."id", "web_kardex"."paciente", "web_kardex"."diagnosis", "web_kardex"."dieta", "web_kardex"."edad", "web_kardex"."peso", "web_kardex"."tratamiento", "web_kardex"."plan", "web_kardex"."fecha_kardex" FROM "web_kardex" ORDER BY "web_kardex"."id" DESC; args=(); alias=default
+"GET /admin/web/kardex/ HTTP/1.1" 200 8965
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692301847.230008, current mtime: 1692302008.7421486
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.078) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.079) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38133
+"GET /static/img/bg/bg-teacompano.png HTTP/1.1" 304 0
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692302008.7421486, current mtime: 1692302127.138986
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.078) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38136
+"GET /static/img/bg/bg-teacompano.png HTTP/1.1" 304 0
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692302127.138986, current mtime: 1692302157.3689187
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.093) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.094) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38135
+"GET /static/css/estilos.css HTTP/1.1" 200 39011
+"GET /static/img/bg/bg-teacompano.png HTTP/1.1" 200 210280
+"GET /static/img/logos/logo-part-png.png HTTP/1.1" 200 214532
+"GET /static/js/carousel.js HTTP/1.1" 200 270
+"GET /static/js/count.js HTTP/1.1" 200 675
+"GET /static/js/modal.js HTTP/1.1" 200 179
+"GET /static/img/bg/bg-teacompano-b.jpg HTTP/1.1" 200 189764
+"GET /static/img/bg/bg-teacompano-c.jpg HTTP/1.1" 200 208060
+"GET /static/img/bg/bg-teacompano-a.jpg HTTP/1.1" 200 249701
+"GET /static/img/rec/separador.png HTTP/1.1" 200 22054
+"GET /static/img/logos/logo-completo.png HTTP/1.1" 200 501546
+"GET /static/img/high/tea-high-enfermeria.png HTTP/1.1" 200 200498
+"GET /static/img/claims/claim-a.png HTTP/1.1" 200 13074
+"GET /static/img/claims/claim-b.png HTTP/1.1" 200 13255
+"GET /static/img/claims/claim-c.png HTTP/1.1" 200 23012
+"GET /static/img/high/tea-high-medicina.png HTTP/1.1" 200 172631
+"GET /static/img/aliados/logo-fs.png HTTP/1.1" 200 69080
+"GET /static/img/high/tea-high-psicologia.png HTTP/1.1" 200 197441
+"GET /static/img/aliados/logo-isis.png HTTP/1.1" 200 6665
+"GET /static/img/aliados/logo-k1n0.jpg HTTP/1.1" 200 120887
+"GET /static/img/aliados/logo-dralina.png HTTP/1.1" 200 198598
+"GET /static/font/fontello.woff2?68425470 HTTP/1.1" 200 35680
+"GET /static/img/bg/bg-teacompano.jpg HTTP/1.1" 200 3115570
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692302157.3689187, current mtime: 1692302176.9855285
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.078) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38139
+"GET /servicios HTTP/1.1" 301 0
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Servicios' LIMIT 21; args=('Servicios',); alias=default
+"GET /servicios/ HTTP/1.1" 200 30273
+"GET /static/img/servicios/servicio-c.jpg HTTP/1.1" 200 72187
+"GET /static/img/servicios/servicio-d.jpg HTTP/1.1" 200 383397
+"GET /static/img/servicios/servicio-a.jpg HTTP/1.1" 200 523594
+"GET /static/img/servicios/servicio-b.jpg HTTP/1.1" 200 567585
+"GET /static/img/servicios/servicio-e.jpg HTTP/1.1" 200 673941
+"GET /servicios/formulario-solicitud HTTP/1.1" 301 0
+(0.079) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Formulario' LIMIT 21; args=('Formulario',); alias=default
+Exception while resolving variable 'title' in template 'formulario-solicitud.html'.
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'Pagina' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Pagina' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [title] in <Pagina: Formulario>
+"GET /servicios/formulario-solicitud/ HTTP/1.1" 200 21821
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html previous mtime: 1692302176.9855285, current mtime: 1692302209.338695
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\carrusel.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.063) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38161
+File C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\intro.html previous mtime: 1690387631.7887983, current mtime: 1692302253.3729107
+C:\Users\todo_\OneDrive\Documentos\GitHub\teacompano\web\templates\partials\intro.html notified as changed. Signal results: [(<function template_changed at 0x000001D6D195D1C0>, True), (<function translation_file_changed at 0x000001D6D2E16B60>, None)].
+(0.094) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38170
+"GET /static/css/estilos.css HTTP/1.1" 200 39011
+"GET /static/img/logos/logo-part-png.png HTTP/1.1" 200 214532
+"GET /static/img/bg/bg-teacompano.png HTTP/1.1" 200 210280
+"GET /static/img/bg/bg-teacompano-a.jpg HTTP/1.1" 200 249701
+"GET /static/js/count.js HTTP/1.1" 200 675
+"GET /static/js/carousel.js HTTP/1.1" 200 270
+"GET /static/js/modal.js HTTP/1.1" 200 179
+"GET /static/img/bg/bg-teacompano-b.jpg HTTP/1.1" 200 189764
+"GET /static/img/bg/bg-teacompano-c.jpg HTTP/1.1" 200 208060
+"GET /static/img/rec/separador.png HTTP/1.1" 200 22054
+"GET /static/img/claims/claim-b.png HTTP/1.1" 200 13255
+"GET /static/img/claims/claim-a.png HTTP/1.1" 200 13074
+"GET /static/img/claims/claim-c.png HTTP/1.1" 200 23012
+"GET /static/img/high/tea-high-enfermeria.png HTTP/1.1" 200 200498
+"GET /static/img/high/tea-high-medicina.png HTTP/1.1" 200 172631
+"GET /static/img/high/tea-high-psicologia.png HTTP/1.1" 200 197441
+"GET /static/img/aliados/logo-fs.png HTTP/1.1" 200 69080
+"GET /static/img/aliados/logo-k1n0.jpg HTTP/1.1" 200 120887
+"GET /static/img/aliados/logo-isis.png HTTP/1.1" 200 6665
+"GET /static/font/fontello.woff2?68425470 HTTP/1.1" 200 35680
+"GET /static/img/aliados/logo-dralina.png HTTP/1.1" 200 198598
+"GET /static/img/logos/logo-completo.png HTTP/1.1" 200 501546
+"GET /static/img/bg/bg-teacompano.jpg HTTP/1.1" 200 3115570
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+"GET /static/css/estilos.css.map HTTP/1.1" 200 8379
+(0.078) SELECT "web_video"."id", "web_video"."videoname", "web_video"."videourl" FROM "web_video" WHERE "web_video"."videoname" = 'Video intro' LIMIT 21; args=('Video intro',); alias=default
+(0.078) SELECT "web_pagina"."id", "web_pagina"."pagename", "web_pagina"."pagemetatitle", "web_pagina"."pagetitle", "web_pagina"."pageslogan", "web_pagina"."pagemetadesc", "web_pagina"."pagekeywords", "web_pagina"."pagebanner", "web_pagina"."pagebannermov", "web_pagina"."pageogdesc", "web_pagina"."pageogurl", "web_pagina"."pageogimg", "web_pagina"."pageogurlsec" FROM "web_pagina" WHERE "web_pagina"."pagename" = 'Home' LIMIT 21; args=('Home',); alias=default
+"GET / HTTP/1.1" 200 38170
+"GET /static/img/bg/bg-teacompano.png HTTP/1.1" 200 210280
+"GET /static/img/logos/logo-part-png.png HTTP/1.1" 200 214532
+"GET /static/css/estilos.css HTTP/1.1" 200 39019
+"GET /static/js/carousel.js HTTP/1.1" 200 270
+"GET /static/js/modal.js HTTP/1.1" 200 179
+"GET /static/js/count.js HTTP/1.1" 200 675
+"GET /static/img/bg/bg-teacompano-c.jpg HTTP/1.1" 200 208060
+"GET /static/img/bg/bg-teacompano-b.jpg HTTP/1.1" 200 189764
+"GET /static/img/bg/bg-teacompano-a.jpg HTTP/1.1" 200 249701
+"GET /static/img/rec/separador.png HTTP/1.1" 200 22054
+"GET /static/img/claims/claim-a.png HTTP/1.1" 200 13074
+"GET /static/img/claims/claim-b.png HTTP/1.1" 200 13255
+"GET /static/img/high/tea-high-medicina.png HTTP/1.1" 200 172631
+"GET /static/img/high/tea-high-enfermeria.png HTTP/1.1" 200 200498
+"GET /static/img/high/tea-high-psicologia.png HTTP/1.1" 200 197441
+"GET /static/img/claims/claim-c.png HTTP/1.1" 200 23012
+"GET /static/img/aliados/logo-fs.png HTTP/1.1" 200 69080
+"GET /static/img/aliados/logo-isis.png HTTP/1.1" 200 6665
+"GET /static/img/aliados/logo-k1n0.jpg HTTP/1.1" 200 120887
+"GET /static/img/aliados/logo-dralina.png HTTP/1.1" 200 198598
+"GET /static/img/logos/logo-completo.png HTTP/1.1" 200 501546
+"GET /static/img/bg/bg-teacompano.jpg HTTP/1.1" 200 3115570
+"GET /static/font/fontello.woff2?68425470 HTTP/1.1" 200 35680
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435
+"GET /static/img/favicondos.ico HTTP/1.1" 200 46435

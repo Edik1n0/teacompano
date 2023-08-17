@@ -1289,7 +1289,7 @@ p {
 }
 .intro .container .intro__content {
   margin: 30px;
-  width: 40%;
+  text-align: center;
 }
 .intro .container .intro__content .separador .separador__img {
   width: 240px;
