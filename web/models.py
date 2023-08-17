@@ -11,6 +11,44 @@ class Asesor(models.Model):
 
     def __str__(self):
         return self.name
+    
+class S3ProductImage(S3Boto3Storage):
+    location = 'imagenes-decortinas'
+    file_overwrite = False
+
+class Service(models.Model):
+    # Elementos Visuales del Servicio
+    servicename = models.CharField(max_length=200, verbose_name="Nombre del Servicio")
+    serviceslogan = models.CharField(max_length=200, verbose_name="Slogan del Servicio")
+    # Elementos del header del Servicio
+    servicemetadesc = RichTextField(verbose_name="Meta descripción del Servicio")
+    servicekeywords = RichTextField(verbose_name="Palabras clave del Servicio")
+    servicebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del Servicio", default='/Servicios/static/img/default.jpg')
+    servicebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del Servicio en Móvil", default='/Servicios/static/img/default-mov.jpg')
+    # Elementos OG del Servicio
+    serviceogdesc = models.CharField(max_length=200, verbose_name="Descripción OG del Servicio")
+    serviceogtitle =models.CharField(max_length=200, verbose_name="Metatítulo OG del Servicio")
+    serviceogurl = models.CharField(max_length=200, verbose_name="Url OG del Servicio")
+    serviceogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato del Servicio")
+    serviceogurlsec = models.CharField(max_length=200, verbose_name="Url OG Segura del Servicio")
+    # serviceoldprice = models.IntegerField(verbose_name="Precio normal", blank=True, default=0, null=True)
+    # servicediscount = models.IntegerField(verbose_name="Valor de descuento", blank=True, default=0, null=True)
+    serviceurl = models.CharField(max_length=200, verbose_name="Url Servicio detalle")
+    servicedescription = RichTextField()
+    serviceimg = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen principal del Servicio")
+    gallerya = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen secundaria del Servicio", blank=True)
+    galleryb = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen adicional del Servicio", blank=True)
+    galleryc = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen final del Servicio", blank=True)
+    # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Servicio")
+    asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
+    # productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
+    serviceupdated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.servicename + ' - creado por - ' + self.asesor.name
+
+    def get_absolute_url(self):
+        return reverse('service_detail', kwargs={'pk': self.pk})
 
 class Video(models.Model):
     videoname = models.CharField(max_length=200, verbose_name="Nombre del video")
@@ -26,8 +64,8 @@ class Pagina(models.Model):
     pageslogan = models.CharField(max_length=200, verbose_name="Slogan(h2) de la página")
     pagemetadesc = RichTextField(verbose_name="Meta descripción de la página")
     pagekeywords = RichTextField(verbose_name="Palabras clave de la página")
-    pagebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página", default='/productos/static/img/default.jpg')
-    pagebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página en Móvil", default='/productos/static/img/default-mov.jpg')
+    pagebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página", default='/Servicios/static/img/default.jpg')
+    pagebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página en Móvil", default='/Servicios/static/img/default-mov.jpg')
     pageogdesc = models.CharField(max_length=400, verbose_name="Descripción OG de la página", default='Descripción del sitio web')
     pageogurl = models.CharField(max_length=200, verbose_name="Url OG de la página")
     pageogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato de la página")

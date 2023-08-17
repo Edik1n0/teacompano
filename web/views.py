@@ -1,7 +1,7 @@
 # Create your views here.
 from django.template.loader import get_template
 from django.utils import timezone
-from .models import Asesor, Video, Pagina, Formulario, Kardex
+from .models import Asesor, Video, Pagina, Formulario, Kardex, Service
 from django.shortcuts import get_object_or_404, render, redirect, HttpResponse
 from django.views.generic import DetailView
 from .forms import FormularioForm
@@ -81,6 +81,31 @@ def servicios(request):
         'pageslogan': pageslogan,
         })
 
+class ServiceDetailView(DetailView):
+    model = Service
+    template_name = 'servicio-detalle.html'
+    context_object_name = 'servicio'
+
+    def get_object(self):
+        return get_object_or_404(Service, serviceurl=self.kwargs['serviceurl'])
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['titulo'] = self.object.servicename
+        context['keywords'] = self.object.servicekeywords
+        context['mdescription'] = self.object.servicemetadesc
+        context['ogurl'] = self.object.serviceogurl
+        context['ogimg'] = self.object.serviceogimg
+        context['ogtitle'] = self.object.serviceogtitle
+        context['ogurlimg'] = self.object.serviceogurlsec
+        context['ogdesc'] = self.object.serviceogdesc
+
+        # Agregar la lista de promociones al contexto
+        # promos = Promo.objects.all()
+        # context['promos'] = promos
+
+        return context
+    
 def pauta(request):
     pagina_pauta = get_object_or_404(Pagina, pagename='Pauta')
     comments = Comment.objects.all()

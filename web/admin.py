@@ -10,7 +10,7 @@ from django.http import HttpResponse
 from django.urls import reverse
 from django.utils.html import format_html
 
-from .models import Kardex, Asesor, Formulario, Video, Pagina
+from .models import Kardex, Asesor, Formulario, Video, Pagina, Service
 
 class KardexAdmin(admin.ModelAdmin):
     list_display = ('paciente', 'fecha_kardex', 'diagnosis', 'dieta', 'edad', 'peso', 'generate_pdf_link')
@@ -101,6 +101,7 @@ admin.site.register(Kardex, KardexAdmin)
 admin.site.register(Asesor)
 admin.site.register(Pagina)
 admin.site.register(Video)
+admin.site.register(Service)
 
 class FormularioAdmin(admin.ModelAdmin):
     readonly_fields = ('fecha_solicitud', 'servicio')
