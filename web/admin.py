@@ -101,7 +101,11 @@ admin.site.register(Kardex, KardexAdmin)
 admin.site.register(Asesor)
 admin.site.register(Pagina)
 admin.site.register(Video)
-admin.site.register(Service)
+
+class ServiceAdmin(admin.ModelAdmin):
+    list_display = ('servicename', 'asesor', 'serviceupdated')
+
+admin.site.register(Service, ServiceAdmin)
 
 class FormularioAdmin(admin.ModelAdmin):
     readonly_fields = ('fecha_solicitud', 'servicio')

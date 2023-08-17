@@ -13,7 +13,7 @@ class Asesor(models.Model):
         return self.name
     
 class S3ProductImage(S3Boto3Storage):
-    location = 'imagenes-decortinas'
+    location = 'teacompano-img'
     file_overwrite = False
 
 class Service(models.Model):
