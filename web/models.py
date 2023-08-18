@@ -17,29 +17,26 @@ class S3ProductImage(S3Boto3Storage):
     file_overwrite = False
 
 class Service(models.Model):
-    # Elementos Visuales del Servicio
-    servicename = models.CharField(max_length=200, verbose_name="Nombre del Servicio")
-    serviceslogan = models.CharField(max_length=200, verbose_name="Slogan del Servicio")
-    # Elementos del header del Servicio
-    servicemetadesc = models.CharField(max_length=300, verbose_name="Meta descripción del Servicio")
-    servicemetatitle = models.CharField(max_length=200, verbose_name="Metatítulo(title) del Servicio", default="Metatítulo por default")
-    servicekeywords = RichTextField(verbose_name="Palabras clave del Servicio")
-    servicebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del Servicio", default='/Servicios/static/img/default.jpg')
-    servicebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del Servicio en Móvil", default='/Servicios/static/img/default-mov.jpg')
-    # Elementos OG del Servicio
-    serviceogdesc = models.CharField(max_length=200, verbose_name="Descripción OG del Servicio")
-    serviceogurl = models.CharField(max_length=200, verbose_name="Url OG del Servicio")
-    serviceogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato del Servicio")
-    serviceogurlsec = models.CharField(max_length=200, verbose_name="Url OG Segura del Servicio")
-    # serviceoldprice = models.IntegerField(verbose_name="Precio normal", blank=True, default=0, null=True)
-    # servicediscount = models.IntegerField(verbose_name="Valor de descuento", blank=True, default=0, null=True)
-    serviceurl = models.CharField(max_length=200, verbose_name="Url Servicio detalle")
-    servicedescription = RichTextField()
-    serviceimg = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen principal del Servicio")
-    gallerya = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen secundaria del Servicio", blank=True)
-    galleryb = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen adicional del Servicio", blank=True)
-    galleryc = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen final del Servicio", blank=True)
-    # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del Servicio")
+    # Elementos Visuales del servicio
+    servicename = models.CharField(max_length=200, verbose_name="Nombre del servicio")
+    serviceslogan = models.CharField(max_length=200, verbose_name="Slogan del servicio")
+    # Elementos del header del servicio
+    servicemetadesc = models.CharField(max_length=300, verbose_name="Meta descripción del servicio")
+    servicemetatitle = models.CharField(max_length=200, verbose_name="Metatítulo(title) del servicio", default="Metatítulo por default")
+    servicekeywords = RichTextField(verbose_name="Palabras clave del servicio")
+    servicebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del servicio", default='/servicios/static/img/default.jpg')
+    servicebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del servicio en Móvil", default='/servicios/static/img/default-mov.jpg')
+    # Elementos OG del servicio
+    serviceogurl = models.CharField(max_length=200, verbose_name="Url OG del servicio")
+    serviceogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato del servicio")
+    serviceogurlsec = models.CharField(max_length=200, verbose_name="Url OG Segura del servicio")
+    serviceurl = models.CharField(max_length=200, verbose_name="Url servicio detalle")
+    servicedescription = RichTextField(verbose_name="Descripción del servicio")
+    serviceimg = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen principal del servicio")
+    gallerya = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen secundaria del servicio", blank=True)
+    galleryb = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen adicional del servicio", blank=True)
+    galleryc = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen final del servicio", blank=True)
+    # productimg = models.ImageField(upload_to='static/img/uploads/', verbose_name="Imagen principal del servicio")
     asesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
     # productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
     serviceupdated = models.DateTimeField(auto_now=True)
@@ -64,8 +61,8 @@ class Pagina(models.Model):
     pageslogan = models.CharField(max_length=200, verbose_name="Slogan(h2) de la página")
     pagemetadesc = RichTextField(verbose_name="Meta descripción de la página")
     pagekeywords = RichTextField(verbose_name="Palabras clave de la página")
-    pagebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página", default='/Servicios/static/img/default.jpg')
-    pagebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página en Móvil", default='/Servicios/static/img/default-mov.jpg')
+    pagebanner = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página", default='/servicios/static/img/default.jpg')
+    pagebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner de la página en Móvil", default='/servicios/static/img/default-mov.jpg')
     pageogdesc = models.CharField(max_length=400, verbose_name="Descripción OG de la página", default='Descripción del sitio web')
     pageogurl = models.CharField(max_length=200, verbose_name="Url OG de la página")
     pageogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato de la página")
@@ -88,7 +85,7 @@ class Formulario(models.Model):
     celular = models.CharField(max_length=15, blank=True)
     descripcion = models.TextField(verbose_name="Descripción del paciente", blank=True)
     fecha_solicitud = models.DateTimeField(default=timezone.now)
-    servicio = models.CharField(max_length=200, choices=SERVICE_CHOICES, verbose_name="Servicio solicitado", blank=True)
+    servicio = models.CharField(max_length=200, choices=SERVICE_CHOICES, verbose_name="servicio solicitado", blank=True)
 
     def __str__(self):
         return self.nombre
