@@ -1830,15 +1830,18 @@ p {
   width: 100%;
 }
 .img__baner .img__banner--imgmov {
-  display: none;
   width: 100%;
-  margin-top: 100px;
 }
-@media (min-width: 300px) and (max-width: 820px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .img__baner .img__banner--imgmov {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 1280px) {
   .img__baner .img__banner--img {
     display: none;
   }
-  .img__baner .img__banner--imgmov {
+  .img__baner .img__baner .img__banner--imgmov {
     display: block;
   }
 }
@@ -1898,11 +1901,11 @@ p {
   height: 74px;
   padding-top: 7px;
 }
-.detalle .detalle__body .detalle__body--description .body__description--prices .product__details {
+.detalle .detalle__body .detalle__body--description .body__description--prices .service__details {
   list-style: none;
   padding-left: 4px;
 }
-.detalle .detalle__body .detalle__body--description .body__description--prices .product__details strong {
+.detalle .detalle__body .detalle__body--description .body__description--prices .service__details strong {
   color: #954f99;
 }
 .detalle .detalle__body .detalle__body--description .body__description--footer .buy__button {
@@ -2055,13 +2058,6 @@ p {
     width: 100%;
     padding: 0px;
   }
-}
-
-.img__baner .img__banner--img {
-  width: 100%;
-}
-.img__baner .img__banner--imgmov {
-  display: none;
 }
 
 .ser .ser__body .ser__section {

@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("../img/bg/bg-teacompano.jpg");
+  background: url("../img/bg/bg-teacompano.7f4beba81664.jpg");
 }
 
 a {
@@ -151,8 +151,8 @@ p {
 }
 @font-face {
   font-family: "fontello";
-  src: url("../font/fontello.eot?68425470");
-  src: url("../font/fontello.eot?68425470#iefix") format("embedded-opentype"), url("../font/fontello.woff2?68425470") format("woff2"), url("../font/fontello.woff?68425470") format("woff"), url("../font/fontello.ttf?68425470") format("truetype"), url("../font/fontello.svg?68425470#fontello") format("svg");
+  src: url("../font/fontello.2c0fbe50d069.eot?68425470");
+  src: url("../font/fontello.2c0fbe50d069.eot?68425470#iefix") format("embedded-opentype"), url("../font/fontello.297403ef424c.woff2?68425470") format("woff2"), url("../font/fontello.5cde2a077486.woff?68425470") format("woff"), url("../font/fontello.b820fcb6d7a2.ttf?68425470") format("truetype"), url("../font/fontello.7778237040d3.svg?68425470#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -162,7 +162,7 @@ p {
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
       font-family: 'fontello';
-      src: url('../font/fontello.svg?68425470#fontello') format('svg');
+      src: url("../font/fontello.7778237040d3.svg?68425470#fontello") format('svg');
     }
   }
   */
@@ -1830,14 +1830,11 @@ p {
   width: 100%;
 }
 .img__baner .img__banner--imgmov {
+  display: none;
   width: 100%;
+  margin-top: 100px;
 }
-@media (min-width: 1280px) and (max-width: 1920px) {
-  .img__baner .img__banner--imgmov {
-    display: none;
-  }
-}
-@media (min-width: 300px) and (max-width: 1280px) {
+@media (min-width: 300px) and (max-width: 820px) {
   .img__baner .img__banner--img {
     display: none;
   }
@@ -1901,11 +1898,11 @@ p {
   height: 74px;
   padding-top: 7px;
 }
-.detalle .detalle__body .detalle__body--description .body__description--prices .service__details {
+.detalle .detalle__body .detalle__body--description .body__description--prices .product__details {
   list-style: none;
   padding-left: 4px;
 }
-.detalle .detalle__body .detalle__body--description .body__description--prices .service__details strong {
+.detalle .detalle__body .detalle__body--description .body__description--prices .product__details strong {
   color: #954f99;
 }
 .detalle .detalle__body .detalle__body--description .body__description--footer .buy__button {
@@ -2060,6 +2057,13 @@ p {
   }
 }
 
+.img__baner .img__banner--img {
+  width: 100%;
+}
+.img__baner .img__banner--imgmov {
+  display: none;
+}
+
 .ser .ser__body .ser__section {
   padding: 20px;
 }
@@ -2185,4 +2189,4 @@ p {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css.9ebdbc689c84.map */

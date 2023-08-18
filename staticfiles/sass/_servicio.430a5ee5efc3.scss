@@ -4,14 +4,12 @@
     }
 
     .img__banner--imgmov {
+        display: none;
         width: 100%;
-
-        @media (min-width: 1280px) and (max-width: 1920px) {
-            display: none;
-        }
+        margin-top: 100px;
     }
 
-    @media (min-width: 300px) and (max-width: 1280px) {
+    @media (min-width: 300px) and (max-width: 820px) {
         .img__banner--img {
             display: none;
         }
@@ -93,7 +91,7 @@
                     padding-top: 7px;
                 }
 
-                .service__details {
+                .product__details {
                     list-style: none;
                     padding-left: 4px;
 

@@ -42,6 +42,12 @@ class Service(models.Model):
     # productprice = models.IntegerField(verbose_name="Precio de venta", blank=True, null=True, editable=False)
     serviceupdated = models.DateTimeField(auto_now=True)
 
+    #Snipets
+    servicesnipeta = models.CharField(max_length=400, verbose_name="Primer snipet del servicio", blank=True, default="Snipet por default")
+    servicesnipetb = models.CharField(max_length=400, verbose_name="Segundo snipet del servicio", blank=True, default="Snipet por default")
+    servicesnipetc = models.CharField(max_length=400, verbose_name="Tercer snipet del servicio", blank=True, default="Snipet por default")
+    servicesnipetd = models.CharField(max_length=400, verbose_name="Cuarto snipet del servicio", blank=True, default="Snipet por default")
+
     def __str__(self):
         return self.servicename + ' - creado por - ' + self.asesor.name
 
