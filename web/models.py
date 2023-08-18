@@ -28,6 +28,7 @@ class Service(models.Model):
     servicebannermov = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen Banner del servicio en Móvil", default='/servicios/static/img/default-mov.jpg')
     # Elementos OG del servicio
     serviceogurl = models.CharField(max_length=200, verbose_name="Url OG del servicio")
+    serviceogdesc = models.CharField(max_length=400, verbose_name="Descripción OG del servicio", default='Descripción del servicio')
     serviceogimg = models.CharField(max_length=200, verbose_name="Url OG Microformato del servicio")
     serviceogurlsec = models.CharField(max_length=200, verbose_name="Url OG Segura del servicio")
     serviceurl = models.CharField(max_length=200, verbose_name="Url servicio detalle")
