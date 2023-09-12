@@ -1,52 +1,59 @@
+import random
+from io import BytesIO
 from django.contrib import admin
-from reportlab.platypus import SimpleDocTemplate, PageTemplate, Frame, Image
+from django.core.files.base import ContentFile
+from django.utils import timezone
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib import colors
-from reportlab.platypus import Table, TableStyle, Paragraph
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet
-from io import BytesIO
 from django.utils.text import slugify
 from django.http import HttpResponse
 from django.urls import reverse
 from django.utils.html import format_html
+from django.template.loader import get_template
+from weasyprint import HTML  # Importa WeasyPrint
 
-from .models import Kardex, Asesor, Formulario, Video, Pagina, Service
+from .models import Kardex, Asesor, Formulario, Video, Pagina, Service, Galeria
 
 class KardexAdmin(admin.ModelAdmin):
-    list_display = ('paciente', 'fecha_kardex', 'diagnosis', 'dieta', 'edad', 'peso', 'generate_pdf_link')
+    list_display = (
+        'paciente',
+        'fecha_kardex',
+        'diagnosis',
+        'dieta',
+        'edad',
+        'peso',
+        'oxigeno',
+    )
     actions = ['generate_pdf_action']
 
-    def generate_pdf_link(self, obj):
-        pdf_url = reverse('generate_pdf', args=[obj.id])
-        return format_html('<a href="{}">Generar PDF</a>', pdf_url)
-    
-    generate_pdf_link.short_description = "PDF"
-
     def generate_pdf_action(self, request, queryset):
-        styles = getSampleStyleSheet()
         pdf_buffer = BytesIO()
 
-        # Crear un documento PDF
-        doc = SimpleDocTemplate(pdf_buffer, pagesize=landscape(letter))
-
-        content = []
-
         for kardex in queryset:
-            # Crear una lista para el contenido de la página
-            page_content = []
+            # Crear un documento PDF utilizando ReportLab
+            pdf_document = SimpleDocTemplate(pdf_buffer)
 
-            data = [
+            # Crear una lista de elementos para agregar al PDF
+            elements = []
+
+            # Crear imagen de fondo
+            background_image_path = "web/static/img/plantilla-kardex.jpg"
+            image = Image(background_image_path)
+
+            # Crear la tabla con los datos y aplicar los estilos
+            table_data = [
                 ['Nombre del paciente', kardex.paciente],
                 ['Diagnóstico', kardex.diagnosis],
                 ['Dieta', kardex.dieta],
                 ['Edad', kardex.edad],
                 ['Peso', kardex.peso],
-                ['Tratamiento', Paragraph(kardex.tratamiento, styles["Normal"])],
-                ['Plan', Paragraph(kardex.plan, styles["Normal"])],
+                ['Tratamiento', kardex.tratamiento],
+                ['Plan', kardex.plan],
                 ['Fecha de creación', kardex.fecha_kardex.strftime('%Y-%m-%d %H:%M:%S')],
             ]
 
-            # Definir los estilos para la tabla
             table_style = TableStyle([
                 ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
                 ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
@@ -58,38 +65,24 @@ class KardexAdmin(admin.ModelAdmin):
             ])
 
             # Crear la tabla con los datos y aplicar los estilos
-            table = Table(data)
+            table = Table(table_data, colWidths=[430, 556])  # Ajusta los valores según tus necesidades
             table.setStyle(table_style)
-            page_content.append(table)
 
-            # Agregar imagen de fondo (ajustar la ruta)
-            background_image = 'web/static/img/bg/hoja-horizontal.jpg'  # Ruta correcta
+            # Agregar la imagen de fondo y la tabla al PDF
+            elements.append(image)
+            elements.append(Spacer(1, 10))  # Espacio en blanco para separar
+            elements.append(table)
 
-            # Debug: Verificar si la imagen se carga correctamente
-            print("Ruta de la imagen:", background_image)
-
-            # Crear un PageTemplate con la imagen de fondo
-            img = Image(background_image, width=doc.width, height=doc.height)
-            img_frame = Frame(0, 0, doc.width, doc.height)
-            img_frame.addFromList([img], doc)
-            template = PageTemplate(id='background', frames=[img_frame])
-            doc.addPageTemplates([template])
-
-            # Debug: Verificar si el PageTemplate se crea correctamente
-            print("PageTemplate creado con la imagen de fondo:", template)
-
-            # Agregar contenido de la página al documento
-            content.extend(page_content)
+            # Construir el documento PDF
+            pdf_document.build(elements)
 
         # Generar un nombre de archivo usando el nombre del paciente y la fecha de creación
         file_name = f"{slugify(kardex.paciente)}-{kardex.fecha_kardex.strftime('%d%m%y')}.pdf"
         response = HttpResponse(content_type='application/pdf')
         response['Content-Disposition'] = f'attachment; filename="{file_name}"'
 
-        doc.build(content)
-
-        pdf_buffer.seek(0)
-        response.write(pdf_buffer.read())
+        # Configurar la respuesta HTTP
+        response.write(pdf_buffer.getvalue())
         pdf_buffer.close()
 
         return response
@@ -97,10 +90,16 @@ class KardexAdmin(admin.ModelAdmin):
     generate_pdf_action.short_description = "Generar PDF de Kardex"
 
 admin.site.register(Kardex, KardexAdmin)
-
 admin.site.register(Asesor)
 admin.site.register(Pagina)
 admin.site.register(Video)
+
+class GaleriaAdmin(admin.ModelAdmin):
+    list_display = (
+        'identificador',
+    )
+
+admin.site.register(Galeria, GaleriaAdmin)
 
 class ServiceAdmin(admin.ModelAdmin):
     list_display = ('servicename', 'asesor', 'serviceupdated')

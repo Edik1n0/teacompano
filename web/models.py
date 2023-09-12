@@ -16,6 +16,13 @@ class S3ProductImage(S3Boto3Storage):
     location = 'teacompano-img'
     file_overwrite = False
 
+class Galeria(models.Model):
+    identificador = models.CharField(max_length=200)
+    imagen = models.ImageField(upload_to='teacompano-img/')  # 'galeria/' es el directorio en S3 donde se guardarán las imágenes
+
+    def __str__(self):
+        return self.identificador
+
 class Service(models.Model):
     # Elementos Visuales del servicio
     servicename = models.CharField(max_length=200, verbose_name="Nombre del servicio")
@@ -101,6 +108,7 @@ class Kardex(models.Model):
     paciente = models.CharField(max_length=200, verbose_name="Nombre del paciente", blank=True)
     diagnosis = models.CharField(max_length=200, verbose_name="Diagnóstico", blank=True)
     dieta = models.CharField(max_length=200, verbose_name="Dieta", blank=True)
+    oxigeno = models.CharField(max_length=200, verbose_name="Oxigeno", blank=True)
     edad = models.CharField(max_length=200, verbose_name="Edad", blank=True)
     peso = models.CharField(max_length=200, verbose_name="Peso", blank=True)
     tratamiento = RichTextField(verbose_name="Tratamiento Farmacológico", blank=True)

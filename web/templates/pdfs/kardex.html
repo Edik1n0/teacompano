@@ -1,19 +1,60 @@
 {% load static %}
-<div class="container kardex">
-    <h1 style="text-align: center;">Kardex</h1>
-    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
-        <tr style="background-color: #f2f2f2;">
-            <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Nombre del paciente</th>
-            <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.paciente }}</td>
-        </tr>
-        <tr>
-            <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Diagnóstico</th>
-            <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.diagnosis }}</td>
-        </tr>
-        <tr style="background-color: #f2f2f2;">
-            <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Dieta</th>
-            <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.dieta }}</td>
-        </tr>
-        <!-- Agregar más filas de la tabla aquí... -->
-    </table>
-</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reporte de Kardex</title>
+</head>
+<style type="text/css">
+    body {
+        background-image: url(https://teacompano-img.s3.amazonaws.com/teacompano-img/plantilla-kardex.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <h1>Hola soy un texto de prueba</h1>
+    <div style="color: black; margin-top: 400px;">
+        <h1 style="text-align: center;">Kardex</h1>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Nombre del paciente</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.paciente }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Diagnóstico</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.diagnosis }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Dieta</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.dieta }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Edad</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.edad }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Peso</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.peso }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Oxígeno</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.oxigeno }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Tratamiento</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.tratamiento }}</td>
+            </tr>
+            <tr>
+                <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Plan</th>
+                <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">{{ kardex.plan }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
