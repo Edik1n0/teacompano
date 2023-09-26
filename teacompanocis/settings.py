@@ -157,6 +157,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'web/static')]
 
 # Activate Django-Heroku.
+try:
+    from .local_settings import *  # noqa
+except ImportError:
+    pass
+
 django_heroku.settings(locals())
 
 # Default primary key field type
