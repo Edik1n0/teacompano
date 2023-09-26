@@ -137,22 +137,26 @@ USE_I18N = True
 USE_TZ = True
 
 
+# Define the base directory for your project
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, '/web/static')
-STATIC_URL = "/web/static/"
+# Define STATIC_ROOT as an absolute path
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_ROOT = "web"
+# Define STATIC_URL without leading/trailing slashes
+STATIC_URL = '/static/'
+
+# Define MEDIA_URL and MEDIA_ROOT
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "web/static/"),)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'web/static')]
 
-try:
-    from .local_settings import *  # noqa
-except ImportError:
-    pass
-
+# Activate Django-Heroku.
 django_heroku.settings(locals())
 
 # Default primary key field type
