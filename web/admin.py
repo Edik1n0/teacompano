@@ -1,94 +1,79 @@
 import random
-from io import BytesIO
-from django.contrib import admin
-from django.core.files.base import ContentFile
-from django.utils import timezone
-from reportlab.lib.pagesizes import letter, landscape
-from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, PageBreak
-from reportlab.lib.styles import getSampleStyleSheet
+import os
+import tempfile
 from django.utils.text import slugify
+from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import reverse
 from django.utils.html import format_html
 from django.template.loader import get_template
-from weasyprint import HTML  # Importa WeasyPrint
+from weasyprint import HTML, CSS
 
-from .models import Kardex, Asesor, Formulario, Video, Pagina, Service, Galeria
+from .models import Kardex, Asesor, Formulario, Video, Pagina, Service, Galeria, ImagenesPrincipales
 
 class KardexAdmin(admin.ModelAdmin):
-    list_display = (
-        'paciente',
-        'fecha_kardex',
-        'diagnosis',
-        'dieta',
-        'edad',
-        'peso',
-        'oxigeno',
-    )
-    actions = ['generate_pdf_action']
+    list_display = ('paciente', 'fecha_kardex', 'edad', 'oxigeno')
+    search_fields = ('paciente', 'diagnosis', 'dieta', 'oxigeno', 'edad', 'peso')
+    list_filter = ('fecha_kardex',)
 
-    def generate_pdf_action(self, request, queryset):
-        pdf_buffer = BytesIO()
+    actions = ['generate_pdf']
+
+    def generate_pdf(self, request, queryset):
+        # Configurar el tamaño de página adecuado (A4 en este ejemplo)
+        page_size = 'A4'
+        
+        # Crear una respuesta HTTP para el PDF
+        response = HttpResponse(content_type='application/pdf')
+        response['Content-Disposition'] = 'attachment; filename="kardex.pdf"'
+
+        # Crear un directorio temporal para archivos temporales
+        temp_dir = tempfile.mkdtemp()
 
         for kardex in queryset:
-            # Crear un documento PDF utilizando ReportLab
-            pdf_document = SimpleDocTemplate(pdf_buffer)
+            # Crear el contenido HTML directamente en el código
+            html_content = f"""
+                <html>
+                    <head>
+                        <title>Kardex</title>
+                        <style>
+                            @page {{
+                                size: {page_size};
+                                margin: 1cm;
+                            }}
+                        </style>
+                    </head>
+                    <body>
+                        <h1>Kardex de {kardex.paciente}</h1>
+                        <p>Fecha: {kardex.fecha_kardex}</p>
+                        <p>Edad: {kardex.edad}</p>
+                        <p>Oxígeno: {kardex.oxigeno}</p>
+                        <!-- Agrega aquí más contenido según tus necesidades -->
+                    </body>
+                </html>
+            """
 
-            # Crear una lista de elementos para agregar al PDF
-            elements = []
+            # Obtener el nombre del archivo PDF basado en el nombre del paciente y la fecha
+            file_name = f"{slugify(kardex.paciente)}_{kardex.fecha_kardex.strftime('%d%m%y')}.pdf"
+            pdf_file_path = os.path.join(temp_dir, file_name)
 
-            # Crear imagen de fondo
-            background_image_path = "web/static/img/plantilla-kardex.jpg"
-            image = Image(background_image_path)
+            # Generar el PDF utilizando WeasyPrint
+            HTML(string=html_content).write_pdf(pdf_file_path, stylesheets=[CSS(string='@page { size: A4; margin: 1cm; }')])
 
-            # Crear la tabla con los datos y aplicar los estilos
-            table_data = [
-                ['Nombre del paciente', kardex.paciente],
-                ['Diagnóstico', kardex.diagnosis],
-                ['Dieta', kardex.dieta],
-                ['Edad', kardex.edad],
-                ['Peso', kardex.peso],
-                ['Tratamiento', kardex.tratamiento],
-                ['Plan', kardex.plan],
-                ['Fecha de creación', kardex.fecha_kardex.strftime('%Y-%m-%d %H:%M:%S')],
-            ]
+            # Adjuntar el PDF generado a la respuesta HTTP
+            with open(pdf_file_path, 'rb') as pdf_file:
+                response.write(pdf_file.read())
 
-            table_style = TableStyle([
-                ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
-                ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-                ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-                ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
-                ('GRID', (0, 0), (-1, -1), 1, colors.black),
-            ])
-
-            # Crear la tabla con los datos y aplicar los estilos
-            table = Table(table_data, colWidths=[430, 556])  # Ajusta los valores según tus necesidades
-            table.setStyle(table_style)
-
-            # Agregar la imagen de fondo y la tabla al PDF
-            elements.append(image)
-            elements.append(Spacer(1, 10))  # Espacio en blanco para separar
-            elements.append(table)
-
-            # Construir el documento PDF
-            pdf_document.build(elements)
-
-        # Generar un nombre de archivo usando el nombre del paciente y la fecha de creación
-        file_name = f"{slugify(kardex.paciente)}-{kardex.fecha_kardex.strftime('%d%m%y')}.pdf"
-        response = HttpResponse(content_type='application/pdf')
-        response['Content-Disposition'] = f'attachment; filename="{file_name}"'
-
-        # Configurar la respuesta HTTP
-        response.write(pdf_buffer.getvalue())
-        pdf_buffer.close()
+        # Eliminar archivos temporales y el directorio temporal
+        for temp_file in os.listdir(temp_dir):
+            temp_file_path = os.path.join(temp_dir, temp_file)
+            os.remove(temp_file_path)
+        os.rmdir(temp_dir)
 
         return response
 
-    generate_pdf_action.short_description = "Generar PDF de Kardex"
+    generate_pdf.short_description = 'Generar PDF kardex'
 
+# Registrar el modelo Kardex con la clase de administración personalizada
 admin.site.register(Kardex, KardexAdmin)
 admin.site.register(Asesor)
 admin.site.register(Pagina)
@@ -109,9 +94,9 @@ admin.site.register(Service, ServiceAdmin)
 class FormularioAdmin(admin.ModelAdmin):
     readonly_fields = ('fecha_solicitud', 'servicio')
 
-    def get_timezone(self, obj):
-        return obj.fecha_solicitud.timezone  # Retorna el valor de timezone de la fecha_solicitud
-
-    #get_timezone.short_description = 'Timezone'  # Nombre descriptivo para el campo en el admin
-
 admin.site.register(Formulario, FormularioAdmin)
+
+class ImagenesPrincipalesAdmin(admin.ModelAdmin):
+    list_display = ('imgname', 'imagenalt', 'imgasesor')
+
+admin.site.register(ImagenesPrincipales, ImagenesPrincipalesAdmin)

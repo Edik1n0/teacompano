@@ -18,7 +18,7 @@ class S3ProductImage(S3Boto3Storage):
 
 class Galeria(models.Model):
     identificador = models.CharField(max_length=200)
-    imagen = models.ImageField(upload_to='teacompano-img/')  # 'galeria/' es el directorio en S3 donde se guardarán las imágenes
+    imagen = models.ImageField(upload_to='teacompano-img/')  # 'galeria/' es el directorio en S3 donde se guardarán las imagenes
 
     def __str__(self):
         return self.identificador
@@ -118,3 +118,16 @@ class Kardex(models.Model):
     def __str__(self):
         fecha_formateada = self.fecha_kardex.strftime('%Y-%m-%d %H:%M:%S')  # Formatea la fecha como quieras
         return f"{self.paciente} - {fecha_formateada}"
+    
+class ImagenesPrincipales(models.Model):
+    imgname = models.CharField(max_length=200, verbose_name="Identificador de la imagen")
+    imagenp = models.ImageField(upload_to='teacompano-img/', verbose_name="Imagen principal", default='/servicios/static/img/banner-ejemplo-b.jpg')
+    imagenalt = models.CharField(max_length=200, verbose_name="Alt de la imagen", blank="true")
+    imgslogan = RichTextField(verbose_name="Slogan de la Imagen", blank="true")
+    imgtitle = RichTextField(verbose_name="Titulo de la Imagen", blank="true")
+    imgcta = models.CharField(max_length=200, verbose_name="Call to action", blank="true")
+    imglink = models.CharField(max_length=200, verbose_name="Enlace CTA", blank="true")
+    imgasesor = models.ForeignKey(Asesor, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.imgname

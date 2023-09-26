@@ -20,6 +20,15 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Define la ruta absoluta a la carpeta de imágenes
+IMAGE_FOLDER = os.path.join(BASE_DIR, 'web', 'static', 'img')
+
+PDFKIT_CONFIG = {
+    'WKHTMLTOPDF_BIN': '/usr/local/bin/wkhtmltopdf',  # Ruta al ejecutable wkhtmltopdf
+    'OPTIONS': {
+        'quiet': '',  # Opciones adicionales de wkhtmltopdf
+    },
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/

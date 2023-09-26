@@ -1,12 +1,10 @@
 # Create your views here.
-from django.template.loader import get_template
 from django.utils import timezone
-from .models import Asesor, Video, Pagina, Formulario, Kardex, Service
-from django.shortcuts import get_object_or_404, render, redirect, HttpResponse
+from .models import Video, Pagina, Service, ImagenesPrincipales
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import DetailView
 from .forms import FormularioForm
 from django.contrib import messages
-from xhtml2pdf import pisa
 
 def form(request):
     if request.method == 'POST':
@@ -201,7 +199,8 @@ def privacy(request):
         })
 
 def index(request):
-    video =get_object_or_404(Video, videoname='Video intro')
+    carrusel = ImagenesPrincipales.objects.all()
+    video = get_object_or_404(Video, videoname='Video intro')
     videourl = video.videourl
     pagina_home = get_object_or_404(Pagina, pagename='Home')
     pageslogan = pagina_home.pageslogan
@@ -217,6 +216,7 @@ def index(request):
     pageogimg = pagina_home.pageogimg
     pageogurlsec = pagina_home.pageogurlsec
     context= {
+        'carrusel': carrusel,
         'pageogdesc':pageogdesc,
         'pageslogan': pageslogan,
         'pagetitle': pagetitle,
@@ -300,27 +300,15 @@ def comments(request):
     }
     return render(request, 'partials/comments.html', context)
 
+def carrusels(request):
+    carrusel = ImagenesPrincipales.objects.all()
+    context = {
+        'carrusel': carrusel,
+    }
+    return render(request, 'partials/carrusel.html', context)
+
 # def custom_404_view(request, exception):
 #     return render(request, '404.html', status=404)
 
 def robots(request):
     return render(request, 'robots.txt')
-
-def generate_pdf(request, kardex_id):
-    kardex = get_object_or_404(Kardex, pk=kardex_id)
-    template_path = 'pdfs/kardex.html'
-    template = get_template(template_path)
-    context = {'kardex': kardex}
-    html = template.render(context)
-
-    response = HttpResponse(content_type='application/pdf')
-    response['Content-Disposition'] = 'filename="kardex.pdf"'
-
-    pdf_buffer = BytesIO()
-    pisa.CreatePDF(html, dest=pdf_buffer)
-    pdf_buffer.seek(0)
-
-    response.write(pdf_buffer.read())
-    pdf_buffer.close()
-
-    return response

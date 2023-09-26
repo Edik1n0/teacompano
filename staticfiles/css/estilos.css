@@ -1745,7 +1745,7 @@ p {
 }
 
 .carrusel .carrusel__wmsg {
-  width: 50%;
+  width: 54%;
   position: absolute;
   z-index: 11;
   top: 240px;
@@ -1753,53 +1753,77 @@ p {
 }
 .carrusel .carrusel__wmsg .wmsg__border {
   display: flex;
-  justify-content: center;
 }
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content {
   border: 10px solid #3d0c60;
   width: 100%;
-  height: 140px;
-  padding: 10px;
+  height: 120px;
+  padding: 16px;
   display: block;
 }
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 100%;
+  padding-top: 0px;
 }
-.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__a--txt {
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__a {
+  width: 30%;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+}
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__a p {
   font-size: 32px;
   color: #FFFFFF;
 }
-.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__b--txt {
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__b {
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+}
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__b p {
   font-size: 96px;
   font-weight: bold;
   color: #FFFFFF;
-  margin-top: -26px;
+}
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__b:hover {
+  transition: all 0.6s;
+}
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__parts .wmsg__b:hover p {
+  transition: all 0.6s;
+  color: #3d0c60;
 }
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot {
   display: flex;
   justify-content: center;
-  color: #FFFFFF;
   margin-top: -30px;
   opacity: 0%;
 }
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .wmsg__font--txt {
-  font-size: 26px;
-  font-weight: bold;
-  color: #FFFFFF;
+  padding-bottom: 4px;
 }
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .wmsg__font--txt,
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .icon-right-open {
-  padding-top: 4px;
   color: #FFFFFF;
-  font-size: 26px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .wmsg__font--txt:hover,
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .icon-right-open:hover {
+  transition: all 0.6s;
+}
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .wmsg__font--txt:hover p,
+.carrusel .carrusel__wmsg .wmsg__border .wmsg__content .wmsg__foot .icon-right-open:hover p {
+  transition: all 0.6s;
+  color: #3d0c60;
 }
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content:hover {
   transition: all 0.6s;
   height: 180px;
-}
-.carrusel .carrusel__wmsg .wmsg__border .wmsg__content:hover .wmsg__b--txt {
-  transition: all 0.6s;
-  color: #954f99;
 }
 .carrusel .carrusel__wmsg .wmsg__border .wmsg__content:hover .wmsg__foot {
   transition: all 0.6s;

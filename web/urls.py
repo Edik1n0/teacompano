@@ -17,5 +17,4 @@ urlpatterns = [
     path('politica-cookies/', views.cookies, name="cookies"),
     path('politica-privacidad/', views.privacy, name="privacy"),
     path("robots.txt", views.robots, name="robots"),
-    path('generate_pdf/<int:kardex_id>/', views.generate_pdf, name='generate_pdf'),
 ]
